@@ -1,0 +1,727 @@
+/* ---------- Large screens ---------- */
+@media (max-width: 1399.98px) {
+  .hero {
+    padding: 60px 40px;
+  }
+
+  .person img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+  }
+
+  .title-decor h1 {
+    font-size: 42px;
+  }
+
+  .title-decor p {
+    font-size: 22px;
+  }
+
+  .title-width,
+  .title-Lots,
+  .title-fqa,
+  .faq-item,
+  .faq-accordion {
+    width: 100%;
+  }
+
+  .prev {
+    left: auto;
+    right: 0;
+  }
+
+  .next {
+    left: 0;
+  }
+}
+
+/* ---------- Laptop / Tablet ---------- */
+@media (max-width: 1199.98px) {
+  .hero {
+    padding: 50px 30px;
+  }
+
+  .title-decor h1 {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  .title-decor p {
+    font-size: 20px;
+  }
+
+  .title-box h3 {
+    font-size: 14px;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .person img {
+    max-width: 560px;
+  }
+
+  .card-company {
+    gap: 25px;
+  }
+
+  .company-card {
+    min-height: 320px;
+    padding: 0 25px;
+  }
+
+  .card-image {
+    width: 34%;
+  }
+
+  .card-content {
+    width: 55%;
+  }
+
+  .card-content h2 {
+    font-size: 22px;
+  }
+
+  .card-content p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .titles-Options {
+    width: 100%;
+  }
+
+  .Options-jop {
+    height: auto;
+    min-height: 178px;
+  }
+
+  .slider-wrapper {
+    min-height: 380px;
+  }
+
+  .jobs-slider-preview {
+    width: 290px;
+  }
+
+  .news-image-card {
+    width: 100%;
+    max-width: 480px;
+    height: 290px;
+  }
+
+  .shape-two {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .shape-three {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .title-width h2,
+  .title-Lots h2 {
+    font-size: 28px;
+  }
+
+  .title-width p,
+  .title-Lots p {
+    font-size: 18px;
+  }
+
+  .title-fqa h2 {
+    font-size: 48px;
+  }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 991.98px) {
+  .home {
+    gap: 40px;
+  }
+
+  .hero {
+    padding: 40px 20px 120px;
+    text-align: center;
+  }
+
+  .hero .row,
+  .ar .hero .row,
+  .en .hero .row,
+  .ar .News-events .row,
+  .en .News-events .row,
+  .ar .Lots-of-jobs .row,
+  .en .Lots-of-jobs .row,
+  .ar .fqa .row,
+  .en .fqa .row,
+  .ar .Latest-government-jobs .row,
+  .en .Latest-government-jobs .row {
+    flex-direction: column !important;
+  }
+
+  .hero-right,
+  .hero-left,
+  .title-decor,
+  .box-decor,
+  .title-box,
+  .categorie-title,
+  .categorie-title-or,
+  .title-width,
+  .title-Lots,
+  .title-fqa {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .title-decor h1 {
+    font-size: 34px;
+    text-align: center !important;
+  }
+
+  .title-decor p {
+    font-size: 20px;
+    text-align: center !important;
+  }
+
+  .title-box h3,
+  .categorie-title h2,
+  .categorie-title p,
+  .categorie-title-or h2,
+  .categorie-title-or p,
+  .title-width h2,
+  .title-width p,
+  .title-width b,
+  .title-Lots h2,
+  .title-Lots p,
+  .title-fqa h2,
+  .title-fqa p {
+    text-align: center !important;
+    justify-content: center;
+  }
+
+  .search-box {
+    padding: 12px;
+  }
+
+  .search-box .input,
+  .ar .search-box .input,
+  .en .search-box .input {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+  }
+
+  .hero-left {
+    margin-top: 30px;
+  }
+
+  .person img {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .wave {
+    height: 180px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .about {
+    margin: 20px 0;
+  }
+
+  .company-card,
+  .ar .company-card,
+  .en .company-card {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .card-content,
+  .card-image {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center;
+    text-align: center !important;
+  }
+
+  .card-content p {
+    max-width: 100%;
+  }
+
+  .card-image img {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .circle-top,
+  .circle-right,
+  .circle-left,
+  .circle-buttom,
+  .circle-top-l,
+  .circle-right-l,
+  .circle-left-l,
+  .circle-buttom-l {
+    display: none;
+  }
+
+  .Jobs,
+  .ar .Jobs,
+  .en .Jobs {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .buttom-Latest-Jobs {
+    margin: auto;
+  }
+
+  .Options-jop,
+  .ar .Options-jop,
+  .en .Options-jop {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .img-Options {
+    margin: 0;
+  }
+
+  .titles-Options {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .titles-Options h2,
+  .paragraph-Options p,
+  .color-Re,
+  .color-b {
+    text-align: center !important;
+    justify-content: center;
+  }
+
+  .paragraph-Options,
+  .Option {
+    justify-content: center;
+  }
+
+  .icon-Options {
+    margin: 0;
+    text-align: center;
+  }
+
+  .slider-wrapper {
+    min-height: 340px;
+  }
+
+  .jobs-slider-preview {
+    width: 260px;
+  }
+
+  .left-card,
+  .right-card {
+    display: none;
+  }
+
+  .active-card {
+    position: relative;
+  }
+
+  .prev,
+  .next {
+    top: 50%;
+    transform: translateY(-50%);
+    left: auto;
+    right: auto;
+  }
+
+  .prev {
+    right: 10px;
+  }
+
+  .next {
+    left: 10px;
+  }
+
+  .news-slider {
+    height: auto;
+    min-height: 320px;
+    margin-top: 20px;
+  }
+
+  .news-image-card {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .shape-one,
+  .shape-two,
+  .shape-three {
+    display: none;
+  }
+
+  .news-arrow {
+    left: 0;
+    width: 55px;
+    height: 65px;
+  }
+
+  .news-arrow .icon-arrow {
+    font-size: 24px;
+  }
+
+  .big-circle,
+  .small-circle,
+  .dot-circle {
+    transform: scale(0.8);
+  }
+
+  .title-Lots {
+    height: auto;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .title-Lots p {
+    width: 100%;
+  }
+
+  .title-fqa {
+    width: 100%;
+  }
+
+  .faq-accordion,
+  .faq-item {
+    width: 100%;
+  }
+
+  .faq-answer {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 767.98px) {
+  .container {
+    width: 94%;
+  }
+
+  .hero {
+    padding: 30px 15px 100px;
+  }
+
+  .title-decor h1 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .title-decor p {
+    font-size: 17px;
+  }
+
+  .title-box h3 {
+    font-size: 13px;
+  }
+
+  .search-box {
+    border-radius: 14px;
+    padding: 10px;
+  }
+
+  .search-box input {
+    height: 42px;
+    font-size: 13px;
+  }
+
+  .search-box button {
+    height: 42px;
+    font-size: 15px;
+  }
+
+  .person img {
+    max-width: 360px;
+  }
+
+  .wave {
+    height: 130px;
+  }
+
+  .categorie-title h2,
+  .categorie-title-or h2 {
+    font-size: 24px;
+  }
+
+  .categorie-title p,
+  .categorie-title-or p {
+    font-size: 16px;
+  }
+
+  .item {
+    height: 60px;
+    padding: 0 18px;
+  }
+
+  .item p {
+    font-size: 16px;
+  }
+
+  .sent-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+  }
+
+  .sent-icon > span[class^="icon-"] {
+    font-size: 30px;
+  }
+
+  .about-item {
+    height: 150px;
+  }
+
+  .black h1,
+  .orange h1 {
+    font-size: 54px;
+  }
+
+  .black p,
+  .orange p {
+    font-size: 15px;
+  }
+
+  .about-partners {
+    width: 100%;
+  }
+
+  .about-partners p {
+    font-size: 16px;
+  }
+
+  .small-title {
+    font-size: 13px;
+  }
+
+  .card-content h2 {
+    font-size: 20px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .buttom-Latest-Jobs {
+    width: 160px;
+  }
+
+  .buttom-Latest-Jobs a {
+    font-size: 16px;
+  }
+
+  .Options-jop {
+    padding: 18px 14px;
+  }
+
+  .titles-Options h2 {
+    font-size: 17px;
+  }
+
+  .paragraph-Options {
+    gap: 10px;
+  }
+
+  .paragraph-Options p,
+  .color-Re,
+  .color-b {
+    font-size: 11px;
+  }
+
+  .Option {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .Option p {
+    width: auto;
+    min-width: 90px;
+    font-size: 9px;
+  }
+
+  .jobs-slider-preview {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .title-jobs-slider-preview h1 {
+    font-size: 20px;
+  }
+
+  .Center-jobs-slider-preview > p {
+    font-size: 11px;
+  }
+
+  .Apply-now a {
+    font-size: 13px;
+  }
+
+  .title-width h2,
+  .title-Lots h2 {
+    font-size: 24px;
+  }
+
+  .title-width p,
+  .title-Lots p {
+    font-size: 16px;
+  }
+
+  .title-fqa h2 {
+    font-size: 38px;
+    margin: 0;
+  }
+
+  .title-fqa p {
+    font-size: 14px;
+  }
+
+  .faq-question h3 {
+    font-size: 16px;
+  }
+
+  .faq-answer p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .vector {
+    margin: 0 8px;
+  }
+}
+
+/* ---------- Small mobile ---------- */
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 24px 12px 80px;
+  }
+
+  .title-decor h1 {
+    font-size: 24px;
+  }
+
+  .title-decor p {
+    font-size: 15px;
+  }
+
+  .person img {
+    max-width: 290px;
+  }
+
+  .item {
+    height: 56px;
+    border-radius: 40px;
+    padding: 0 14px;
+  }
+
+  .item p {
+    font-size: 15px;
+  }
+
+  .sent-icon > span[class^="icon-"] {
+    font-size: 26px;
+  }
+
+  .black h1,
+  .orange h1 {
+    font-size: 44px;
+  }
+
+  .jobs-slider-preview {
+    max-width: 100%;
+  }
+
+  .news-arrow {
+    width: 46px;
+    height: 56px;
+  }
+
+  .title-width h2,
+  .title-Lots h2 {
+    font-size: 21px;
+  }
+
+  .title-width p,
+  .title-Lots p {
+    font-size: 15px;
+  }
+
+  .title-fqa h2 {
+    font-size: 32px;
+  }
+
+  .faq-question {
+    gap: 10px;
+  }
+
+  .faq-mark {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
+
+/* ---------- Extra fixes for RTL/LTR layout ---------- */
+.ar .hero .row {
+  flex-direction: row-reverse;
+}
+
+.en .hero .row {
+  flex-direction: row;
+}
+
+.ar .News-events .row,
+.ar .Lots-of-jobs .row,
+.ar .fqa .row,
+.ar .Latest-government-jobs .row {
+  flex-direction: row-reverse;
+}
+
+.en .News-events .row,
+.en .Lots-of-jobs .row,
+.en .fqa .row,
+.en .Latest-government-jobs .row {
+  flex-direction: row;
+}
+
+.ar .nav-links ul,
+.ar .nav-links2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.en .nav-links ul,
+.en .nav-links2 {
+  display: flex;
+  flex-direction: row;
+}

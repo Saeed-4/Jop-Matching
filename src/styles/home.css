@@ -1,0 +1,1732 @@
+a{
+    text-decoration: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #e75d06, #e45d03);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 250px,
+    rgba(255,255,255,0.05) 250px,
+    rgba(255,255,255,0.05) 450px
+  );
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 220px,
+    rgba(255, 255, 255, 0.015) 220px,
+    rgba(255, 255, 255, 0.015) 420px
+  );
+  pointer-events: none;
+}
+
+.hero-right{
+    margin-top: 27px;
+}
+
+.title-decor h1 {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.6;
+  color: #fff;
+  margin: 0 0 -10px;
+  
+}
+
+.title-decor p {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.8;
+  color: #fff;
+  margin: 0;
+  
+}
+
+.box-decor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 47px;
+}
+
+.title-box h3 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #fff;
+  margin: 0;
+}
+
+.search-box {
+  background: #fff;
+  border-radius: 18px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 760px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.search-box input {
+  flex: 1;
+  width: 251px;
+  height: 46px;
+  border: none;
+  outline: none;
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  color: #444;
+}
+
+.search-box button {
+  width: 110px;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  background: #dd5c16;
+  color: #fff;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-left{
+    width: 100%;
+    height: auto;
+}
+
+.person img{
+    width: 757px;
+    height: 682px;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 317px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+.job-categories{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+}
+.categorie-title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.categorie-title h2{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 0px;
+}
+
+.categorie-title p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    color: #656565;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    border-radius: 63px;
+    border: 1px solid #D7D7D7;
+    padding: 0 26px;
+    width: 90%;
+    gap: 10px;
+}
+
+.item p{
+    margin: 0;
+    flex: 1;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    text-align: center;
+}
+
+
+
+
+.about{
+    width: 100%;
+    height: auto;
+    margin: 50px 0px
+}
+
+.about-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 197px;
+    justify-content: center;
+}
+
+.black h1{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 275;
+    font-size: 74px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black p{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.orange h1{
+    color: #DD5C16;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 74px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange p{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DD5C16;
+}
+
+.about-item h1,
+.about-item p {
+  margin: 0;
+}
+
+.all-item{
+    width: 100%;
+    display: flex;
+}
+
+.all-partners{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-partners{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 220px; 
+  gap: 24px;
+  margin: auto; 
+}
+
+.img1{
+  width: 100px;
+  height: 100px;
+}
+
+.img2{
+  width: 171px;
+  height: 100px;
+}
+
+.img4{
+  width: 63px;
+  height: 100px;
+}
+
+.img5{
+  width: 215.00030517578125px;
+  height: 100px;
+}
+.about-partners p{
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #717070;
+}
+
+.card-company {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-card {
+  width: 100%;
+  min-height: 360px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  padding: 0 40px;
+}
+
+.card-image {
+  width: 38%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+  align-self: flex-end;
+}
+
+.card-image img {
+  width: 105%;
+  max-width: 360px;
+  top: -55px;
+  left: 23px;
+  display: block;
+  object-fit: contain;
+}
+
+.card-content {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.small-title {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DD5C16;
+}
+
+.card-content h2 {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0 0 14px;
+}
+
+.card-content p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #656565;
+  margin: 0;
+  padding: 17px 0px ;
+  max-width: 420px;
+}
+
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-top {
+  width: 17px;
+  height: 17px;
+  background: #d9ddf5;
+  top: 6px;
+  left: 590px;
+  opacity: 0.8;
+}
+
+.circle-right {
+  width: 54px;
+  height: 54px;
+  top: 6px;
+  left: 613px;
+  background: #d9ddf5;
+}
+
+.circle-left {
+  width: 82px;
+  height: 82px;
+  background: rgba(163, 180, 255, 0.3);
+  left: -35px;
+  top: 60px;
+}
+
+.circle-buttom{
+  width: 324px;
+  height: 324px;
+  top: 91px;
+  left: -120px;
+  background: #1A33ED47;
+}
+
+.circle-top-l{
+  width: 17px;
+  height: 17px;
+  background: #EFB596;
+  top: 6px;
+  left: 590px;
+  opacity: 0.8;
+}
+
+.circle-right-l{
+  width: 54px;
+  height: 54px;
+  top: 6px;
+  left: 613px;
+  background: #EFB596;
+}
+
+.circle-left-l{
+  width: 82px;
+  height: 82px;
+  background: #BFBFBF73;
+  left: -35px;
+  top: 60px;
+}
+
+.circle-buttom-l{
+  width: 324px;
+  height: 324px;
+  top: 91px;
+  left: -120px;
+  background: #DD5C161A;
+}
+
+
+
+.buttom-Latest-Jobs{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  width: 196px;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid #DD5C16; 
+  border-radius: 25px;
+}
+
+.buttom-Latest-Jobs a{
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #DD5C16;
+}
+
+.Jobs{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon-style::before {
+  color: #adadad;
+  font-size: 22px;
+}
+
+.paragraph-Options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+
+.Options-jop{
+  display: flex;
+  width: 100%;
+  height: 178px;
+  padding: 20px 30px; 
+  gap: 10px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.img-Options{
+  width: 55px;
+  height: 55px;
+  margin: 20px 0px;
+}
+
+.titles-Options{
+  display: flex;
+  flex-direction: column; 
+  width: 454px;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.titles-Options h2{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000000;
+}
+
+.paragraph-Options{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.paragraph-Options p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Tajawal", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.color-Re{
+  color: #000000;
+  font-family: "Tajawal";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+}
+
+.color-b{
+  color: #000000;
+  font-family: "Tajawal";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+
+.Option{
+  display: flex;
+  gap: 20px;
+}
+
+.Option p{
+  display: flex;
+  flex-direction: row; 
+  width: 101px;
+  height: 27px;
+  padding: 10px;
+  font-size: 10px;
+  gap: 10px;
+  border: 1px solid #929292; 
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #929292;
+}
+
+.icon-Options{
+  margin: 11px 0px;
+  width: 100%;
+  text-align: end;
+}
+.icon-save{
+  font-size: 24px;
+  color: #929292;
+}
+.icon-sector,
+.icon-Vector {
+  font-size: 14px;
+  color: #a3a3a3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorie-title a{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 10px;
+  width: 227px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid #DD5C16; 
+  color: #DD5C16;
+  border-radius: 30px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobs-slider-preview {
+  position: absolute;
+  width: 319px;
+  min-height: 283px;
+  padding: 14px;
+  gap: 12px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+/* الكرت الرئيسي */
+.active-card {
+  z-index: 3;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* الكروت الجانبية */
+.side-card {
+  z-index: 1;
+  opacity: 0.2;
+  filter: blur(1px);
+  transform: scale(0.9);
+}
+
+.left-card {
+  left: 0;
+}
+
+.right-card {
+  right: 0;
+}
+
+/* محتوى الكرت */
+.top-jobs-slider-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-top-jobs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-jobs-slider-preview img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.top-jobs-slider-preview h2 {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+.icon-warning {
+  font-size: 16px;
+  color: #d8b24a;
+}
+
+.Center-jobs-slider-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-jobs-slider-preview {
+  display: flex;
+  gap: 25px;
+  align-items: baseline;
+}
+
+.title-jobs-slider-preview h1 {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+}
+
+.title-jobs-slider-preview p {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-size: 11px;
+  color: #a4a4a4;
+}
+
+.Center-jobs-slider-preview > p {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #777;
+}
+
+.Options-jobs-slider-preview {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.Options-jobs-slider-preview p {
+  margin: 0;
+  min-width: 72px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Tajawal", sans-serif;
+  font-size: 10px;
+  color: #848484;
+}
+
+.bottom-jobs-slider-preview {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bottom-jobs-slider-preview > p {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-size: 11px;
+  color: #DD5C16;
+  text-align: center;
+}
+
+.Apply-now {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Apply-now a {
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  background: #DD5C16;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Tajawal", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.Apply-now p {
+  margin: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Apply-now .icon-save {
+  font-size: 18px;
+  color: #c8c8c8;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 37px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.prev {
+  right: 135px;
+  background: #DD5C16;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.next {
+  left: 133px;
+  background: #ffffff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.06);
+}
+
+.prev .icon-arrow {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.next .icon-arrow-1 {
+  color: #DD5C16;
+  font-size: 14px;
+}
+
+.categorie-title-or{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.categorie-title-or h2{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    color: #DD5C16;
+    margin: 0px;
+}
+.categorie-title-or p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    color: #656565;
+}
+
+.title-width{
+  display: flex;
+  flex-direction: column; 
+  width: 569px;
+  height: 297px;
+  justify-content: space-between;
+}
+
+.title-width b{
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+.news-events {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.news-row {
+  align-items: center;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.news-content h3 {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: #DD5C16;
+}
+
+.sub-title {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7B7B7B;
+}
+
+.news-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-date {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #DD5C16;
+}
+
+.title-width h2 {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.title-width p {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  color: #929292;
+}
+
+.title-width span {
+font-family: 'Tajawal', sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+line-height: 156%;
+letter-spacing: 0;
+vertical-align: middle;
+color: #DD5C16;
+}
+
+.news-slider {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-image-card {
+  position: relative;
+  z-index: 3;
+  width: 540px;
+  height: 320px;
+  border-radius: 35px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.news-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slider-shape {
+  position: absolute;
+  border-radius: 35px;
+  z-index: 1;
+}
+
+.shape-one {
+  width: 150px;
+  height: 230px;
+  background: rgba(221, 92, 22, 0.12);
+  left: 108px;
+  top: 88px;
+}
+
+.shape-two {
+  width: 50%;
+  height: 283px;
+  background:
+  linear-gradient(180deg, rgba(221, 92, 22, 0) 0%, rgba(221, 92, 22, 0.9) 100%),
+  rgba(0, 0, 0, 0.2);
+  left: 10px;
+  top: 35px;
+}
+
+.shape-three{
+  width: 50%;
+  height: 230px;
+  background: rgba(0, 0, 0, 0.05);
+  left: -46px;
+  top: 61px;
+}
+
+.news-arrow {
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 84px;
+  border: none;
+  border-radius:20px 0px 0px  20px;
+  background: #DD5C16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.news-arrow .icon-arrow {
+  font-size: 32px;
+  color: #FFFFFF;
+  transform: rotate(-180deg);
+}
+
+.circle-decor {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.big-circle {
+  width: 150px;
+  height: 150px;
+  right: 0;
+  bottom: -51px;
+  border: 10px solid rgba(221, 92, 22, 0.12);
+}
+
+.small-circle {
+    width: 50px;
+    height: 51px;
+    right: 39px;
+    bottom: -75px;
+    border: 2px solid rgba(221, 92, 22, 0.18);
+}
+
+.dot-circle {
+    width: 20px;
+    height: 20px;
+    right: -37px;
+    bottom: 18px;
+    background: rgba(221, 92, 22, 0.25);
+}
+
+.Lots-of-jobs{
+  width: 100%;
+  height: auto;
+}
+
+.img-Lots img{
+  width: 100%;
+  height: auto;
+}
+
+.title-Lots{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: -38px;
+}
+
+.title-Lots h2{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 150%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #000;
+  
+}
+
+.title-Lots span{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 150%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #DD5C16;
+}
+
+.title-Lots p{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #717070;
+  width: 81%;
+}
+
+.fqa{
+  width: 100%;
+  height: auto;
+}
+
+.title-fqa{
+  display: flex;
+  flex-direction: column;
+  width: 613px;
+  height: auto;
+  gap: 25px;
+}
+.small-faq-title{
+  font-family: 'Tajawal', sans-serif;
+  display: inline-flex;
+  width: 99px;
+  height: 26px;
+  border-radius: 100px;
+  padding: 0 10px;
+  gap: 10px;
+  align-items: center;
+  background-color: #EF921B1F;
+  color: #DD5C16;
+  font-size: 10px;
+}
+
+.title-fqa h2{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 125%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #000000;
+  margin: -20px 0px;
+}
+
+.title-fqa h2 span{
+  color: #DD5C16;
+}
+
+.title-fqa p{
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.title-fqa a{
+  font-family: 'Tajawal', sans-serif;
+  width: 154px;
+  height: 35px;
+  gap: 10px;
+  border-width: 1px;
+  border-radius: 30px;
+  border: 1px solid #DD5C16;
+  padding: 10px;
+  opacity: 1;
+  transform: rotate(0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DD5C16;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: auto;
+  gap: 20px;
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  width: 673px;
+  min-height: 66px;
+  border: 0.25px solid #DBDBDB;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  height: auto;
+}
+
+.faq-item.active {
+  background: #F8F3EC;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.vector {
+  transform: rotate(270deg);
+  transition: transform 0.3s ease;
+  margin: 0px 20px;
+}
+
+.vector.rotated {
+  transform: rotate(90deg);
+}
+.faq-question h3 {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0;
+  flex: 1;
+}
+
+.faq-icon {
+  display: flex;
+  flex-direction: column;
+  width: 15px;
+  height: 29px;
+  gap: 10px;
+}
+
+.faq-mark {
+  width: 24px;
+  height: 24px;
+  background: #DD5C16;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.faq-answer {
+  margin-top: 18px;
+  padding-right: 40px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #6E6E6E;
+}
+
+/* =========================
+   RTL / LTR READY OVERRIDES
+   حطي هذا آخر الملف
+========================= */
+
+/* language wrappers */
+.ar {
+  direction: rtl;
+  text-align: right;
+  font-family: "Tajawal", sans-serif;
+}
+
+.en {
+  direction: ltr;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+/* general text alignment */
+.en .title-decor h1,
+.en .title-decor p,
+.en .title-box h3,
+.en .categorie-title h2,
+.en .categorie-title p,
+.en .categorie-title-or h2,
+.en .categorie-title-or p,
+.en .titles-Options h2,
+.en .paragraph-Options p,
+.en .card-content,
+.en .title-width h2,
+.en .title-width p,
+.en .title-width b,
+.en .title-width span,
+.en .title-Lots h2,
+.en .title-Lots span,
+.en .title-Lots p,
+.en .title-fqa h2,
+.en .title-fqa p,
+.en .faq-question h3,
+.en .faq-answer p,
+.en .top-jobs-slider-preview h2,
+.en .title-jobs-slider-preview h1,
+.en .title-jobs-slider-preview p,
+.en .Center-jobs-slider-preview > p,
+.en .bottom-jobs-slider-preview > p,
+.en .about-partners p,
+.en .item p,
+.en .black p,
+.en .orange p {
+  text-align: left;
+  direction: ltr;
+}
+
+.ar .title-decor h1,
+.ar .title-decor p,
+.ar .title-box h3,
+.ar .categorie-title h2,
+.ar .categorie-title p,
+.ar .categorie-title-or h2,
+.ar .categorie-title-or p,
+.ar .titles-Options h2,
+.ar .paragraph-Options p,
+.ar .card-content,
+.ar .title-width h2,
+.ar .title-width p,
+.ar .title-width b,
+.ar .title-width span,
+.ar .title-Lots h2,
+.ar .title-Lots span,
+.ar .title-Lots p,
+.ar .title-fqa h2,
+.ar .title-fqa p,
+.ar .faq-question h3,
+.ar .faq-answer p,
+.ar .top-jobs-slider-preview h2,
+.ar .title-jobs-slider-preview h1,
+.ar .title-jobs-slider-preview p,
+.ar .Center-jobs-slider-preview > p,
+.ar .bottom-jobs-slider-preview > p,
+.ar .about-partners p,
+.ar .item p,
+.ar .black p,
+.ar .orange p {
+  text-align: right;
+  direction: rtl;
+}
+
+.en .hero .row {
+  flex-direction: row;
+}
+
+/* search area */
+.ar .search-box {
+  direction: rtl;
+}
+
+.en .search-box {
+  direction: ltr;
+}
+
+.ar .search-box .input {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 14px;
+  width: 100%;
+}
+
+.en .search-box .input {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  width: 100%;
+}
+
+.en .search-box input {
+  text-align: left;
+}
+
+.ar .search-box input {
+  text-align: right;
+}
+
+/* common flex rows */
+.ar .paragraph-Options,
+.ar .Option,
+.ar .Apply-now,
+.ar .title-top-jobs,
+.ar .top-jobs-slider-preview,
+.ar .faq-question,
+.ar .Jobs,
+.ar .nav-links2 {
+  direction: rtl;
+}
+
+.en .paragraph-Options,
+.en .Option,
+.en .Apply-now,
+.en .title-top-jobs,
+.en .top-jobs-slider-preview,
+.en .faq-question,
+.en .Jobs,
+.en .nav-links2 {
+  direction: ltr;
+}
+
+/* cards and content alignment */
+.en .card-content {
+  align-items: flex-start;
+}
+
+.ar .card-content {
+  align-items: flex-start;
+}
+
+/* lots of jobs bullets */
+.en .title-Lots p img,
+.en .faq-mark,
+.en .icon-sector,
+.en .icon-Vector {
+  margin-right: 0;
+}
+
+.ar .title-Lots p img,
+.ar .faq-mark,
+.ar .icon-sector,
+.ar .icon-Vector {
+  margin-left: 0;
+}
+
+/* latest jobs cards */
+.en .Options-jop {
+  direction: ltr;
+}
+
+.ar .Options-jop {
+  direction: rtl;
+}
+
+.en .icon-Options {
+  text-align: end;
+}
+
+.ar .icon-Options {
+  text-align: end;
+}
+
+/* company cards */
+.en .company-card {
+  direction: ltr;
+}
+
+.ar .company-card {
+  direction: rtl;
+}
+
+.en .card-company {
+  direction: ltr;
+}
+
+.ar .card-company {
+  direction: rtl;
+}
+
+/* faq block */
+.en .faq-item {
+  direction: ltr;
+}
+
+.ar .faq-item {
+  direction: rtl;
+}
+
+.en .faq-answer {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.ar .faq-answer {
+  padding-right: 40px;
+  padding-left: 0;
+}
+
+/* arrows */
+.ar .vector {
+  transform: rotate(270deg);
+}
+
+.ar .vector.rotated {
+  transform: rotate(90deg);
+}
+
+.en .vector {
+  transform: rotate(90deg);
+}
+
+.en .vector.rotated {
+  transform: rotate(270deg);
+}
+
+/* slider arrows */
+.en .news-arrow .icon-arrow {
+  transform: rotate(0deg);
+}
+
+.ar .news-arrow .icon-arrow {
+  transform: rotate(-180deg);
+}
+
+/* government slider side positions */
+.en .left-card {
+  left: 0;
+  right: auto;
+}
+
+.en .right-card {
+  right: 0;
+  left: auto;
+}
+
+.ar .left-card {
+  left: 0;
+  right: auto;
+}
+
+.ar .right-card {
+  right: 0;
+  left: auto;
+}
+
+/* title width/date alignment */
+.en .title-width,
+.en .title-Lots,
+.en .title-fqa,
+.en .categorie-title,
+.en .categorie-title-or {
+  align-items: flex-start;
+}
+
+
+
+/* buttons / links alignment */
+.en .categorie-title a,
+.en .title-fqa a,
+.en .buttom-Latest-Jobs,
+.en .Apply-now a {
+  text-align: center;
+  direction: ltr;
+}
+
+.ar .categorie-title a,
+.ar .title-fqa a,
+.ar .buttom-Latest-Jobs,
+.ar .Apply-now a {
+  text-align: center;
+  direction: rtl;
+}
+
+/* navbar */
+.en nav,
+.en .nav,
+.en .nav .container,
+.en .nav-links ul,
+.en .nav-links2 {
+  direction: ltr;
+}
+
+.ar nav,
+.ar .nav,
+.ar .nav .container,
+.ar .nav-links ul,
+.ar .nav-links2 {
+  direction: rtl;
+}
+
+.en .nav-links ul,
+.en .nav-links2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.ar .nav-links ul,
+.ar .nav-links2 {
+  display: flex;
+}
+
+/* responsive small screens */
+@media (max-width: 991px) {
+  .en .hero .row,
+  .ar .hero .row {
+    flex-direction: column;
+  }
+
+  .en .title-Lots,
+  .ar .title-Lots,
+  .en .title-fqa,
+  .ar .title-fqa,
+  .en .title-width,
+  .ar .title-width {
+    width: 100%;
+    align-items: center;
+  }
+
+  .en .title-decor h1,
+  .en .title-decor p,
+  .en .title-box h3,
+  .en .categorie-title h2,
+  .en .categorie-title p,
+  .en .categorie-title-or h2,
+  .en .categorie-title-or p,
+  .en .title-width h2,
+  .en .title-width p,
+  .en .title-Lots h2,
+  .en .title-Lots p,
+  .en .title-fqa h2,
+  .en .title-fqa p,
+  .en .faq-question h3,
+  .en .faq-answer p,
+  .ar .title-decor h1,
+  .ar .title-decor p,
+  .ar .title-box h3,
+  .ar .categorie-title h2,
+  .ar .categorie-title p,
+  .ar .categorie-title-or h2,
+  .ar .categorie-title-or p,
+  .ar .title-width h2,
+  .ar .title-width p,
+  .ar .title-Lots h2,
+  .ar .title-Lots p,
+  .ar .title-fqa h2,
+  .ar .title-fqa p,
+  .ar .faq-question h3,
+  .ar .faq-answer p {
+    text-align: center;
+  }
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('@/assets/fonts/Tajawal/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('@/assets/fonts/Tajawal/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+
+

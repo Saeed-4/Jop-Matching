@@ -1,0 +1,42 @@
+.sent-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    min-height: 34px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sent-icon > span[class^="icon-"] {
+    position: relative;
+    display: inline-block;
+    font-size: 39px;
+    line-height: 1;
+}
+/* نخفي الأبيض */
+.sent-icon .path1::before {
+    color: transparent !important;
+}
+
+/* اللون البرتقالي */
+.sent-icon .path2::before,
+.sent-icon .path3::before,
+.sent-icon .path4::before,
+.sent-icon .path5::before {
+  background: linear-gradient(90deg, #DD5C16 0%, #EF921B 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.sent-icon .icon-customer-service::before {
+  background: linear-gradient(90deg, #DD5C16 0%, #EF921B 100%);
+  background-clip: text;
+  color: transparent;
+  
+}
+
+.en .item {
+    flex-direction: row;
+}
