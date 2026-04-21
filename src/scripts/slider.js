@@ -1,6 +1,7 @@
 export default {
   data() {
     return {
+      /* سلايدر الوظائف */
       currentIndex: 0,
       jobs: [
         {
@@ -57,6 +58,14 @@ export default {
             en: 'Managing advanced technical projects.'
           }
         }
+      ],
+
+      /* سلايدر الأخبار */
+      newsCurrentIndex: 0,
+      newsImages: [
+        new URL('@/assets/Group 1000003989.png', import.meta.url).href,
+        new URL('@/assets/image 26.png', import.meta.url).href,
+        new URL('@/assets/image 27.png', import.meta.url).href
       ]
     }
   },
@@ -72,12 +81,24 @@ export default {
   },
 
   methods: {
+    /* سلايدر الوظائف */
     nextSlide() {
       this.currentIndex = (this.currentIndex + 1) % this.jobs.length
     },
 
     prevSlide() {
       this.currentIndex = (this.currentIndex - 1 + this.jobs.length) % this.jobs.length
+    },
+
+    /* سلايدر الأخبار */
+    nextNewsSlide() {
+      this.newsCurrentIndex =
+        (this.newsCurrentIndex + 1) % this.newsImages.length
+    },
+
+    prevNewsSlide() {
+      this.newsCurrentIndex =
+        (this.newsCurrentIndex - 1 + this.newsImages.length) % this.newsImages.length
     }
   }
 }

@@ -213,6 +213,7 @@
   .search-box .input,
   .ar .search-box .input,
   .en .search-box .input {
+    display: flex;
     flex-direction: column !important;
     gap: 10px;
   }
@@ -424,6 +425,80 @@
 
 /* ---------- Mobile ---------- */
 @media (max-width: 767.98px) {
+
+  .nav-links ul{
+    flex-direction: column;
+    margin: 0px 104px;
+  }
+
+.footer-under {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .footer-under .container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-under .container > div {
+    width: 100% !important;
+  }
+
+  .social ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .development{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+  .JM{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero .search-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px !important;
+    display: block !important;
+  }
+
+  .hero .search-box .input,
+  .ar .hero .search-box .input,
+  .en .hero .search-box .input {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .hero .search-box input,
+  .hero .search-box button {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  .hero .search-box input {
+    height: 44px !important;
+    font-size: 13px !important;
+  }
+
+  .hero .search-box button {
+    height: 44px !important;
+    font-size: 15px !important;
+  }
+
+  /* ===== باقي الموقع ===== */
   .container {
     width: 94%;
   }
@@ -445,23 +520,10 @@
     font-size: 13px;
   }
 
-  .search-box {
-    border-radius: 14px;
-    padding: 10px;
-  }
-
-  .search-box input {
-    height: 42px;
-    font-size: 13px;
-  }
-
-  .search-box button {
-    height: 42px;
-    font-size: 15px;
-  }
-
   .person img {
+    width: 100%;
     max-width: 360px;
+    height: auto;
   }
 
   .wave {
@@ -479,6 +541,7 @@
   }
 
   .item {
+    width: 100%;
     height: 60px;
     padding: 0 18px;
   }
@@ -619,7 +682,6 @@
     margin: 0 8px;
   }
 }
-
 /* ---------- Small mobile ---------- */
 @media (max-width: 575.98px) {
   .hero {
@@ -692,10 +754,6 @@
 }
 
 /* ---------- Extra fixes for RTL/LTR layout ---------- */
-.ar .hero .row {
-  flex-direction: row-reverse;
-}
-
 .en .hero .row {
   flex-direction: row;
 }
@@ -704,7 +762,6 @@
 .ar .Lots-of-jobs .row,
 .ar .fqa .row,
 .ar .Latest-government-jobs .row {
-  flex-direction: row-reverse;
 }
 
 .en .News-events .row,
@@ -717,7 +774,6 @@
 .ar .nav-links ul,
 .ar .nav-links2 {
   display: flex;
-  flex-direction: row-reverse;
 }
 
 .en .nav-links ul,

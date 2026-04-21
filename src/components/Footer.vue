@@ -86,7 +86,7 @@ const text = computed(() => messages[props.currentLang])
 <style scoped>
 ul {
   list-style: none;
-  padding: 0;
+  padding: 18px 0px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -112,10 +112,6 @@ li {
   width: 90%;
   max-width: 1350px;
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-links {
@@ -142,6 +138,7 @@ li {
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  justify-content: flex-end;
 }
 
 .subscribe-section {
@@ -169,8 +166,7 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-  width: 335px;
+  width: 100%;
   height: 40px;
   border-radius: 31px;
   border: 0.5px solid #B2B2B2;
@@ -185,7 +181,6 @@ li {
   border: none;
   outline: none;
   background: transparent;
-
   font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -241,7 +236,7 @@ li {
 
 .footer-under {
   width: 100%;
-  height: 80px;
+  height: auto;
   background-color: #DD5C16;
   display: flex;
   align-items: center;
@@ -254,6 +249,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+.JM{
+  display: flex;
 }
 
 .JM p {
@@ -328,4 +329,76 @@ li {
   src: url('@/assets/fonts/Tajawal/Tajawal-Bold.ttf') format('truetype');
   font-weight: 700;
 }
+
+@media (max-width: 767.98px) {
+  .development{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+
+   .footer-top .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-top .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* الروابط */
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  /* قسم الاشتراك */
+  .StayWithUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .subscribe-section {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+  }
+
+  .subscribe-box {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .subscribe-box input {
+    flex: 1;
+    height: 42px;
+    padding: 0 10px;
+  }
+
+  .subscribe-box button {
+    width: 45px;
+    height: 42px;
+  }
+
+  /* الأيقونة */
+  .icon-footer img {
+    max-width: 120px;
+    margin-top: 10px;
+  }
+}
+    
 </style>

@@ -619,12 +619,12 @@
                 <div class="slider-shape shape-one"></div>
                 <div class="slider-shape shape-two"></div>
                 <div class="slider-shape shape-three"></div>
-              
+                
                 <div class="news-image-card">
-                  <img src="@/assets/Group 1000003989.png" alt="news image">
+                  <img :src="newsImages[newsCurrentIndex]" alt="news image">
                 </div>
-              
-                <button class="news-arrow">
+                
+                <button class="news-arrow next" @click="nextNewsSlide">
                   <span class="icon-arrow"></span>
                 </button>
               
@@ -747,3 +747,4 @@ export default {
 <style src="../styles/home.css"></style>
 <style src="../styles/_grids.css"></style>
 <style src="../styles/icon.css"></style>
+<style src="../styles/resposive.css"></style>
