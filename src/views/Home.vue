@@ -17,8 +17,17 @@
               
                 <div class="search-box">
                   <div class="input">
-                    <input type="text" :placeholder="text.home.hero.searchJob" />
-                    <input :placeholder="text.home.hero.searchLocation" />
+                    <div class="input-box">
+                      <input type="text" :placeholder="text.home.hero.searchJob" />
+                      <span class="icon-search"></span>
+                    </div>
+                  
+                    <div class="input-box">
+                      <span class="icon-search"></span>
+                      <input type="text" :placeholder="text.home.hero.searchLocation" />
+                      <span class="icon-Polygon-1"></span>
+                    </div>
+                  
                     <button>{{ text.home.hero.searchBtn }}</button>
                   </div>
                 </div>
@@ -748,3 +757,4 @@ export default {
 <style src="../styles/_grids.css"></style>
 <style src="../styles/icon.css"></style>
 <style src="../styles/resposive.css"></style>
+<style src="../styles/font.css"></style>

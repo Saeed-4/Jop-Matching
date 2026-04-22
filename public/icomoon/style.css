@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?675q0k');
-  src:  url('fonts/icomoon.eot?675q0k#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?675q0k') format('truetype'),
-    url('fonts/icomoon.woff?675q0k') format('woff'),
-    url('fonts/icomoon.svg?675q0k#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?azg1zk');
+  src:  url('fonts/icomoon.eot?azg1zk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?azg1zk') format('truetype'),
+    url('fonts/icomoon.woff?azg1zk') format('woff'),
+    url('fonts/icomoon.svg?azg1zk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-2:before {
+  content: "\e903";
+}
+.icon-search-1:before {
+  content: "\e922";
+  color: #c3c3c3;
+}
 .icon-Vector-91:before {
   content: "\e902";
 }
-.icon-Frame-1000006967-1:before {
-  content: "\e903";
+.icon-Polygon-1:before {
+  content: "\e920";
+  color: #dd5c16;
+}
+.icon-search:before {
+  content: "\e921";
   color: #dd5c16;
 }
 .icon-arrow-1:before {

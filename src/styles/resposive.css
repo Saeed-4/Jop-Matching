@@ -34,6 +34,52 @@
   .next {
     left: 0;
   }
+
+  .header-Operators {
+    min-height: 120px;
+    padding: 20px 0;
+  }
+
+  .title-Operators h2 {
+    font-size: 28px;
+  }
+
+  .title-Operators p {
+    font-size: 15px;
+  }
+
+  .filter-box.large {
+    width: 100%;
+  }
+
+  .filter-box.small {
+    width: 100%;
+  }
+
+  .section-operators {
+    min-height: 320px;
+  }
+
+  .operator-name {
+    font-size: 16px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .JobOpportunities .container {
+    width: 92%;
+  }
+
+  .job-card-wide {
+    padding: 18px 24px 20px;
+  }
+
+  .job-card-head h2 {
+    font-size: 20px;
+  }
 }
 
 /* ---------- Laptop / Tablet ---------- */
@@ -138,6 +184,100 @@
 
   .title-fqa h2 {
     font-size: 48px;
+  }
+
+  .header-Operators {
+    min-height: 120px;
+    padding: 20px 0;
+  }
+
+  .title-Operators h2 {
+    font-size: 28px;
+  }
+
+  .title-Operators p {
+    font-size: 15px;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    width: 100%;
+  }
+
+  .section-operators {
+    min-height: 320px;
+  }
+
+  .operator-name {
+    font-size: 16px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .header-Operators {
+    min-height: 115px;
+    padding: 18px 0;
+  }
+
+  .title-Operators h2 {
+    font-size: 28px;
+  }
+
+  .title-Operators p {
+    font-size: 15px;
+  }
+
+  .filter-job-row {
+    row-gap: 14px;
+  }
+
+  .job-filter-box {
+    height: 44px;
+  }
+
+  .small-job-box {
+    padding: 0 14px;
+  }
+
+  .filter-label {
+    font-size: 14px;
+  }
+
+  .job-card-wide {
+    padding: 18px 20px;
+  }
+
+  .job-card-head h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .job-date {
+    font-size: 13px;
+  }
+
+  .job-company {
+    font-size: 15px;
+  }
+
+  .job-description {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .job-tags span {
+    min-width: auto;
+    padding: 0 14px;
+    font-size: 12px;
+  }
+
+  .apply-btn {
+    width: 118px;
+    height: 38px;
+    font-size: 14px;
   }
 }
 
@@ -421,6 +561,156 @@
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
+
+  .header-Operators {
+    min-height: 110px;
+    padding: 18px 0;
+  }
+
+  .title-Operators {
+    align-items: center;
+    text-align: center;
+  }
+
+  .title-Operators h2 {
+    font-size: 24px;
+  }
+
+  .title-Operators p {
+    font-size: 14px;
+  }
+
+  .decor-circle.left-big,
+  .decor-circle.right-big {
+    transform: scale(0.85);
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .filters-bar {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .section-operators {
+    min-height: 300px;
+    padding: 18px 16px;
+  }
+
+  .img-section {
+    width: 56px;
+    height: 56px;
+  }
+
+  .operator-name {
+    font-size: 15px;
+  }
+
+  .operator-location {
+    font-size: 13px;
+  }
+
+  .pagination-box {
+    margin-top: 24px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .JobOpportunities .container {
+    width: 94%;
+  }
+
+  .header-Operators {
+    min-height: 105px;
+    padding: 16px 0;
+  }
+
+  .title-Operators {
+    text-align: center;
+    align-items: center;
+  }
+
+  .title-Operators h2 {
+    font-size: 24px;
+  }
+
+  .title-Operators p {
+    font-size: 14px;
+  }
+
+  .filter-job-row {
+    row-gap: 14px;
+    margin: 22px 0;
+  }
+
+  .job-filter-box {
+    width: 100%;
+    height: 44px;
+  }
+
+  .search-job-box input {
+    font-size: 14px;
+  }
+
+  .job-card-body {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .job-card-action {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .job-card-content {
+    width: 100%;
+  }
+
+  .job-card-head {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .job-card-head h2 {
+    font-size: 18px;
+  }
+
+  .job-company {
+    gap: 8px;
+  }
+
+  .job-description {
+    font-size: 14px;
+  }
+
+  .job-tags {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .job-pagination {
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .job-page-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
 }
 
 /* ---------- Mobile ---------- */
@@ -457,7 +747,7 @@
     align-items: center;
     gap: 12px;
     justify-content: center;
-}
+  }
 
   .JM{
     display: flex;
@@ -498,7 +788,6 @@
     font-size: 15px !important;
   }
 
-  /* ===== باقي الموقع ===== */
   .container {
     width: 94%;
   }
@@ -681,6 +970,225 @@
   .vector {
     margin: 0 8px;
   }
+
+  .Operators .container {
+    width: 94%;
+  }
+
+  .header-Operators {
+    min-height: 95px;
+    padding: 16px 0;
+  }
+
+  .title-Operators {
+    text-align: center;
+  }
+
+  .title-Operators h2 {
+    font-size: 22px;
+  }
+
+  .title-Operators p {
+    font-size: 13px;
+  }
+
+  .row {
+    row-gap: 14px;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 14px;
+  }
+
+  .section-operators {
+    padding: 16px 14px;
+  }
+
+  .img-section {
+    width: 52px;
+    height: 52px;
+  }
+
+  .operator-name {
+    font-size: 15px;
+  }
+
+  .about-section p {
+    font-size: 13px;
+  }
+
+  .pagination-box {
+    justify-content: center;
+  }
+
+  .JobOpportunities .container {
+    width: 94%;
+  }
+
+  .header-Operators {
+    min-height: 95px;
+    padding: 14px 0;
+  }
+
+  .title-Operators {
+    text-align: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .title-Operators h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .title-Operators p {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .decor-circle.left-big,
+  .decor-circle.right-big {
+    transform: scale(0.75);
+  }
+
+  .decor-circle.left-small,
+  .decor-circle.right-small {
+    transform: scale(0.8);
+  }
+
+  .filter-job-row {
+    row-gap: 12px;
+    margin: 18px 0;
+  }
+
+  .job-filter-box {
+    height: 44px;
+    border-radius: 24px;
+  }
+
+  .search-job-box {
+    padding: 0 8px 0 12px;
+    gap: 10px;
+  }
+
+  .search-job-box input {
+    font-size: 13px;
+  }
+
+  .search-btn-job {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .search-btn-job .icon-search-1 {
+    font-size: 13px;
+  }
+
+  .small-job-box {
+    padding: 0 12px;
+  }
+
+  .filter-label {
+    font-size: 13px;
+  }
+
+  .filter-arrow {
+    font-size: 10px;
+  }
+
+  .job-card-wide {
+    padding: 16px 14px;
+    border-radius: 16px;
+  }
+
+  .job-category {
+    min-width: 90px;
+    height: 28px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .job-card-top {
+    margin-bottom: 10px;
+  }
+
+  .job-card-body {
+    gap: 14px;
+  }
+
+  .job-card-head {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .job-card-head h2 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .job-date {
+    font-size: 12px;
+  }
+
+  .job-company {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .job-company img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .job-description {
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 14px;
+  }
+
+  .show-more {
+    display: inline-block;
+    margin-inline-start: 4px;
+  }
+
+  .job-tags {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .job-tags span {
+    height: 30px;
+    padding: 0 12px;
+    font-size: 11px;
+    border-radius: 999px;
+  }
+
+  .apply-btn {
+    width: 108px;
+    height: 36px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .apply-btn .icon-arrow {
+    font-size: 10px;
+  }
+
+  .job-pagination {
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .job-page-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
 }
 /* ---------- Small mobile ---------- */
 @media (max-width: 575.98px) {
@@ -749,6 +1257,167 @@
   .faq-mark {
     width: 20px;
     height: 20px;
+    font-size: 14px;
+  }
+
+  .Operators .container {
+    width: 92%;
+  }
+
+  .header-Operators {
+    min-height: 85px;
+    padding: 14px 0;
+  }
+
+  .title-Operators h2 {
+    font-size: 20px;
+  }
+
+  .title-Operators p {
+    font-size: 12px;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    min-height: 44px;
+    padding: 0 12px;
+  }
+
+  .img-section {
+    width: 48px;
+    height: 48px;
+  }
+
+  .operator-name {
+    font-size: 14px;
+  }
+
+  .operator-location {
+    font-size: 11px;
+  }
+
+  .about-section p {
+    font-size: 12px;
+  }
+
+  .page-btn {
+    min-width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+
+  .JobOpportunities .container {
+    width: 92%;
+  }
+
+  .header-Operators {
+    min-height: 84px;
+    padding: 12px 0;
+  }
+
+  .title-Operators h2 {
+    font-size: 20px;
+  }
+
+  .title-Operators p {
+    font-size: 12px;
+  }
+
+  .decor-circle.left-big,
+  .decor-circle.right-big,
+  .decor-circle.left-small,
+  .decor-circle.right-small,
+  .decor-circle.left-dot,
+  .decor-circle.right-dot {
+    opacity: 0.75;
+  }
+
+  .filter-job-row {
+    row-gap: 10px;
+    margin: 16px 0;
+  }
+
+  .job-filter-box {
+    height: 42px;
+    border-radius: 22px;
+  }
+
+  .search-job-box {
+    padding: 0 6px 0 10px;
+  }
+
+  .search-job-box input {
+    font-size: 12px;
+  }
+
+  .small-job-box {
+    padding: 0 10px;
+  }
+
+  .filter-label {
+    font-size: 12px;
+  }
+
+  .filter-arrow {
+    font-size: 9px;
+  }
+
+  .job-card-wide {
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+
+  .job-category {
+    min-width: 84px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+  .job-card-head h2 {
+    font-size: 15px;
+  }
+
+  .job-date {
+    font-size: 11px;
+  }
+
+  .job-company {
+    font-size: 13px;
+  }
+
+  .job-company img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .job-description {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .job-tags {
+    gap: 6px;
+  }
+
+  .job-tags span {
+    height: 28px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .apply-btn {
+    width: 100px;
+    height: 34px;
+    font-size: 12px;
+  }
+
+  .job-pagination {
+    gap: 8px;
+  }
+
+  .job-page-btn {
+    width: 38px;
+    height: 38px;
     font-size: 14px;
   }
 }

@@ -160,7 +160,258 @@ const messages = {
           }
         ]
       }
-    }
+    },
+
+    operators: {
+    header: {
+      title: 'المشغلين',
+      breadcrumb: 'الرئيسية - المشغلين'
+    },
+
+    filters: {
+      searchPlaceholder: 'ابحث عن شركات...',
+      sector: 'القطاع',
+      companySize: 'حجم المشغل'
+    },
+
+    pagination: {
+        next: 'التالي',
+        prev: 'السابق'
+      },
+
+      cards: [
+        {
+          name: 'شركة بدران اخوانه وشركاه لتجارة وصناعة الادوات الصحية',
+          location: 'سبت، محافظة الخليل',
+          description: 'شركة متخصصة في صناعة وتجارة البلاستيك الصافي في الدورات الكهربائية ومواد البناء'
+        },
+        {
+          name: 'غرفة تجارة وصناعة وزراعة محافظة غزة',
+          location: 'غزة',
+          description: 'وصف مختصر عن الشركة أو المؤسسة يظهر هنا بشكل مرتب داخل الكرت.'
+        },
+        {
+          name: 'شركة أرياف للاستثمار والتسويق الزراعي',
+          location: 'مدينة أريحا، محافظة أريحا',
+          description: 'شركة أرياف للاستثمار والتسويق الزراعي هي شركة مساهمة خصوصية محدودة، وتعمل في مجال التسويق والتصنيع الزراعي.'
+        },
+        {
+          name: 'بنك فلسطين',
+          location: 'فلسطين',
+          description: 'وصف قصير عن الجهة.'
+        },
+        {
+          name: 'شركة التقدم في سطور',
+          location: 'المفاضلة، محافظة الخليل',
+          description: 'تأسست الشركة سنة 1953 في مدينة الخليل، وتعمل في مجال الصناعات المختلفة.'
+        },
+        {
+          name: 'شركة عبر لصناعة المنظفات',
+          location: 'كفر نعمة، محافظة رام الله',
+          description: 'شركة تعمل في مجال إنتاج مواد التنظيف والمعطرات والمعقمات.'
+        },
+        {
+          name: 'شركة المستقبل للتقنية',
+          location: 'رام الله',
+          description: 'شركة متخصصة في تطوير البرمجيات والحلول الرقمية الحديثة.'
+        },
+        {
+          name: 'شركة النور للصناعات الغذائية',
+          location: 'نابلس',
+          description: 'شركة تعمل في إنتاج المواد الغذائية بجودة عالية وفق المعايير العالمية.'
+        },
+        {
+          name: 'شركة الإبداع للتصميم',
+          location: 'بيت لحم',
+          description: 'شركة تقدم خدمات التصميم الجرافيكي وتجربة المستخدم.'
+        },
+        {
+          name: 'شركة الريادة للاستشارات',
+          location: 'الخليل',
+          description: 'شركة تقدم خدمات استشارية في الإدارة وتطوير الأعمال.'
+        },
+        {
+          name: 'شركة الأمل للتعليم',
+          location: 'جنين',
+          description: 'مؤسسة تعليمية تقدم برامج تدريبية متقدمة.'
+        },
+        {
+          name: 'شركة القدس للمقاولات',
+          location: 'القدس',
+          description: 'شركة تعمل في مجال البناء والمشاريع الهندسية.'
+        },
+        {
+          name: 'شركة التقنية الحديثة',
+          location: 'طولكرم',
+          description: 'شركة متخصصة في حلول الشبكات وأمن المعلومات.'
+        },
+        {
+          name: 'شركة سما للخدمات اللوجستية',
+          location: 'أريحا',
+          description: 'شركة تقدم خدمات النقل والتخزين والتوزيع.'
+        },
+        {
+          name: 'شركة الإتقان للتطوير',
+          location: 'غزة',
+          description: 'شركة ناشئة تعمل في تطوير تطبيقات الويب والموبايل.'
+        },
+        {
+          name: 'شركة بدران اخوانه وشركاه لتجارة وصناعة الادوات الصحية',
+          location: 'سبت، محافظة الخليل',
+          description: 'شركة متخصصة في صناعة وتجارة البلاستيك الصافي في الدورات الكهربائية ومواد البناء'
+        },
+        {
+          name: 'غرفة تجارة وصناعة وزراعة محافظة غزة',
+          location: 'غزة',
+          description: 'وصف مختصر عن الشركة أو المؤسسة يظهر هنا بشكل مرتب داخل الكرت.'
+        },
+        {
+          name: 'شركة أرياف للاستثمار والتسويق الزراعي',
+          location: 'مدينة أريحا، محافظة أريحا',
+          description: 'شركة أرياف للاستثمار والتسويق الزراعي هي شركة مساهمة خصوصية محدودة، وتعمل في مجال التسويق والتصنيع الزراعي.'
+        },
+        {
+          name: 'بنك فلسطين',
+          location: 'فلسطين',
+          description: 'وصف قصير عن الجهة.'
+        },
+        {
+          name: 'شركة التقدم في سطور',
+          location: 'المفاضلة، محافظة الخليل',
+          description: 'تأسست الشركة سنة 1953 في مدينة الخليل، وتعمل في مجال الصناعات المختلفة.'
+        },
+        {
+          name: 'شركة عبر لصناعة المنظفات',
+          location: 'كفر نعمة، محافظة رام الله',
+          description: 'شركة تعمل في مجال إنتاج مواد التنظيف والمعطرات والمعقمات.'
+        },
+        {
+          name: 'شركة المستقبل للتقنية',
+          location: 'رام الله',
+          description: 'شركة متخصصة في تطوير البرمجيات والحلول الرقمية الحديثة.'
+        },
+        {
+          name: 'شركة النور للصناعات الغذائية',
+          location: 'نابلس',
+          description: 'شركة تعمل في إنتاج المواد الغذائية بجودة عالية وفق المعايير العالمية.'
+        },
+        {
+          name: 'شركة الإبداع للتصميم',
+          location: 'بيت لحم',
+          description: 'شركة تقدم خدمات التصميم الجرافيكي وتجربة المستخدم.'
+        },
+        {
+          name: 'شركة الريادة للاستشارات',
+          location: 'الخليل',
+          description: 'شركة تقدم خدمات استشارية في الإدارة وتطوير الأعمال.'
+        },
+        {
+          name: 'شركة الأمل للتعليم',
+          location: 'جنين',
+          description: 'مؤسسة تعليمية تقدم برامج تدريبية متقدمة.'
+        },
+        {
+          name: 'شركة القدس للمقاولات',
+          location: 'القدس',
+          description: 'شركة تعمل في مجال البناء والمشاريع الهندسية.'
+        },
+        {
+          name: 'شركة التقنية الحديثة',
+          location: 'طولكرم',
+          description: 'شركة متخصصة في حلول الشبكات وأمن المعلومات.'
+        },
+        {
+          name: 'شركة سما للخدمات اللوجستية',
+          location: 'أريحا',
+          description: 'شركة تقدم خدمات النقل والتخزين والتوزيع.'
+        },
+        {
+          name: 'شركة الإتقان للتطوير',
+          location: 'غزة',
+          description: 'شركة ناشئة تعمل في تطوير تطبيقات الويب والموبايل.'
+        }
+      ]
+    },
+
+    jobOpportunities: {
+      header: {
+        title: 'فرص العمل',
+        breadcrumb: 'الرئيسية - فرص العمل'
+      },
+    
+      filters: {
+        searchPlaceholder: 'وظائف، شركات، تدريب عملي، أخرى',
+        sector: 'القطاع',
+        country: 'البلد',
+        educationLevel: 'المستوى العلمي',
+        workType: 'نوع العمل'
+      },
+    
+      cards: [
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة. يجب أن يكون لديه القدرة على العمل ضمن فريق متعدد التخصصات والتعاون مع المطورين لتقديم تجربة مميزة.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          description: 'نبحث عن مطور Backend متمرس في تطوير واجهات برمجة التطبيقات وتحسين أداء الأنظمة. يجب أن يكون المرشح قادرًا على العمل مع قواعد البيانات والتعاون مع فريق التطوير لتقديم حلول فعالة.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة. يجب أن يكون لديه القدرة على العمل ضمن فريق متعدد التخصصات والتعاون مع المطورين لتقديم تجربة مميزة.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          description: 'نبحث عن مطور Backend متمرس في تطوير واجهات برمجة التطبيقات وتحسين أداء الأنظمة. يجب أن يكون المرشح قادرًا على العمل مع قواعد البيانات والتعاون مع فريق التطوير لتقديم حلول فعالة.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        }
+      ]
+    },
+
+
   },
 
   en: {
@@ -324,7 +575,225 @@ const messages = {
           }
         ]
       }
-    }
+    },
+
+    operators: {
+      header: {
+        title: 'Operators',
+        breadcrumb: 'Home - Operators'
+      },
+    
+      filters: {
+        searchPlaceholder: 'Search companies...',
+        sector: 'Sector',
+        companySize: 'Company Size'
+      },
+    
+      pagination: {
+        next: 'Next',
+        prev: 'Previous'
+      },
+    
+      cards: [
+        {
+          name: 'Badran Brothers & Partners for Sanitary Ware Trading and Manufacturing',
+          location: 'As-Sabt, Hebron Governorate',
+          description: 'A company specialized in manufacturing and trading pure plastic products for electrical systems and building materials.'
+        },
+        {
+          name: 'Gaza Chamber of Commerce, Industry and Agriculture',
+          location: 'Gaza',
+          description: 'A short description about the company or organization appears here in an organized card layout.'
+        },
+        {
+          name: 'Areej Investment and Agricultural Marketing Company',
+          location: 'Jericho City, Jericho Governorate',
+          description: 'Areej Investment and Agricultural Marketing Company is a private limited shareholding company working in agricultural marketing and processing.'
+        },
+        {
+          name: 'Bank of Palestine',
+          location: 'Palestine',
+          description: 'A short description about the entity.'
+        },
+        {
+          name: 'Al-Taqaddum Company',
+          location: 'Al-Mafraqah, Hebron Governorate',
+          description: 'The company was established in 1953 in Hebron and operates in various industrial sectors.'
+        },
+        {
+          name: 'Abar Detergents Manufacturing Company',
+          location: 'Kafr Ni’ma, Ramallah Governorate',
+          description: 'A company working in the production of detergents, fresheners, and disinfectants.'
+        },
+        {
+          name: 'Future Tech Company',
+          location: 'Ramallah',
+          description: 'A company specialized in software development and modern digital solutions.'
+        },
+        {
+          name: 'Al Noor Food Industries',
+          location: 'Nablus',
+          description: 'A company producing high-quality food products according to global standards.'
+        },
+        {
+          name: 'Creative Design Agency',
+          location: 'Bethlehem',
+          description: 'A company providing graphic design and user experience services.'
+        },
+        {
+          name: 'Leadership Consulting',
+          location: 'Hebron',
+          description: 'A company offering business and management consulting services.'
+        },
+        {
+          name: 'Hope Education Center',
+          location: 'Jenin',
+          description: 'An educational institution offering advanced training programs.'
+        },
+        {
+          name: 'Jerusalem Contracting Company',
+          location: 'Jerusalem',
+          description: 'A company working in construction and engineering projects.'
+        },
+        {
+          name: 'Modern Tech Solutions',
+          location: 'Tulkarm',
+          description: 'A company specialized in networking and cybersecurity solutions.'
+        },
+        {
+          name: 'Sama Logistics',
+          location: 'Jericho',
+          description: 'A company providing transport, storage, and distribution services.'
+        },
+        {
+          name: 'Itqan Development',
+          location: 'Gaza',
+          description: 'A startup focused on web and mobile application development.'
+        },
+        {
+          name: 'Badran Brothers & Partners for Sanitary Ware Trading and Manufacturing',
+          location: 'As-Sabt, Hebron Governorate',
+          description: 'A company specialized in manufacturing and trading pure plastic products for electrical systems and building materials.'
+        },
+        {
+          name: 'Gaza Chamber of Commerce, Industry and Agriculture',
+          location: 'Gaza',
+          description: 'A short description about the company or organization appears here in an organized card layout.'
+        },
+        {
+          name: 'Areej Investment and Agricultural Marketing Company',
+          location: 'Jericho City, Jericho Governorate',
+          description: 'Areej Investment and Agricultural Marketing Company is a private limited shareholding company working in agricultural marketing and processing.'
+        },
+        {
+          name: 'Bank of Palestine',
+          location: 'Palestine',
+          description: 'A short description about the entity.'
+        },
+        {
+          name: 'Al-Taqaddum Company',
+          location: 'Al-Mafraqah, Hebron Governorate',
+          description: 'The company was established in 1953 in Hebron and operates in various industrial sectors.'
+        },
+        {
+          name: 'Abar Detergents Manufacturing Company',
+          location: 'Kafr Ni’ma, Ramallah Governorate',
+          description: 'A company working in the production of detergents, fresheners, and disinfectants.'
+        },
+        {
+          name: 'Future Tech Company',
+          location: 'Ramallah',
+          description: 'A company specialized in software development and modern digital solutions.'
+        },
+        {
+          name: 'Al Noor Food Industries',
+          location: 'Nablus',
+          description: 'A company producing high-quality food products according to global standards.'
+        },
+        {
+          name: 'Creative Design Agency',
+          location: 'Bethlehem',
+          description: 'A company providing graphic design and user experience services.'
+        },
+        {
+          name: 'Leadership Consulting',
+          location: 'Hebron',
+          description: 'A company offering business and management consulting services.'
+        },
+        {
+          name: 'Hope Education Center',
+          location: 'Jenin',
+          description: 'An educational institution offering advanced training programs.'
+        },
+        {
+          name: 'Jerusalem Contracting Company',
+          location: 'Jerusalem',
+          description: 'A company working in construction and engineering projects.'
+        },
+        {
+          name: 'Modern Tech Solutions',
+          location: 'Tulkarm',
+          description: 'A company specialized in networking and cybersecurity solutions.'
+        },
+        {
+          name: 'Sama Logistics',
+          location: 'Jericho',
+          description: 'A company providing transport, storage, and distribution services.'
+        },
+        {
+          name: 'Itqan Development',
+          location: 'Gaza',
+          description: 'A startup focused on web and mobile application development.'
+        }
+      ]
+    },
+    jobOpportunities: {
+      header: {
+        title: 'Job Opportunities',
+        breadcrumb: 'Home - Job Opportunities'
+      },
+    
+      filters: {
+        searchPlaceholder: 'Jobs, companies, internships, others',
+        sector: 'Sector',
+        country: 'Country',
+        educationLevel: 'Education Level',
+        workType: 'Work Type'
+      },
+    
+      cards: [
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          description: 'We are looking for a creative UX/UI designer with solid experience in user research and interaction design. The ideal candidate will develop intuitive and innovative interfaces and analyze user behavior to improve the overall experience.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          description: 'We are looking for a creative UX/UI designer with solid experience in user research and interaction design. The ideal candidate will develop intuitive and innovative interfaces.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          description: 'We are looking for an experienced Backend developer in APIs and system performance optimization. The candidate should be able to work with databases and collaborate with the development team to deliver effective solutions.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        }
+      ]
+    },
   }
 }
 
