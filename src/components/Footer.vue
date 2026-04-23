@@ -278,8 +278,8 @@ li {
 }
 
 .social ul li a {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 0.5px solid rgba(255, 255, 255, 0.5);
   display: flex;

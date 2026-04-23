@@ -1,0 +1,293 @@
+.sign-up {
+  min-height: calc(100vh - 80px);
+  padding: 55px 0 40px;
+  background: #f9f9f9;
+}
+
+.sign-up .container {
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.title-sign-up {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.title-sign-up h2 {
+  margin: 0 0 10px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+}
+
+.title-sign-up p {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #5f5f5f;
+}
+
+.box-sign-up {
+  width: 100%;
+  min-height: 438px;
+  border: 1px solid #00000026;
+  border-radius: 28px;
+  padding: 38px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.box-sign-up:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.icon-sign-up {
+  margin-bottom: 22px;
+}
+
+.icon-sign-up span {
+  display: inline-block;
+  font-size: 108px;
+  color: #b1b1b1;
+  line-height: 1;
+}
+
+.about-sign-up h3 {
+  margin: 0 0 14px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+}
+
+.about-sign-up p {
+  margin: 0;
+  max-width: 390px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #7b7b7b;
+}
+
+.Create-sign-up {
+  margin-top: 26px;
+}
+
+.Create-sign-up a {
+  text-decoration: none;
+}
+
+.Create-sign-up p {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #9d9d9d;
+}
+
+.bottom-sign-up {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.bottom-sign-up p {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  color: #7a7a7a;
+}
+
+.bottom-sign-up a {
+  color: #dd5c16;
+  text-decoration: none;
+  font-weight: 600;
+  margin-inline-start: 4px;
+}
+
+/* =========================
+   XXL
+========================= */
+@media (max-width: 1399.98px) {
+  .title-sign-up h2 {
+    font-size: 52px;
+  }
+
+  .title-sign-up p {
+    font-size: 20px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 32px;
+  }
+
+  .about-sign-up p {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   XL
+========================= */
+@media (max-width: 1199.98px) {
+  .box-sign-up {
+    min-height: 390px;
+    padding: 34px 22px 26px;
+  }
+
+  .icon-sign-up span {
+    font-size: 95px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 30px;
+  }
+
+  .about-sign-up p {
+    font-size: 17px;
+  }
+
+  .Create-sign-up p {
+    font-size: 22px;
+  }
+}
+
+/* =========================
+   LG
+========================= */
+@media (max-width: 991.98px) {
+  .sign-up {
+    padding: 45px 0 36px;
+  }
+
+  .sign-up .container {
+    width: 94%;
+  }
+
+  .title-sign-up {
+    margin-bottom: 28px;
+  }
+
+  .title-sign-up h2 {
+    font-size: 44px;
+  }
+
+  .title-sign-up p {
+    font-size: 18px;
+  }
+
+  .box-sign-up {
+    min-height: 340px;
+  }
+
+  .icon-sign-up span {
+    font-size: 82px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 24px;
+  }
+
+  .about-sign-up p {
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   MD
+========================= */
+@media (max-width: 767.98px) {
+  .sign-up {
+    padding: 38px 0 30px;
+  }
+
+  .title-sign-up h2 {
+    font-size: 36px;
+  }
+
+  .title-sign-up p {
+    font-size: 16px;
+  }
+
+  .box-sign-up {
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 28px 18px 22px;
+  }
+
+  .icon-sign-up {
+    margin-bottom: 18px;
+  }
+
+  .icon-sign-up span {
+    font-size: 70px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .about-sign-up p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .Create-sign-up {
+    margin-top: 20px;
+  }
+
+  .Create-sign-up p {
+    font-size: 19px;
+  }
+}
+
+/* =========================
+   SM
+========================= */
+@media (max-width: 575.98px) {
+  .sign-up .container {
+    width: 92%;
+  }
+
+  .title-sign-up h2 {
+    font-size: 30px;
+  }
+
+  .title-sign-up p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .box-sign-up {
+    min-height: 270px;
+    border-radius: 18px;
+    padding: 22px 14px 18px;
+  }
+
+  .icon-sign-up span {
+    font-size: 58px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 19px;
+  }
+
+  .about-sign-up p {
+    font-size: 13px;
+  }
+
+  .Create-sign-up p {
+    font-size: 17px;
+  }
+}

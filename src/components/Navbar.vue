@@ -3,7 +3,9 @@
     <div class="nav">
       <div class="container">
         <div class="img-nav">
-          <img src="@/assets/Group 3.png" alt="logo">
+          <router-link to="/">
+            <img src="@/assets/Group 3.png" alt="logo">
+          </router-link>
         </div>
 
           <div class="menu-toggle" @click="toggleMenu">☰</div>

@@ -410,7 +410,110 @@ const messages = {
         }
       ]
     },
+    
+    governmentJobsPage: {
+      header: {
+        title: 'الوظائف الحكومية',
+        breadcrumb: 'الرئيسية - الوظائف الحكومية'
+      },
+      searchPlaceholder: 'وظائف، شركات، تدريب عملي، ..أخرى',
+      cards: [
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات. سيقوم المرشح المثالي بتطوير واجهات مستخدم بديهية ومبتكرة، وتحليل سلوكيات المستخدمين لتحسين التجربة العامة.',
+          showMore: 'عرض المزيد',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+      ]
+    },
 
+    loginPage: {
+      title: 'تسجيل الدخول',
+      subtitle: 'أهلاً بعودتك من جديد',
+      phoneLabel: 'الهاتف المحمول',
+      phonePlaceholder: '972  00 000 0000',
+      passwordLabel: 'كلمة المرور',
+      passwordPlaceholder: 'كلمة المرور',
+      rememberMe: 'تذكرني',
+      forgotPassword: 'هل نسيت كلمة السر ؟',
+      loginBtn: 'تسجيل الدخول',
+      noAccount: 'ليس لديك حساب ؟',
+      createAccount: 'إنشاء حساب'
+    },
 
   },
 
@@ -793,6 +896,91 @@ const messages = {
           applyNow: 'Apply Now'
         }
       ]
+    },
+
+    governmentJobsPage: {
+      header: {
+        title: 'Government Jobs',
+        breadcrumb: 'Home - Government Jobs'
+      },
+      searchPlaceholder: 'Jobs, companies, internships, others',
+      cards: [
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'Noor Co.',
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        
+      ]
+    },
+
+    loginPage: {
+      title: 'LogIn',
+      subtitle: 'Welcome back again',
+      phoneLabel: 'Mobile Phone',
+      phonePlaceholder: '972  00 000 0000',
+      passwordLabel: 'Password',
+      passwordPlaceholder: 'Password',
+      rememberMe: 'Remember me', 
+      forgotPassword: 'Forgot password?',
+      loginBtn: 'Login',
+      noAccount: "Don't have an account?",
+      createAccount: 'Create Account'
     },
   }
 }

@@ -1,0 +1,265 @@
+.log-in {
+  min-height: calc(100vh - 80px);
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.log-in .container {
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.box-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-login {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.title-login h2 {
+  margin: 0 0 8px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.title-login p {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  color: #8f8f8f;
+}
+
+.section-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 520px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  color: #5C5C5C;
+  text-align: right;
+}
+
+.phone-box,
+.password-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-box {
+  width: 85px;
+  min-width: 54px;
+  height: 50px;
+  border: 1px solid #DD5C1680;
+  border-radius: 47px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.country-box img {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+}
+
+.country-box .icon-Polygon-1 {
+  font-size: 9px;
+}
+
+.phone-box input,
+.password-box input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #DD5C1680;
+  border-radius: 76px;
+  background: #fff;
+  outline: none;
+  padding: 0 18px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box .icon-hide {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.password-box input {
+  padding-left: 48px;
+}
+
+.phone-box input::placeholder,
+.password-box input::placeholder {
+  color: #c5c5c5;
+}
+
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 20px;
+}
+
+.forgot-password {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  color: #dd5c16;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  color: #7b7b7b;
+  cursor: pointer;
+}
+
+.remember-me input {
+  accent-color: #dd5c16;
+  width: 14px;
+  height: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 47px;
+  background: #dd5c16;
+  color: #fff;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.signup-text {
+  text-align: center;
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.signup-text a {
+  color: #dd5c16;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+[dir="rtl"] .input-group label {
+  text-align: right;
+}
+
+[dir="rtl"] .phone-box {
+  flex-direction: row;
+}
+
+[dir="rtl"] .phone-box input,
+[dir="rtl"] .password-box input {
+  text-align: right;
+}
+
+[dir="rtl"] .password-box .icon-hide {
+  left: 18px;
+}
+
+[dir="rtl"] .password-box input {
+  padding-left: 48px;
+  padding-right: 18px;
+}
+
+[dir="rtl"] .login-options {
+  flex-direction: row;
+}
+
+[dir="rtl"] .remember-me {
+  flex-direction: row;
+}
+
+/* =========================
+   LTR
+========================= */
+[dir="ltr"] .input-group label {
+  text-align: left;
+}
+
+[dir="ltr"] .phone-box {
+  flex-direction: row-reverse;
+}
+
+[dir="ltr"] .phone-box input,
+[dir="ltr"] .password-box input {
+  text-align: left;
+}
+
+[dir="ltr"] .password-box .icon-hide {
+  right: 18px;
+}
+
+[dir="ltr"] .password-box input {
+  padding-right: 48px;
+  padding-left: 18px;
+}
+
+[dir="ltr"] .login-options {
+  flex-direction: row-reverse;
+}
+
+[dir="ltr"] .remember-me {
+  flex-direction: row-reverse;
+}
+
+[dir="ltr"] .signup-text a {
+  margin-inline-start: 0;
+  margin-inline-end: 4px;
+}
