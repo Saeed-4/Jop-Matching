@@ -37,9 +37,21 @@ const routes = [
     component: () => import('../views/login.vue')
   },
   {
-    path:'/signup',
-    name:'signup',
-    component:signup,
+  path: '/signup',
+  name: 'signup',
+  component: () => import('../views/signup.vue')
+  },
+  {
+    path: '/signup-company',
+    name: 'signup-company',
+    component: () => import('../views/signup-company.vue'),
+    meta: { authLayout: true }
+  },
+  {
+    path: '/signup-jobseeker',
+    name: 'signup-jobseeker',
+    component: () => import('../views/signup-jobseeker.vue'),
+    meta: { authLayout: true }
   },
   {
     path:'/faq',

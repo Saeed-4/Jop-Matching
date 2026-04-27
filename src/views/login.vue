@@ -88,4 +88,3 @@ export default {
 
 <style src="../styles/login.css"></style>
 <style src="../styles/font.css"></style>
-<style src="/public/icomoon/style.css"></style>

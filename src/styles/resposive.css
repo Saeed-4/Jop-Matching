@@ -100,6 +100,22 @@
   .title-login p {
     font-size: 22px;
   }
+
+  .signup-company-box {
+    max-width: 700px;
+  }
+
+  .title-signup-company h2 {
+    font-size: 40px;
+  }
+
+  .step-line {
+    width: 65px;
+  }
+
+  .signup-jobseeker-box {
+    max-width: 760px;
+  }
 }
 
 /* ---------- Laptop / Tablet ---------- */
@@ -363,6 +379,31 @@
   .password-box input,
   .country-box {
     height: 52px;
+  }
+
+  .signup-company-box {
+    max-width: 650px;
+  }
+
+  .title-signup-company h2 {
+    font-size: 36px;
+  }
+
+  .step-line {
+    width: 55px;
+  }
+
+  .company-step,
+  .password-step {
+    max-width: 560px;
+  }
+
+  .signup-jobseeker-box {
+    max-width: 720px;
+  }
+
+  .step-line {
+    width: 60px;
   }
 }
 
@@ -896,6 +937,46 @@
   .login-btn {
     height: 52px;
     font-size: 22px;
+  }
+
+  .signup-company .container {
+    width: 94%;
+  }
+
+  .title-signup-company h2 {
+    font-size: 32px;
+  }
+
+  .step-item {
+    width: 75px;
+  }
+
+  .step-line {
+    width: 45px;
+  }
+
+  .otp-box {
+    padding: 40px 25px;
+  }
+
+  .signup-jobseeker .container {
+    width: 94%;
+  }
+
+  .signup-header h2 {
+    font-size: 36px;
+  }
+
+  .step-item {
+    width: 70px;
+  }
+
+  .step-line {
+    width: 35px;
+  }
+
+  .otp-box {
+    padding: 45px 40px;
   }
 }
 
@@ -1564,6 +1645,123 @@
   .signup-text {
     font-size: 16px;
   }
+
+  .signup-company {
+    padding: 25px 0;
+  }
+
+  .signup-company-header {
+    padding-top: 35px;
+  }
+
+  .back-link {
+    top: 0;
+    right: 0;
+  }
+
+  .title-signup-company h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .steps-indicator {
+    gap: 5px;
+  }
+
+  .step-item {
+    width: 65px;
+  }
+
+  .step-circle {
+    width: 24px;
+    height: 24px;
+  }
+
+  .step-item p {
+    font-size: 10px;
+  }
+
+  .step-line {
+    width: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group.half {
+    width: 100%;
+  }
+
+  .upload-section {
+    grid-template-columns: 1fr;
+  }
+
+  .otp-inputs input {
+    width: 60px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  .success-card {
+    padding: 25px 15px;
+  }
+
+  .signup-jobseeker {
+    padding: 25px 0;
+  }
+
+  .signup-header {
+    padding-top: 38px;
+  }
+
+  .signup-jobseeker.rtl .back-link {
+    right: 0;
+  }
+
+  .signup-jobseeker.ltr .back-link {
+    left: 0;
+  }
+
+  .signup-header h2 {
+    font-size: 30px;
+  }
+
+  .steps-indicator {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+  }
+
+  .steps-indicator::-webkit-scrollbar {
+    display: none;
+  }
+
+  .step-item {
+    min-width: 65px;
+  }
+
+  .step-line {
+    min-width: 28px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group.half {
+    width: 100%;
+  }
+
+  .otp-inputs input {
+    width: 58px;
+    height: 68px;
+  }
+
+  .otp-box {
+    padding: 35px 20px;
+  }
 }
 /* ---------- Small mobile ---------- */
 @media (max-width: 575.98px) {
@@ -1972,9 +2170,111 @@
   .signup-text {
     font-size: 14px;
   }
+
+  .signup-company .container {
+    width: 92%;
+  }
+
+  .title-signup-company h2 {
+    font-size: 26px;
+  }
+
+  .steps-indicator {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .step-item {
+    min-width: 60px;
+  }
+
+  .step-line {
+    width: 20px;
+  }
+
+  .step-item p {
+    font-size: 9px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .password-input input {
+    height: 44px;
+    font-size: 13px;
+  }
+
+  .next-btn {
+    height: 44px;
+    font-size: 17px;
+  }
+
+  .otp-inputs input {
+    width: 50px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .done-svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .success-card h3 {
+    font-size: 18px;
+  }
+
+  .success-card p {
+    font-size: 12px;
+  }
+
+  .signup-header h2 {
+    font-size: 26px;
+  }
+
+  .step-item {
+    min-width: 58px;
+  }
+
+  .step-line {
+    min-width: 20px;
+  }
+
+  .step-item p {
+    font-size: 9px;
+  }
+
+  .upload-cv-box {
+    height: 140px;
+  }
+
+  .main-btn,
+  .outline-btn {
+    height: 44px;
+    font-size: 17px;
+  }
+
+  .otp-inputs {
+    gap: 8px;
+  }
+
+  .otp-inputs input {
+    width: 48px;
+    height: 58px;
+  }
+
+  .success-card {
+    min-height: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .done-svg {
+    width: 90px;
+    height: 90px;
+  }
 }
 
-/* ---------- Extra fixes for RTL/LTR layout ---------- */
+
 .en .hero .row {
   flex-direction: row;
 }

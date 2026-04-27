@@ -1,7 +1,7 @@
 <template>
   <div :dir="currentLang === 'ar' ? 'rtl' : 'ltr'" :class="currentLang">
     <LoginNavbar
-      v-if="isAuthPage"
+      v-if="$route.meta.authLayout"
       :currentLang="currentLang"
       @changeLang="changeLang"
     />
@@ -14,7 +14,10 @@
 
     <router-view :currentLang="currentLang" />
 
-    <Footer v-if="!isAuthPage" :currentLang="currentLang" />
+    <Footer
+      v-if="!$route.meta.authLayout"
+      :currentLang="currentLang"
+    />
   </div>
 </template>
 

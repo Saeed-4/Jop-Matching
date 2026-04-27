@@ -21,7 +21,7 @@
               <p>انشاء حساب توظيف يمكنك من خلاله نشر فرص عمل او منح او تدريب عملي</p>
             </div>
             <div class="Create-sign-up">
-              <router-link to="">
+              <router-link to="/signup-company">
                 <p>انشاء حساب</p>
               </router-link>
             </div>
@@ -37,7 +37,7 @@
               <p>انشاء حساب باحث عن عمل  يمكنك من خلاله نشر فرص عمل او منح او تدريب عملي تقدمه الشركه</p>
             </div>
             <div class="Create-sign-up">
-              <router-link to="">
+              <router-link to="/signup-jobseeker">
                 <p>انشاء حساب</p>
               </router-link>
             </div>

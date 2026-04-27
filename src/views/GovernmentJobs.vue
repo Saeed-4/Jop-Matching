@@ -97,5 +97,4 @@ export default GovernmentJobs
 <style src="../styles/header.css"></style>
 <style src="../styles/font.css"></style>
 <style src="../styles/GovernmentJobs.css"></style>
-<style src="/public/icomoon/style.css"></style>
 <style src="../styles/resposive.css"></style>

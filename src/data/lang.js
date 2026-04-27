@@ -515,6 +515,121 @@ const messages = {
       createAccount: 'إنشاء حساب'
     },
 
+    signupCompany: {
+      back: 'عودة',
+      title: 'إنشاء حساب',
+      steps: {
+        register: 'بيانات التسجيل',
+        verify: 'تأكيد البيانات',
+        companyProfile: 'ملف الشركة',
+        password: 'كلمة المرور'
+      },
+      fields: {
+        companyName: 'اسم الشركة / مؤسسة التوظيف',
+        registrationNumber: 'رقم التسجيل (إن وجد)',
+        phone: 'الهاتف الخلوي',
+        email: 'البريد الإلكتروني للشركة',
+        workSector: 'قطاع العمل',
+        website: 'الموقع الإلكتروني للشركة',
+        companyType: 'الشركة',
+        city: 'المدينة',
+        governorate: 'المحافظة',
+        address: 'العنوان',
+        companySize: 'حجم الشركة',
+        description: 'وصف الشركة',
+        password: 'كلمة المرور',
+        confirmPassword: 'تأكيد كلمة المرور'
+      },
+      buttons: {
+        next: 'التالي',
+        confirm: 'تأكيد',
+        create: 'إنشاء'
+      },
+      auth: {
+        haveAccount: 'لديك حساب ؟',
+        login: 'تسجيل الدخول'
+      },
+      otpText: 'يرجى تأكيد رقم الهاتف عن طريق إدخال الرمز المرسل للتحقق من الرقم المدخل',
+      resend: 'إرسال مرة أخرى',
+      passwordDesc: 'لمزيد من الأمان والخصوصية قم بإضافة كلمة سر لحسابك',
+      uploadText: 'إرفاق بعض الملفات ذات العلاقة',
+      noFiles: 'لا يوجد ملفات للعرض',
+      uploadTitles: {
+        logo: 'شعار الشركة',
+        files: 'الملفات والصور',
+        certificate: 'شهادة تسجيل الشركة',
+        other: 'مرفقات أخرى ذات علاقة'
+      },
+      successTitle: 'تم إنشاء الحساب بنجاح',
+      successDesc: 'يمكنك استخدام حسابك للبحث عن وظائف وتقديم طلبات التوظيف'
+    },
+
+    signupJobSeeker: {
+      back: 'عودة',
+      title: 'إنشاء حساب',
+      steps: {
+        cv: 'السيرة الذاتية',
+        personal: 'البيانات الشخصية',
+        phone: 'تأكيد رقم الهاتف',
+        professional: 'البيانات المهنية',
+        password: 'كلمة المرور'
+      },
+      cv: {
+        title: 'السيرة الذاتية',
+        desc: 'يمكنك تحميل سيرتك الذاتية لاستخراج بياناتك تلقائيًا، أو المتابعة بتعبئة البيانات يدويًا',
+        uploadText: 'قم بسحب الملفات داخل الخانة أو تضغط لبحث ارفاق بعض الملفات ذات العلاقة',
+        allowed: 'جميع الملفات المتاحة pdf, docx, txt',
+        extracting: 'جاري استخراج البيانات',
+        done: 'تم استخراج بياناتك بنجاح'
+      },
+      fields: {
+        firstName: 'الاسم الأول',
+        lastName: 'الاسم الأخير',
+        birthDate: 'تاريخ الميلاد',
+        idNumber: 'رقم الهوية الشخصية',
+        gender: 'الجنس',
+        notSelected: 'غير محدد',
+        male: 'ذكر',
+        female: 'أنثى',
+        phone: 'الهاتف المحمول',
+        email: 'البريد الإلكتروني',
+        country: 'الدولة',
+        palestine: 'فلسطين المحتلة',
+        city: 'المدينة',
+        governorate: 'المحافظة',
+        password: 'كلمة المرور',
+        confirmPassword: 'تأكيد كلمة المرور'
+      },
+      professional: {
+        title: 'البيانات المهنية',
+        desc: 'أضف خبراتك المهنية خلال مسيرتك العملية السابقة إن وجد:',
+        education: 'التعليم',
+        educationDesc: 'لا يوجد معلومات تعليمية مضافة',
+        experience: 'الخبرات',
+        experienceDesc: 'لا يوجد خبرات تدريبية أو عملية مضافة',
+        skillsPlaceholder: 'أضف مهاراتك العملية والعلمية الخاصة بك أو قم باختيارها من خلال القائمة أثناء البحث',
+        certificates: 'الشهادات',
+        certificatesDesc: 'لا يوجد خبرات تدريبية أو عملية مضافة',
+        skills: 'المهارات',
+      },
+      buttons: {
+        next: 'التالي',
+        confirm: 'تأكيد',
+        confirmContinue: 'تأكيد ومتابعة',
+        manual: 'تعبئة البيانات يدوياً'
+      },
+      auth: {
+        haveAccount: 'لديك حساب ؟',
+        login: 'تسجيل الدخول'
+      },
+      or: 'أو',
+      otpText: 'يرجى تأكيد رقم الهاتف عن طريق إدخال الرمز المرسل إلى الرقم للتحقق من الرقم المدخل',
+      resend: 'إرسال مرة أخرى',
+      passwordDesc: 'للمزيد من الأمان والخصوصية قم بإضافة كلمة سر لحسابك:',
+      successTitle: 'تم إنشاء الحساب بنجاح',
+      successDesc: 'يمكنك استخدام حسابك للبحث عن وظائف وتقديم طلبات التوظيف'
+    },
+
   },
 
   en: {
@@ -981,6 +1096,121 @@ const messages = {
       loginBtn: 'Login',
       noAccount: "Don't have an account?",
       createAccount: 'Create Account'
+    },
+
+    signupCompany: {
+      back: 'Back',
+      title: 'Create Account',
+      steps: {
+        register: 'Registration Data',
+        verify: 'Data Verification',
+        companyProfile: 'Company Profile',
+        password: 'Password'
+      },
+      fields: {
+        companyName: 'Company / Recruitment Organization Name',
+        registrationNumber: 'Registration Number (if any)',
+        phone: 'Mobile Phone',
+        email: 'Company Email',
+        workSector: 'Work Sector',
+        website: 'Company Website',
+        companyType: 'Company',
+        city: 'City',
+        governorate: 'Governorate',
+        address: 'Address',
+        companySize: 'Company Size',
+        description: 'Company Description',
+        password: 'Password',
+        confirmPassword: 'Confirm Password'
+      },
+      buttons: {
+        next: 'Next',
+        confirm: 'Confirm',
+        create: 'Create'
+      },
+      auth: {
+        haveAccount: 'Already have an account?',
+        login: 'Login'
+      },
+      otpText: 'Please confirm your phone number by entering the verification code sent to your number',
+      resend: 'Resend',
+      passwordDesc: 'For more security and privacy, add a password to your account',
+      uploadText: 'Attach related files',
+      noFiles: 'No files to display',
+      uploadTitles: {
+        logo: 'Company Logo',
+        files: 'Files and Images',
+        certificate: 'Company Registration Certificate',
+        other: 'Other Related Attachments'
+      },
+      successTitle: 'Account Created Successfully',
+      successDesc: 'You can use your account to search for jobs and submit applications'
+    },
+
+    signupJobSeeker: {
+      back: 'Back',
+      title: 'Create Account',
+      steps: {
+        cv: 'CV',
+        personal: 'Personal Data',
+        phone: 'Phone Verification',
+        professional: 'Professional Data',
+        password: 'Password'
+      },
+      cv: {
+        title: 'CV',
+        desc: 'You can upload your CV to extract your data automatically, or continue by filling the data manually',
+        uploadText: 'Drag files here or click to attach related files',
+        allowed: 'Available file types: pdf, docx, txt',
+        extracting: 'Extracting data',
+        done: 'Your data has been extracted successfully'
+      },
+      fields: {
+        firstName: 'First Name',
+        lastName: 'Last Name',
+        birthDate: 'Date of Birth',
+        idNumber: 'Personal ID Number',
+        gender: 'Gender',
+        notSelected: 'Not selected',
+        male: 'Male',
+        female: 'Female',
+        phone: 'Mobile Phone',
+        email: 'Email',
+        country: 'Country',
+        palestine: 'Palestine',
+        city: 'City',
+        governorate: 'Governorate',
+        password: 'Password',
+        confirmPassword: 'Confirm Password'
+      },
+      professional: {
+        title: 'Professional Data',
+        desc: 'Add your professional experience from your previous career path, if any:',
+        education: 'Education',
+        educationDesc: 'No educational information added',
+        experience: 'Experience',
+        experienceDesc: 'No training or work experience added',
+        skillsPlaceholder: 'Add your practical and academic skills or choose them from the list while searching',
+        certificates: 'Certificates',
+        certificatesDesc: 'No training or work certificates added',
+        skills: 'Skills',
+      },
+      buttons: {
+        next: 'Next',
+        confirm: 'Confirm',
+        confirmContinue: 'Confirm and Continue',
+        manual: 'Fill Data Manually'
+      },
+      auth: {
+        haveAccount: 'Already have an account?',
+        login: 'Login'
+      },
+      or: 'or',
+      otpText: 'Please confirm your phone number by entering the verification code sent to your number',
+      resend: 'Resend',
+      passwordDesc: 'For more security and privacy, add a password to your account:',
+      successTitle: 'Account Created Successfully',
+      successDesc: 'You can use your account to search for jobs and submit applications'
     },
   }
 }
