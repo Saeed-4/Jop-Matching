@@ -1002,6 +1002,18 @@ const messages = {
           {
             q: 'What are the goals of Job Matching?',
             a: 'Since its establishment in 2011, Job Matching has implemented sustainable development projects aimed at improving living conditions for underserved communities. We have successfully created more than 200 job opportunities in different areas.'
+          },
+          {
+            q: 'Are there new services provided by Job Matching?',
+            a: 'Yes, Job Matching continuously develops its services by improving job–skill matching algorithms, offering professional training, providing new job and training opportunities, and enhancing the user experience to make job searching and applying easier.'
+          },
+          {
+            q: 'What are the advantages of using Job Matching compared to other options?',
+            a: 'Job Matching stands out for its ease of use, availability of diverse job opportunities across various sectors, and a smart system that matches job seekers’ skills with job requirements, increasing the chances of finding suitable employment quickly and efficiently.'
+          },
+          {
+            q: 'How can the user experience in Job Matching be improved?',
+            a: 'The user experience can be improved by developing a simple and fast interface, providing personalized job recommendations, offering an effective notification system, and ensuring continuous technical support to help users with any issues they encounter.'
           }
         ]
       }

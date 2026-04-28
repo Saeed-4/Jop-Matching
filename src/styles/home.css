@@ -1615,7 +1615,7 @@ color: #DD5C16;
 }
 
 .en .vector {
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }
 
 .en .vector.rotated {
