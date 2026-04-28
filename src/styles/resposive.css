@@ -390,7 +390,7 @@
   }
 
   .step-line {
-    width: 55px;
+    width: 65px;
   }
 
   .company-step,
@@ -404,6 +404,14 @@
 
   .step-line {
     width: 60px;
+  }
+
+    .signup-header h2 {
+    font-size: 40px;
+  }
+
+  .step-item {
+    width: 78px;
   }
 }
 
@@ -963,20 +971,36 @@
     width: 94%;
   }
 
+  .signup-jobseeker-box {
+    max-width: 680px;
+  }
+
   .signup-header h2 {
     font-size: 36px;
   }
 
+  .steps-indicator {
+    gap: 6px;
+  }
+
   .step-item {
-    width: 70px;
+    width: 68px;
   }
 
   .step-line {
-    width: 35px;
+    width: 32px;
+  }
+
+  .step-item p {
+    font-size: 10px;
   }
 
   .otp-box {
-    padding: 45px 40px;
+    padding: 40px 35px;
+  }
+
+  .professional-step {
+    max-width: 680px;
   }
 }
 
@@ -1715,22 +1739,26 @@
     padding-top: 38px;
   }
 
+  .signup-header h2 {
+    font-size: 31px;
+    margin-bottom: 25px;
+  }
+
   .signup-jobseeker.rtl .back-link {
     right: 0;
+    left: auto;
   }
 
   .signup-jobseeker.ltr .back-link {
     left: 0;
-  }
-
-  .signup-header h2 {
-    font-size: 30px;
+    right: auto;
   }
 
   .steps-indicator {
     overflow-x: auto;
     justify-content: flex-start;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .steps-indicator::-webkit-scrollbar {
@@ -1738,11 +1766,16 @@
   }
 
   .step-item {
-    min-width: 65px;
+    min-width: 72px;
   }
 
   .step-line {
-    min-width: 28px;
+    min-width: 32px;
+    width: 32px;
+  }
+
+  .step-content {
+    max-width: 100%;
   }
 
   .form-row {
@@ -1754,13 +1787,73 @@
     width: 100%;
   }
 
+  .upload-cv-box {
+    height: 145px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .uploaded-file {
+    height: auto;
+    min-height: 75px;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .file-info {
+    max-width: 70%;
+  }
+
+  .file-info strong {
+    word-break: break-word;
+  }
+
+  .otp-box {
+    padding: 35px 18px;
+  }
+
+  .otp-inputs {
+    gap: 10px;
+  }
+
   .otp-inputs input {
     width: 58px;
     height: 68px;
   }
 
-  .otp-box {
-    padding: 35px 20px;
+  .professional-step h3,
+  .cv-step h3,
+  .password-step h3 {
+    font-size: 22px;
+  }
+
+  .pro-card {
+    min-height: 78px;
+    padding: 14px 16px;
+  }
+
+  .skills-box {
+    height: auto;
+    min-height: 48px;
+  }
+
+  .tags {
+    gap: 7px;
+  }
+
+  .tags span {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .success-step {
+    margin-top: 45px;
+  }
+
+  .success-card {
+    min-height: 220px;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
 /* ---------- Small mobile ---------- */

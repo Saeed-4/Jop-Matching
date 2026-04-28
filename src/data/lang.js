@@ -157,7 +157,19 @@ const messages = {
           {
             q: 'ما هي أهداف Job Matching ؟',
             a: 'منذ تأسيسها في عام 2011، قامت Job Matching بتنفيذ مشاريع التنمية المستدامة التي تهدف إلى تحسين ظروف المعيشة للمجتمعات المحرومة. لقد نجحنا في تجديد أكثر من 200 فرصة عمل في مناطق مختلفة.'
-          }
+          },
+          {
+            q: 'هل هناك خدمات جديدة تقدمها Job Matching؟',
+            a: 'نعم، تعمل منصة Job Matching بشكل مستمر على تطوير خدماتها، مثل تحسين خوارزميات مطابقة الوظائف مع المهارات، وتوفير تدريبات مهنية، وإتاحة فرص عمل وتدريب جديدة، بالإضافة إلى تحسين تجربة المستخدم لتسهيل عملية البحث والتقديم.'
+          },
+          {
+            q: 'ما هي مزايا استخدام Job Matching مقارنة بالخيارات الأخرى؟',
+            a: 'تتميز منصة Job Matching بسهولة الاستخدام، وتوفير فرص عمل متنوعة في مختلف القطاعات، بالإضافة إلى نظام ذكي يطابق بين مهارات الباحثين عن عمل ومتطلبات الوظائف، مما يزيد من فرص الحصول على وظيفة مناسبة بسرعة وكفاءة.'
+          },
+          {
+            q: 'كيف يمكن تحسين تجربة المستخدم في Job Matching؟',
+            a: 'يمكن تحسين تجربة المستخدم من خلال تطوير واجهة استخدام سهلة وسريعة، وتقديم اقتراحات وظائف مخصصة لكل مستخدم، وتوفير نظام إشعارات فعال، بالإضافة إلى دعم فني مستمر لمساعدة المستخدمين في أي مشكلة يواجهونها.'
+          },
         ]
       }
     },
@@ -630,6 +642,206 @@ const messages = {
       successDesc: 'يمكنك استخدام حسابك للبحث عن وظائف وتقديم طلبات التوظيف'
     },
 
+    latestJobsPage: {
+      title: 'أحدث الوظائف',
+      breadcrumb: 'الرئيسية - أحدث الوظائف',
+      jobs: [
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | فرص',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'نحن نبحث عن مصمم UX/UI مبدع بخبرة واسعة في إجراء أبحاث المستخدم وتصميم التفاعلات وتحسين تجربة المستخدم.',
+          showMore: 'عرض المزيد...',
+          tags: ['عمل عن بعد', 'دوام كامل', 'مستوى متوسط', 'رام الله / البيرة'],
+          applyNow: 'تقدّم الآن'
+        },
+        {
+          category: 'تصميم البرمجيات',
+          date: '2025 \\ 09 \\ 01',
+          title: 'إعلان هام إلى العمال والباحثين عن عمل',
+          company: 'وزارة العمل الفلسطينية',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'إعلان مهم للباحثين عن عمل بخصوص فرص تشغيل وتسجيل بيانات الباحثين عن عمل.',
+          showMore: 'عرض المزيد...',
+          tags: ['دوام كامل', 'مستوى متوسط', 'فلسطين'],
+          applyNow: 'تقدّم الآن'
+        },
+      ],
+    },
+
+    contact: {
+        title1: 'تواصل معنا..',
+        title2: 'واجعلنا شركاءك في الوصول لهدفك',
+        desc: 'أصحاب الشركات يمكنهم الاستفسار عن باقات الإعلانات، طرق الدفع، أو كيفية الوصول إلى المرشحين المناسبين , الباحثون عن عمل يمكنهم طلب المساعدة في إعداد حساباتهم أو متابعة طلباتهم الوظيفية',
+        name: 'الاسم الكامل',
+        namePlaceholder: 'أدخل اسمك',
+        phone: 'الهاتف المحمول',
+        email: 'البريد الإلكتروني',
+        emailPlaceholder: 'example@gmail.com',
+        message: 'تفاصيل الرسالة',
+        messagePlaceholder: 'اكتب رسالتك',
+        send: 'إرسال',
+        contactInfoText: 'معلومات الاتصال والتواصل للمديريات والمراكز التابعة لوزارة العمل',
+        location: 'رام الله | البيرة',
+        phoneNumber: '0097 59 449 8337',
+        emailAddress: 'example@work.ps'
+    }
   },
 
   en: {
@@ -1212,6 +1424,207 @@ const messages = {
       successTitle: 'Account Created Successfully',
       successDesc: 'You can use your account to search for jobs and submit applications'
     },
+
+    latestJobsPage: {
+      title: 'Latest Jobs',
+      breadcrumb: 'Home - Latest Jobs',
+      jobs: [
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652 (2).png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 08 \\ 14',
+          title: 'Senior UX/UI Designer with Specialization in User Research',
+          company: 'FORASI | Opportunities',
+          logo: new URL('@/assets/Rectangle 652 (3).png', import.meta.url).href,
+          description: 'We are looking for a creative UX/UI designer with strong experience in user research and interaction design.',
+          showMore: 'Show more...',
+          tags: ['Remote Work', 'Full Time', 'Mid Level', 'Ramallah / Al-Bireh'],
+          applyNow: 'Apply Now'
+        },
+        {
+          category: 'Software Design',
+          date: '2025 \\ 09 \\ 01',
+          title: 'Important Announcement for Workers and Job Seekers',
+          company: 'Palestinian Ministry of Labor',
+          logo: new URL('@/assets/Rectangle 652.png', import.meta.url).href,
+          description: 'An important announcement for job seekers regarding employment opportunities and registration.',
+          showMore: 'Show more...',
+          tags: ['Full Time', 'Mid Level', 'Palestine'],
+          applyNow: 'Apply Now'
+        },
+      ]
+    },
+
+    contact: {
+      title1: 'Contact Us..',
+      title2: 'Let us help you reach your goals',
+      desc: 'Business owners can inquire about advertising packages, payment methods, or how to reach suitable candidates; job seekers can request assistance in setting up their accounts or tracking their job applications.',
+      name: 'Full Name',
+      namePlaceholder: 'Enter your name',
+      phone: 'Mobile Number',
+      email: 'Email',
+      emailPlaceholder: 'example@gmail.com',
+      message: 'Message Details',
+      messagePlaceholder: 'Write your message',
+      send: 'Send',
+      contactInfoText: 'Contact information for the directorates and centers of the Ministry of Labor',
+      location: 'Ramallah | Al-Bireh',
+      phoneNumber: '0097 59 449 8337',
+      emailAddress: 'example@work.ps'
+    }
   }
 }
 

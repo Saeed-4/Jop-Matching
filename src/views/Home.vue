@@ -327,7 +327,7 @@
                   </div>
                   <div class="col-lg-3 col-md-5 col-sm-12 col-12">
                     <div class="buttom-Latest-Jobs">
-                      <router-link to="#">{{ text.home.latestJobs.viewAll }}</router-link>
+                      <router-link to="/LatestJobs">{{ text.home.latestJobs.viewAll }}</router-link>
                     </div>
                   </div>
               </div>
@@ -678,7 +678,7 @@
                 <span class="small-faq-title">{{ text.home.faq.smallTitle }}</span>
                 <h2><span>{{ text.home.faq.title1 }}</span> {{ text.home.faq.title2 }}</h2>
                 <p>{{ text.home.faq.description }}</p>
-                <router-link to="#">{{ text.home.faq.viewAll }}</router-link>
+                <router-link to="/faq">{{ text.home.faq.viewAll }}</router-link>
               </div>
             </div>
           

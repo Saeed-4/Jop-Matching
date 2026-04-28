@@ -9,6 +9,7 @@ import faq from '@/views/faq.vue'
 import privacy from '@/views/privacy.vue'
 import howToUse from '@/views/howToUse.vue'
 import contact from '@/views/contact.vue'
+import LatestJobs from '@/views/LatestJobs.vue'
 
 const routes = [
   {
@@ -72,6 +73,11 @@ const routes = [
     path:'/privacy',
     name:'privacy',
     component:privacy,
+  },
+  {
+    path:'/LatestJobs',
+    name:'LatestJobs',
+    component:LatestJobs,
   },
 ]
 

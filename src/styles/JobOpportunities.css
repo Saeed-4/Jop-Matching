@@ -202,6 +202,7 @@
   font-size: 15px;
   line-height: 2;
   color: #9b9b9b;
+  display: flex;
 }
 
 .show-more {

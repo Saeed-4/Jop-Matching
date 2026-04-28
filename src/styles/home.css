@@ -1257,6 +1257,10 @@ color: #DD5C16;
   font-size: 10px;
 }
 
+.all-faq{
+  margin: 50PX 0PX;
+}
+
 .title-fqa h2{
   font-family: 'Tajawal', sans-serif;
   font-weight: 700;
@@ -1305,7 +1309,7 @@ color: #DD5C16;
   flex-direction: column;
   width: 100%;
   height: auto;
-  gap: 20px;
+  gap: 23px;
 }
 
 .faq-item {

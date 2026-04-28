@@ -424,3 +424,4 @@ export default {
 
 <style src="../styles/signup-jobseeker.css"></style>
 <style src="../styles/font.css"></style>
+<style src="../styles/resposive.css"></style>
