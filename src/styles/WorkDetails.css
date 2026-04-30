@@ -1,0 +1,375 @@
+.WorkDetails {
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.all{
+    margin: 25px 0px;
+}
+
+.header-WorkDetails {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-WorkDetails img {
+  width: 90px;
+  height: 90px;
+  border-radius: 16px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.titles-WorkDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon-WorkDetails {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-start;
+}
+
+.icon-WorkDetails span {
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.title-Work h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.title-Work p {
+  margin: 4px 0;
+  color: #535353;
+  font-size: 16px;
+}
+
+.title-Work span {
+  margin-left: 6px;
+  color: #999;
+}
+
+.Application-period {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.Application-period span {
+  color: #dd5c16;
+  font-weight: 600;
+}
+
+.anAppointment{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.button-WorkDetails{
+    display: flex;
+    width: 100%;
+}
+
+.icon-save-Work{
+    border: 0.5px solid #797979;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.anAppointment p{
+  margin: 0;
+  font-size: 12px;
+  color: #DD5C16;
+  display: flex;
+  align-items: flex-start;
+}
+
+.button-WorkDetails {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.button-WorkDetails button {
+  background: #dd5c16;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.button-WorkDetails button:hover {
+  background: #c94f0f;
+}
+
+.Company-WorkDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Company-WorkDetails p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Company-WorkDetails img{
+    width: 49px;
+    height: 29px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.icon-save {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  cursor: pointer;
+}
+
+/* section2*/
+.about-WorkDetails{
+    width: 100%;
+    height: auto;
+    border: 1px solid #DFDFDF;
+    border-radius: 25px;
+    padding: 20px 11px;
+    gap: 10px;
+}
+
+.back-1{
+    width: 100%;
+    height: auto;
+}
+
+.back-1 h2{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.back-1 p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.back-2{
+    width: 100%;
+    height: auto;
+    background-color: #DD5C160F;
+    border-radius: 20px;
+    padding: 1px 11px 23px 0px;
+}
+
+.back-2 h3{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    color: #DD5C16;
+}
+
+/* section3*/
+.Job-requirements{
+    width: 100%;
+    width: auto;
+}
+
+.Job-requirements,.Job-Skills h2{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-Job-requirements{
+    width: 100%;
+    height: auto;
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.about-Job-requirements h2{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.about-Job-requirements p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    color: #717070;
+}
+
+/* section4*/
+
+.about-Job-Skills{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.about-Job-Skills p {
+    border: 0.5px solid #8C8C8C40;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 11px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* section5*/
+.Basic-responsibilities{
+    width: 100%;
+    height: auto;
+}
+
+.Basic-responsibilities h2{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Basic-responsibilities p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* section6*/
+.Submission-mechanism{
+    width: 100%;
+    height: auto;
+}
+
+.Submission-mechanism h2{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Submission-mechanism p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+
+.WorkDetails.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.WorkDetails.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.WorkDetails.ltr {
+  flex-direction: row-reverse;
+}
+
+.WorkDetails.ltr .Application-period {
+  align-items: flex-start;
+}
+
+.WorkDetails.ltr .icon-WorkDetails {
+  justify-content: flex-end;
+}
+
+.WorkDetails.ltr .title-Work span {
+  margin-right: 6px;
+  margin-left: 0;
+}

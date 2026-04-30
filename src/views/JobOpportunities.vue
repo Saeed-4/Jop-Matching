@@ -83,7 +83,7 @@
 
               <p class="job-description">
                 {{ job.description }}
-                <span class="show-more">{{ job.showMore }}</span>
+                <router-link to="/work-details"><span class="show-more">{{ job.showMore }}</span></router-link>
               </p>
 
               <div class="job-tags">

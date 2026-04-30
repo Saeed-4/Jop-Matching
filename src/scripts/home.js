@@ -10,7 +10,10 @@ export default {
 
   data() {
     return {
-      openFaqs: []
+      openFaqs: [],
+      searchJob: '',
+      searchLocation: '',
+      showDropdown: false,
     }
   },
 
@@ -27,6 +30,26 @@ export default {
       } else {
         this.openFaqs.push(index)
       }
-    }
+    },
+
+    goToSearch() {
+      this.$router.push({
+        name: 'SearchResults',
+        query: {
+          job: this.searchJob,
+          location: this.searchLocation
+        }
+      })
+    },
+
+    toggleDropdown() {
+      this.showDropdown = !this.showDropdown
+    },
+
+    selectCountry(country) {
+      this.searchLocation = country
+      this.showDropdown = false
+    },
+
   }
 }

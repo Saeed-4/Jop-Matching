@@ -140,18 +140,56 @@ a{
   color: #dd5c16;
 }
 
-/* الأيقونة اليسار (arrow) */
-.input-box .icon-Polygon-1 {
+.select-box .icon-Polygon-1 {
   position: absolute;
   top: 50%;
-  left: -182px;
+  left: 12px; /* عربي */
   transform: translateY(-50%);
   font-size: 10px;
   color: #dd5c16;
+  pointer-events: none;
 }
 
+/* عربي */
+.ar .select-box .icon-Polygon-1 {
+  left: 12px;
+  right: auto;
+}
 
+/* انجليزي */
+.en .select-box .icon-Polygon-1 {
+  right: 12px;
+  left: auto;
+}
 
+.select-box select {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 46px;
+  border-radius: 30px;
+  border: 2px solid #dd5c16; 
+  padding: 0 15px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15px;
+  color: #dd5c16; 
+  background: transparent;
+  appearance: none; 
+}
+
+.select-box select option {
+  color: #dd5c16;
+}
+
+.select-box select:focus {
+  outline: none;
+  border-color: #dd5c16;
+  box-shadow: 0 0 0 2px rgba(221, 92, 22, 0.2);
+}
+
+.select-box .select-arrow {
+  color: #dd5c16;
+}
 
 .search-box button {
   width: 110px;
@@ -191,7 +229,7 @@ a{
 .wave svg {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 101%;
 }
 
 
@@ -671,7 +709,7 @@ a{
   width: 101px;
   height: 27px;
   padding: 10px;
-  font-size: 10px;
+  font-size: 9px;
   gap: 10px;
   border: 1px solid #929292; 
   border-radius: 30px;
@@ -683,7 +721,8 @@ a{
 .icon-Options{
   margin: 11px 0px;
   width: 100%;
-  text-align: end;
+  display: flex;
+  justify-content: flex-end;
 }
 .icon-save{
   font-size: 24px;
@@ -990,6 +1029,7 @@ a{
   letter-spacing: 0;
   display: flex;
   align-items: center;
+  color: #DD5C16;
 }
 .news-events {
   width: 100%;
@@ -1497,10 +1537,6 @@ color: #DD5C16;
   width: 100%;
 }
 
-.en .search-box input {
-  text-align: left;
-}
-
 .ar .search-box input {
   text-align: right;
 }
@@ -1760,3 +1796,71 @@ color: #DD5C16;
 }
 
 
+.select-box {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dd5c16;
+  border-radius: 15px;
+  max-height: 200px; /* 👈 هون السر */
+  overflow-y: auto; /* 👈 سكرول */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown li {
+  padding: 10px 15px;
+  color: #dd5c16;
+  transition: 0.2s;
+}
+
+.dropdown li:hover {
+  background: #fff2e7;
+}
+
+.select-box select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15px;
+  color: #7a7a7a;
+  cursor: pointer;
+  appearance: none;
+  padding: 0 35px;
+}
+
+.select-arrow {
+  pointer-events: none;
+}
+
+.ar .input-box .icon-search {
+  right: 12px;
+  left: auto;
+}
+
+.ar .select-box .icon-Polygon-1 {
+  left: 12px;
+  right: auto;
+}
+
+/* انجليزي */
+.en .input-box .icon-search {
+  left: 12px;
+  right: auto;
+}
+
+.en .select-box .icon-Polygon-1 {
+  right: 12px;
+  left: auto;
+}

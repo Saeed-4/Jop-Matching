@@ -18,17 +18,37 @@
                 <div class="search-box">
                   <div class="input">
                     <div class="input-box">
-                      <input type="text" :placeholder="text.home.hero.searchJob" />
+                      <input
+                        type="text"
+                        :placeholder="text.home.hero.searchJob"
+                        v-model="searchJob"
+                      />
                       <span class="icon-search"></span>
                     </div>
                   
-                    <div class="input-box">
+                    <div class="input-box select-box" @click="toggleDropdown">
                       <span class="icon-search"></span>
-                      <input type="text" :placeholder="text.home.hero.searchLocation" />
+                                        
+                      <div class="selected">
+                        {{ searchLocation || text.home.hero.searchLocation }}
+                      </div>
+                    
                       <span class="icon-Polygon-1"></span>
+                    
+                      <ul v-if="showDropdown" class="dropdown">
+                        <li
+                          v-for="country in text.jobOpportunities.filters.countries"
+                          :key="country"
+                          @click.stop="selectCountry(country)"
+                        >
+                          {{ country }}
+                        </li>
+                      </ul>
                     </div>
                   
-                    <button>{{ text.home.hero.searchBtn }}</button>
+                    <button @click="goToSearch">
+                      {{ text.home.hero.searchBtn }}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -46,7 +66,7 @@
           <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
             <path
               d="M0,80 C300,150 1100,0 1440,80 L1440,150 L0,150 Z"
-              fill="#ffffff"
+              fill="#F7F7F7"
             />
           </svg>
         </div>
@@ -66,7 +86,7 @@
         
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-human-resources">
                     <span class="path1"></span>
@@ -81,7 +101,7 @@
             </div>
           
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-plane">
                     <span class="path1"></span>
@@ -94,7 +114,7 @@
             </div>
           
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-fork-knife-on-a-plate">
                     <span class="path1"></span>
@@ -106,7 +126,7 @@
             </div>
           
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-customer-service"></span>
                 </div>
@@ -115,7 +135,7 @@
             </div>
           
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-art">
                     <span class="path1"></span>
@@ -129,7 +149,7 @@
             </div>
           
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-finance">
                     <span class="path1"></span>
@@ -141,7 +161,7 @@
             </div>
           
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-logistics">
                     <span class="path1"></span>
@@ -154,7 +174,7 @@
             </div>
           
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <router-link to="/" class="item">
+              <router-link to="/Search-results" class="item">
                 <div class="sent-icon">
                   <span class="icon-world">
                     <span class="path1"></span>
@@ -278,7 +298,9 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                   <div class="company-card">
                     <div class="card-content">
-                      <b class="small-title">{{ text.home.career.companyCard.smallTitle }}</b>
+                      <router-link to="/signup-company">
+                        <b class="small-title">{{ text.home.career.companyCard.smallTitle }}</b>
+                      </router-link>
                       <h2>{{ text.home.career.companyCard.title }}</h2>
                       <p>{{ text.home.career.companyCard.description }}</p>
                     </div>
@@ -294,7 +316,9 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                   <div class="company-card">
                     <div class="card-content">
-                      <b class="small-title">{{ text.home.career.seekerCard.smallTitle }}</b>
+                      <router-link to="/signup-jobseeker">
+                        <b class="small-title">{{ text.home.career.seekerCard.smallTitle }}</b>
+                      </router-link>
                       <h2>{{ text.home.career.seekerCard.title }}</h2>
                       <p>{{ text.home.career.seekerCard.description }}</p>
                     </div>
@@ -484,7 +508,7 @@
               <div class="categorie-title">
                 <h2>{{ text.home.governmentJobs.title }}</h2>
                 <p>{{ text.home.governmentJobs.description }}</p>
-                <router-link>{{ text.home.governmentJobs.viewMore }}</router-link>
+                <router-link to="/LatestJobs">{{ text.home.governmentJobs.viewMore }}</router-link>
               </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">

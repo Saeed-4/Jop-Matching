@@ -356,7 +356,23 @@ const messages = {
         sector: 'القطاع',
         country: 'البلد',
         educationLevel: 'المستوى العلمي',
-        workType: 'نوع العمل'
+        workType: 'نوع العمل',
+        countries: [
+          'فلسطين',
+          'الأردن',
+          'السعودية',
+          'الإمارات',
+          'قطر',
+          'الكويت',
+          'مصر',
+          'لبنان',
+          'تركيا',
+          'ألمانيا',
+          'فرنسا',
+          'فنلندا',
+          'الولايات المتحدة',
+          'كندا'
+        ]
       },
     
       cards: [
@@ -841,6 +857,262 @@ const messages = {
         location: 'رام الله | البيرة',
         phoneNumber: '0097 59 449 8337',
         emailAddress: 'example@work.ps'
+    },
+
+    workDetails: {
+      title: 'موظف دعم أنظمة الأعمال',
+      company: 'سلطة النقد الفلسطينية',
+      location: 'رام الله | البيرة',
+
+      breadcrumb: 'الرئيسية - فرص العمل - تفاصيل العمل',
+
+      applyFrom: 'التقديم متاح من',
+      applyTo: 'حتى',
+      applyNow: 'تقديم للوظيفة الآن',
+      source: 'المصدر:',
+
+      aboutCompanyTitle: 'سلطة النقد الفلسطينية',
+      aboutCompanyDesc: 'سلطة النقد الفلسطينية هي مؤسسة مستقلة تلعب دوراً هاماً في تنمية الاقتصاد الفلسطيني من خلال الحفاظ على الاستقرار المالي والنقدي، وتنظيم عمل الجهاز المصرفي ومؤسسات الإقراض وشركات الدفع.',
+
+      announcementTitle: 'إعلان توظيف',
+      announcementDesc: 'انطلاقاً من مبدأ تكافؤ الفرص، تسعى سلطة النقد الفلسطينية إلى استقطاب الكفاءات لشغل وظيفة "موظف دعم أنظمة الأعمال" في دائرة نظم التكنولوجيا.',
+
+      requirementsTitle: 'متطلبات الوظيفة',
+
+      langSkills: 'المهارات اللغوية',
+      langSkillsDesc: 'إتقان المحادثة والكتابة باللغتين العربية والإنجليزية.',
+
+      experience: 'الخبرة العملية',
+      experienceDesc: '5 سنوات حد أدنى في نفس مجال العمل.',
+
+      education: 'المؤهل العلمي',
+      educationDesc: 'شهادة البكالوريوس في علم الحاسوب.',
+
+      skillsTitle: 'المهارات',
+
+      skills: [
+        'مهارة التواصل',
+        'التفكير الشامل المترابط',
+        'التفكير الإبداعي المبتكر',
+        'اتخاذ القرارات المدروسة',
+        'حل المشكلات المعقدة',
+        'التحليل المنطقي المتألق',
+        'التفكير المالي / النقدي المتعمق',
+        'المهارات الاستراتيجية الفعالة',
+        'إدارة الوقت',
+        'حل المشكلات',
+        'قيادة الفريق'
+      ],
+
+      responsibilities: [
+        'تقديم الدعم الفني للأنظمة والتطبيقات الحيوية لضمان استجابة أسرع لطلبات الدعم وبناء قدرات داخلية مستدامة.',
+        'تنفيذ مهام المشاريع التكنولوجية بما يتعلق بإدارة وتنصيب JBOSS, WebLogic, IBM WebSphere, IIS Applications Servers.',
+        'تقديم الدعم التقني المستوى الثاني أو الثالث لأنظمة الأعمال (TMS, CRM, HRMS, SWIFT, RTGS, SupTech, Payment Systems).',
+        'المتابعة بشكل مباشر عمليات تحديث وترقية أنظمة الأعمال والتطبيقات مع الجهات ذات العلاقة.',
+        'تنفيذ عمليات تقنية متقدمة متعلقة بمتابعة إصلاح الأعطال المعقدة للأنظمة الحرجة، تغيير الإعدادات، ومعالجة الملفات التشغيلية بحسب الإجراءات المعتمدة.',
+        'مراقبة أداء الأنظمة ومدى توفرها، ورصد نشاط المستخدمين، وإعداد التقارير اللازمة لضمان استمرارية وكفاءة التشغيل.',
+        'المساهمة في عمليات التشغيل والتغيير، مع الالتزام الكامل بسياسات أمن المعلومات.',
+        'العمل على كتابة إجراءات العمل القياسية (SOPs) وقاعدة المعرفة (Knowledge Base) بما يخص أنظمة الاعمال.',
+        'التنسيق مع مزودي الخدمة للحصول على دعم فني من المستوى الثاني وفقاً لاتفاقيات مستوى الخدمة (SLA).',
+        'تطبيق النسخ الجديدة وضمان تنفيذ النسخ الاحتياطي بشكل دوري.',
+        'إعداد تقارير شهرية لقياس الإنجاز وتحديد الأولويات ومتابعة الالتزام بالخطط الزمنية.'
+      ],
+
+      submissionTitle: 'آلية التقديم',
+      submissionDesc: 'وعليه، يمكن لمن تتوفر لديهم المتطلبات الوظيفية المطلوبة ويرغبون في الترشح لهذه الوظيفة، تعبئة طلب التوظيف عبر الرابط الموجود في الإعلان، على موقع سلطة النقد الإلكتروني، وإرفاق السيرة الذاتية، والتأكد من تعبئة كافة الحقول الواردة في طلب التوظيف، علماً أنه لن ينظر في أي من الطلبات الواردة عبر الوسائط الأخرى، وذلك بحد أقصى يوم السبت الموافق 27/09/2025.',
+      note: 'سيتم الإتصال بالمتقدمين الذين تنطبق عليهم الشروط فقط.',
+      finalWish: 'مع تمنياتنا للجميع بدوام التقدم والنجاح',
+    
+      responsibilitiesTitle: 'الواجبات والمسؤوليات الأساسية',
+    },
+
+    howUse: {
+      videoSection: {
+        title: "شاهد كيف تعمل المنصة",
+        desc: "فيديو توضيحي شامل يشرح جميع مميزات المنصة في دقائق أضف مهاراتك، خبراتك، شهادتك، وتفضيلاتك الوظيفية. كلما كان ملفك أكثر اكتمالاً، كانت التوصيات",
+        points: [
+          "سجل مجاناً كباحث عن عمل أو صاحب عمل في دقائق معدودة. اختر نوع الحساب المناسب لك وابدأ رحلتك",
+          "أضف مهاراتك، خبراتك، شهاداتك، وتفضيلاتك الوظيفية. كلما كان ملفك أكثر اكتمالاً، كانت التوصيات",
+          "استكشف آلاف الوظائف المتاحة في مختلف المجالات. استخدم الفلاتر المتقدمة للعثور على الوظيفة",
+          "تقدم للوظائف بنقرة واحدة باستخدام ملفك المحفوظ. لا حاجة لملء نماذج طويلة في كل",
+          "راقب حالة طلباتك، احصل على إشعارات فورية"
+        ]
+      },
+
+      platform: {
+        title: "استكشف واجهة المنصة",
+        desc: "تصفح العديد من اللقطات للمنصة وتعرف على مميزاتها",
+        cards: [
+          {
+            title: "إشعارات الفرص الجديدة",
+            desc: "تنبيهات مخصصة للمستخدمين",
+            img: new URL("@/assets/3c1417033d73b669f457b25dc627f2900cc2dcd9.png", import.meta.url).href
+          },
+          {
+            title: "تتبع الطلبات",
+            desc: "فلتر ذكية للوظائف",
+            img: new URL("@/assets/e1a8a69636cbfb8a005933dee242971c63fc77a6.png", import.meta.url).href
+          },
+          {
+            title: "البحث المتقدم",
+            desc: "فلتر ذكية للوظائف",
+            img: new URL("@/assets/d01393906a220742a4b2e45e8efd484701dac1eb.png", import.meta.url).href
+          },
+          {
+            title: "توصيات الوظائف",
+            desc: "اقتراحات مخصصة بناءً على مهارات المستخدم",
+            img: new URL("@/assets/15d42f30a1ec4ca871b9578e8d031c2b0ffa2161.png", import.meta.url).href
+          },
+          {
+            title: "تواصل مع الشركات",
+            desc: "إمكانية التواصل المباشر مع أصحاب العمل",
+            img: new URL("@/assets/c14d7d1ca35d961e3bf1c2cc48206784f749aa7b.png", import.meta.url).href
+          },
+          {
+            title: "تقييمات الموظفين",
+            desc: "آراء وتقييمات من العاملين",
+            img: new URL("@/assets/a98c48a78eeaecbbefeb85f1601b5442915225d8.png", import.meta.url).href
+          }
+        ]
+      },
+      title: "كيفية الاستخدام",
+      breadcrumb: "الرئيسية - كيفية الاستخدام",
+
+      heroTitle: "شاهد كيف تعمل المنصة",
+      heroDesc: "خطوات بسيطة ترشدك بوظيفة أحلامك في فلسطين",
+
+      aboutTitle: "منصة توظيف فلسطينية شاملة",
+      aboutDesc: "JobMatch هي منصة التوظيف الرائدة في فلسطين التي تربط الباحثين عن عمل بأفضل الفرص الوظيفية المتاحة.",
+
+      stepsTitle: "خطوات بسيطة للبدء",
+      stepsDesc: "اتبع هذه الخطوات الخمس وابدأ رحلتك نحو الوظيفة المثالية",
+
+      steps: [
+      {
+        title: "إنشاء حساب",
+        desc: "سجل مجاناً كباحث عن عمل أو صاحب عمل في دقائق معدودة. اختر نوع الحساب المناسب لك وابدأ رحلتك",
+        img: new URL('@/assets/Frame (5).png', import.meta.url).href
+      },
+      {
+        title: "بناء ملفك الشخصي",
+        desc: "أضف مهاراتك، خبراتك، شهادتك، وتفضيلاتك الوظيفية. كلما كان ملفك أكثر اكتمالاً، كانت التوصيات أفضل",
+        img: new URL('@/assets/Frame (1).png', import.meta.url).href
+      },
+      {
+        title: "تصفح وابحث",
+        desc: "استكشف آلاف الوظائف المتاحة في مختلف المجالات. استخدم الفلاتر المتقدمة للعثور على الوظيفة المناسبة لك بسهولة",
+        img: new URL('@/assets/Frame (2).png', import.meta.url).href
+      },
+      {
+        title: "تقدم بسهولة",
+        desc: "تقدم للوظائف بنقرة واحدة باستخدام ملفك المحفوظ. لا حاجة لملء نماذج طويلة في كل مرة",
+        img: new URL('@/assets/Frame (3).png', import.meta.url).href
+      },
+      {
+        title: "تتبع تقدمك",
+        desc: "راقب حالة طلباتك واحصل على إشعارات فورية بكل تحديث. كن دائماً على اطلاع بمستجدات طلباتك",
+        img: new URL('@/assets/Frame (4).png', import.meta.url).href
+      }
+    ],
+    
+      cta: {
+        title: "هل أنت مستعد للبدء ؟",
+        desc: "انضم إلى آلاف المستخدمين الذين وجدوا وظائف أحلامهم عبر منصتنا",
+        btn1: "إنشاء حساب مجاني",
+        btn2: "تصفح الوظائف المتاحة",
+        note: "التسجيل مجاني بالكامل • لا حاجة لبطاقة ائتمان"
+      }
+    },
+
+    privacy: {
+      title: "سياسة الخصوصية",
+      breadcrumb: "الرئيسية - سياسة الخصوصية",
+      intro: "تلتزم منصتنا للبحث عن الوظائف بحماية معلوماتك الشخصية وضمان الشفافية في كيفية جمع بياناتك واستخدامها ومشاركتها. نحن ندرك أهمية خصوصيتك ونسعى لتوفير مستوى عالٍ من الحماية يتماشى مع المعايير الدولية.",
+
+      sections: [
+        {
+          title: "المعلومات التي نجمعها",
+          content: "نجمع المعلومات لتحسين جودة خدماتنا وتمكيننا من تقديم تجربة مخصصة ودقيقة تتناسب مع احتياجاتك المهنية."
+        },
+        {
+          title: "المعلومات الشخصية المقدمة من قبلك",
+          items: [
+            "الاسم الكامل: نستخدمه للتعرف عليك داخل المنصة.",
+            "عنوان البريد الإلكتروني ورقم الهاتف: للتواصل معك بشأن الوظائف والتنبيهات.",
+            "الموقع وتفضيلات العمل: لعرض فرص تناسب منطقتك واهتماماتك.",
+            "السيرة الذاتية والمهارات وتاريخ العمل: لعرض مؤهلاتك لأصحاب العمل.",
+            "صورة الملف الشخصي أو روابط المحفظة: لتعزيز ملفك المهني."
+          ]
+        },
+        {
+          title: "المعلومات المجمعة تلقائيًا",
+          items: [
+            "نوع الجهاز ونظام التشغيل.",
+            "إصدار المتصفح وعنوان IP.",
+            "الصفحات التي تمت زيارتها ومدة الاستخدام.",
+            "نشاط تسجيل الدخول والتفاعلات."
+          ]
+        },
+        {
+          title: "ملفات تعريف الارتباط والتتبع",
+          content: "نستخدم ملفات تعريف الارتباط لتذكر إعداداتك وتحسين تجربتك وتحليل تفاعلك مع المنصة."
+        },
+        {
+          title: "كيفية استخدام معلوماتك",
+          items: [
+            "إنشاء وإدارة حسابك.",
+            "توصية فرص العمل المناسبة.",
+            "عرض ملفك الشخصي على أصحاب العمل.",
+            "تحسين أداء الموقع وتجربة المستخدم.",
+            "إرسال الإشعارات والتنبيهات.",
+            "تعزيز الأمان ومنع الأنشطة الاحتيالية."
+          ]
+        },
+        {
+          title: "كيفية وصول أصحاب العمل إلى بياناتك",
+          content: "عندما يكون ملفك الشخصي مرئيًا، يمكن لأصحاب العمل المعتمدين الوصول إلى معلومات تساعدهم على تقييم مدى ملاءمتك للوظائف."
+        },
+        {
+          title: "مشاركة معلوماتك مع أطراف ثالثة",
+          items: [
+            "موفرو الاستضافة والتخزين السحابي.",
+            "أدوات التحليل والأداء.",
+            "معالجات الدفع.",
+            "خدمات دعم العملاء."
+          ]
+        },
+        {
+          title: "حماية البيانات والأمان",
+          items: [
+            "نقل البيانات عبر بروتوكولات مشفرة.",
+            "بنية تحتية آمنة للخوادم.",
+            "ضوابط وصول داخلية صارمة.",
+            "مراقبة واختبارات أمنية مستمرة."
+          ]
+        },
+        {
+          title: "حقوقك",
+          items: [
+            "عرض أو تحديث معلومات ملفك الشخصي.",
+            "طلب حذف حسابك.",
+            "طلب نسخة من بياناتك المخزنة.",
+            "تحديد كيفية استخدام بياناتك.",
+            "تعطيل ملفات تعريف الارتباط."
+          ]
+        },
+        {
+          title: "الاحتفاظ بالبيانات",
+          content: "نحتفظ بمعلوماتك طالما أن حسابك نشط، وقد نحتفظ ببعض البيانات بعد حذف الحساب لأسباب قانونية أو أمنية."
+        },
+        {
+          title: "خصوصية الأطفال",
+          content: "منصتنا غير مخصصة للأطفال دون 16 عامًا، ولا نقوم بجمع معلوماتهم عمدًا."
+        },
+        {
+          title: "تحديثات هذه السياسة",
+          content: "قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم إعلامك بالتحديثات الجوهرية."
+        }
+      ]
     }
   },
 
@@ -1200,7 +1472,23 @@ const messages = {
         sector: 'Sector',
         country: 'Country',
         educationLevel: 'Education Level',
-        workType: 'Work Type'
+        workType: 'Work Type',
+        countries: [
+          'Palestine',
+          'Jordan',
+          'Saudi Arabia',
+          'UAE',
+          'Qatar',
+          'Kuwait',
+          'Egypt',
+          'Lebanon',
+          'Turkey',
+          'Germany',
+          'France',
+          'Finland',
+          'United States',
+          'Canada'
+        ]
       },
     
       cards: [
@@ -1636,6 +1924,285 @@ const messages = {
       location: 'Ramallah | Al-Bireh',
       phoneNumber: '0097 59 449 8337',
       emailAddress: 'example@work.ps'
+    },
+
+    workDetails: {
+      title: 'Business Systems Support Officer',
+      company: 'Palestinian Monetary Authority',
+      location: 'Ramallah | Al-Bireh',
+
+      breadcrumb: 'Home - Jobs - Work Details',
+
+      applyFrom: 'Application available from',
+      applyTo: 'until',
+      applyNow: 'Apply Now',
+      source: 'Source:',
+
+      aboutCompanyTitle: 'Palestinian Monetary Authority',
+      aboutCompanyDesc: 'The Palestinian Monetary Authority is an independent institution that plays a key role in developing the Palestinian economy by maintaining financial stability and regulating the banking and financial sectors.',
+
+      announcementTitle: 'Job Announcement',
+      announcementDesc: 'Based on equal opportunity principles, the PMA is seeking qualified candidates for the position of "Business Systems Support Officer" in the Technology Department.',
+
+      requirementsTitle: 'Job Requirements',
+
+      langSkills: 'Language Skills',
+      langSkillsDesc: 'Fluency in both Arabic and English (spoken and written).',
+
+      experience: 'Work Experience',
+      experienceDesc: 'Minimum of 5 years of relevant experience.',
+
+      education: 'Education',
+      educationDesc: 'Bachelor’s degree in Computer Science.',
+
+      skillsTitle: 'Skills',
+
+      skills: [
+        'Communication skills',
+        'Holistic and interconnected thinking',
+        'Creative and innovative thinking',
+        'Well-informed decision making',
+        'Solving complex problems',
+        'Strong logical analysis',
+        'Deep financial and critical thinking',
+        'Effective strategic skills',
+        'Time management',
+        'Problem solving',
+        'Team leadership'
+      ],
+
+      responsibilities: [
+        'Provide technical support for critical systems and applications to ensure faster response to support requests and build sustainable internal capabilities.',
+        'Execute technology project tasks related to managing and deploying JBOSS, WebLogic, IBM WebSphere, and IIS Application Servers.',
+        'Provide second- and third-level technical support for business systems (TMS, CRM, HRMS, SWIFT, RTGS, SupTech, Payment Systems).',
+        'Closely follow up on system updates and upgrades in coordination with relevant stakeholders.',
+        'Perform advanced technical operations including troubleshooting complex issues in critical systems, adjusting configurations, and handling operational files according to approved procedures.',
+        'Monitor system performance and availability, track user activity, and prepare reports to ensure continuity and efficiency of operations.',
+        'Contribute to operation and change processes while fully complying with information security policies.',
+        'Develop Standard Operating Procedures (SOPs) and maintain a Knowledge Base related to business systems.',
+        'Coordinate with service providers to obtain second-level technical support according to Service Level Agreements (SLA).',
+        'Apply new releases and ensure regular backup processes are properly executed.',
+        'Prepare monthly reports to measure performance, set priorities, and track adherence to timelines.'
+      ],
+
+      submissionTitle: 'Application Process',
+      submissionDesc: 'Accordingly, candidates who meet the required qualifications and wish to apply for this position can complete the application form via the link provided in the announcement on the official website of the Palestinian Monetary Authority, attach their CV, and ensure that all required fields are completed. Applications submitted through other channels will not be considered. The deadline for submission is Saturday, 27/09/2025.',
+      note: 'Only candidates who meet the requirements will be contacted.',
+      finalWish: 'We wish everyone continued success and progress.',
+    
+      responsibilitiesTitle: 'Key Responsibilities',
+    },
+
+    filters: {
+      searchPlaceholder: 'Jobs, companies, internships, others',
+      sector: 'Sector',
+      country: 'Country',
+      educationLevel: 'Education Level',
+      workType: 'Work Type',
+      countries: [
+        'Palestine',
+        'Jordan',
+        'Saudi Arabia',
+        'UAE',
+        'Qatar',
+        'Kuwait',
+        'Egypt',
+        'Lebanon',
+        'Turkey',
+        'Germany',
+        'France',
+        'Finland',
+        'United States',
+        'Canada'
+      ]
+    },
+    howUse: {
+      videoSection: {
+      title: "See How The Platform Works",
+      desc: "A short explainer video showing the main platform features and how users can build a complete profile for better recommendations.",
+      points: [
+        "Sign up for free as a job seeker or employer in a few minutes.",
+        "Add your skills, experience, certificates, and job preferences.",
+        "Explore thousands of available jobs across different fields.",
+        "Apply to jobs with one click using your saved profile.",
+        "Track your applications and receive instant notifications."
+      ]
+    },
+    
+    platform: {
+      title: "Explore The Platform Interface",
+      desc: "Browse platform screenshots and discover its features",
+      cards: [
+        {
+          title: "New Opportunity Alerts",
+          desc: "Personalized user notifications",
+          img: new URL("@/assets/3c1417033d73b669f457b25dc627f2900cc2dcd9.png", import.meta.url).href
+        },
+        {
+          title: "Application Tracking",
+          desc: "Smart job filters",
+          img: new URL("@/assets/e1a8a69636cbfb8a005933dee242971c63fc77a6.png", import.meta.url).href
+        },
+        {
+          title: "Advanced Search",
+          desc: "Smart job filters",
+          img: new URL("@/assets/d01393906a220742a4b2e45e8efd484701dac1eb.png", import.meta.url).href
+        },
+        {
+          title: "Job Recommendations",
+          desc: "Suggestions based on user skills",
+          img: new URL("@/assets/15d42f30a1ec4ca871b9578e8d031c2b0ffa2161.png", import.meta.url).href
+        },
+        {
+          title: "Connect With Companies",
+          desc: "Direct contact with employers",
+          img: new URL("@/assets/c14d7d1ca35d961e3bf1c2cc48206784f749aa7b.png", import.meta.url).href
+        },
+        {
+          title: "Employee Reviews",
+          desc: "Feedback and reviews from employees",
+          img: new URL("@/assets/a98c48a78eeaecbbefeb85f1601b5442915225d8.png", import.meta.url).href
+        }
+      ]
+    },
+      title: "How It Works",
+      breadcrumb: "Home - How It Works",
+
+      heroTitle: "See How The Platform Works",
+      heroDesc: "Simple steps to guide you to your dream job in Palestine",
+
+      aboutTitle: "A Comprehensive Hiring Platform",
+      aboutDesc: "JobMatch connects job seekers with the best opportunities quickly and easily.",
+
+      stepsTitle: "Simple Steps to Get Started",
+      stepsDesc: "Follow these steps and start your journey",
+
+      steps: [
+        {
+          title: "Create Account",
+          desc: "Sign up for free as a job seeker or employer in just a few minutes. Choose the account type that suits you and start your journey",
+          img: new URL('@/assets/Frame (5).png', import.meta.url).href
+        },
+        {
+          title: "Build Your Profile",
+          desc: "Add your skills, experience, certificates, and job preferences. The more complete your profile is, the better the recommendations",
+          img: new URL('@/assets/Frame (1).png', import.meta.url).href
+        },
+        {
+          title: "Browse & Search",
+          desc: "Explore thousands of job opportunities across different fields. Use advanced filters to find the right job easily",
+          img: new URL('@/assets/Frame (2).png', import.meta.url).href
+        },
+        {
+          title: "Apply Easily",
+          desc: "Apply to jobs with one click using your saved profile. No need to fill long forms every time",
+          img: new URL('@/assets/Frame (3).png', import.meta.url).href
+        },
+        {
+          title: "Track Progress",
+          desc: "Monitor your applications and receive instant updates. Stay informed about your application status at all times",
+          img: new URL('@/assets/Frame (4).png', import.meta.url).href
+        }
+      ],
+    
+      cta: {
+        title: "Are You Ready to Get Started?",
+        desc: "Join thousands who found their dream jobs",
+        btn1: "Create Free Account",
+        btn2: "Browse Jobs",
+        note: "Free registration • No credit card required"
+      }
+    },
+
+    privacy: {
+      title: "Privacy Policy",
+      breadcrumb: "Home - Privacy Policy",
+      intro: "Our job search platform is committed to protecting your personal information and ensuring transparency in how your data is collected, used, and shared. We value your privacy and aim to provide a high level of protection aligned with international standards.",
+        
+      sections: [
+        {
+          title: "Information We Collect",
+          content: "We collect information to improve our services and provide a personalized experience that matches your career needs."
+        },
+        {
+          title: "Personal Information You Provide",
+          items: [
+            "Full name: Used to identify you on the platform.",
+            "Email address and phone number: Used for job alerts, account notifications, and support.",
+            "Location and work preferences: Used to show opportunities that match your area and interests.",
+            "CV, skills, and work history: Used to present your qualifications to employers.",
+            "Profile photo or portfolio links: Used to improve your professional profile."
+          ]
+        },
+        {
+          title: "Automatically Collected Information",
+          items: [
+            "Device type and operating system.",
+            "Browser version and IP address.",
+            "Visited pages and time spent on the platform.",
+            "Login activity and interactions."
+          ]
+        },
+        {
+          title: "Cookies and Tracking",
+          content: "We use cookies to remember your preferences, keep your session active, and analyze how you interact with the platform."
+        },
+        {
+          title: "How We Use Your Information",
+          items: [
+            "Create and manage your account.",
+            "Recommend relevant job opportunities.",
+            "Show your profile to employers.",
+            "Improve website performance and user experience.",
+            "Send notifications and alerts.",
+            "Enhance security and prevent fraudulent activity."
+          ]
+        },
+        {
+          title: "Employer Access to Your Data",
+          content: "When your profile is visible, approved employers may access information that helps them evaluate your suitability for available jobs."
+        },
+        {
+          title: "Sharing Your Information with Third Parties",
+          items: [
+            "Hosting and cloud storage providers.",
+            "Analytics and performance tools.",
+            "Payment processors.",
+            "Customer support services."
+          ]
+        },
+        {
+          title: "Data Protection and Security",
+          items: [
+            "Encrypted data transfer.",
+            "Secure server infrastructure.",
+            "Strict internal access controls.",
+            "Continuous monitoring and security testing."
+          ]
+        },
+        {
+          title: "Your Rights",
+          items: [
+            "View or update your profile information.",
+            "Request account deletion.",
+            "Request a copy of your stored data.",
+            "Control how your data is used.",
+            "Disable cookies."
+          ]
+        },
+        {
+          title: "Data Retention",
+          content: "We keep your information while your account is active and may retain some data after deletion for legal or security reasons."
+        },
+        {
+          title: "Children’s Privacy",
+          content: "Our platform is not intended for children under 16, and we do not knowingly collect their information."
+        },
+        {
+          title: "Policy Updates",
+          content: "We may update this privacy policy from time to time and will notify you of major changes."
+        }
+      ]
     }
   }
 }

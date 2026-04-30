@@ -3,13 +3,13 @@ import Home from '../views/Home.vue'
 import Operators from '@/views/Operators.vue'
 import JobOpportunities from '@/views/JobOpportunities.vue'
 import GovernmentJobs from '@/views/GovernmentJobs.vue'
-import login from '@/views/login.vue'
-import signup from '@/views/signup.vue'
 import faq from '@/views/faq.vue'
 import privacy from '@/views/privacy.vue'
 import howToUse from '@/views/howToUse.vue'
 import contact from '@/views/contact.vue'
 import LatestJobs from '@/views/LatestJobs.vue'
+import WorkDetails from '@/views/WorkDetails.vue'
+import SearchResults from '@/views/SearchResults.vue'
 
 const routes = [
   {
@@ -35,23 +35,23 @@ const routes = [
   {
     path:'/login',
     name:'login',
-    component: () => import('../views/login.vue')
+    component: () => import('@/views/login.vue')
   },
   {
   path: '/signup',
   name: 'signup',
-  component: () => import('../views/signup.vue')
+  component: () => import('@/views/signup.vue')
   },
   {
     path: '/signup-company',
     name: 'signup-company',
-    component: () => import('../views/signup-company.vue'),
+    component: () => import('@/views/signup-company.vue'),
     meta: { authLayout: true }
   },
   {
     path: '/signup-jobseeker',
     name: 'signup-jobseeker',
-    component: () => import('../views/signup-jobseeker.vue'),
+    component: () => import('@/views/signup-jobseeker.vue'),
     meta: { authLayout: true }
   },
   {
@@ -78,6 +78,17 @@ const routes = [
     path:'/LatestJobs',
     name:'LatestJobs',
     component:LatestJobs,
+  },
+  {
+    path:'/work-details',
+    name:'WorkDetails',
+    component:WorkDetails,
+  },
+
+  {
+    path:'/Search-results',
+    name:'SearchResults',
+    component:SearchResults,
   },
 ]
 
