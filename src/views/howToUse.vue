@@ -11,7 +11,7 @@
           </div>
         </div>
 
-        <span class="circle c1"></span>
+        <span class="circles c1"></span>
         <span class="circle2 c2"></span>
         <span class="circle2 c3"></span>
       </div>
