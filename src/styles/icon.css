@@ -15,12 +15,11 @@
     font-size: 39px;
     line-height: 1;
 }
-/* نخفي الأبيض */
+
 .sent-icon .path1::before {
     color: transparent !important;
 }
 
-/* اللون البرتقالي */
 .sent-icon .path2::before,
 .sent-icon .path3::before,
 .sent-icon .path4::before,

@@ -48,16 +48,7 @@
     </div>
 </template>
 <script>
-import messages from '@/data/lang'
-
-export default {
-  props: ['currentLang'],
-
-  computed: {
-    text() {
-      return messages[this.currentLang].privacy
-    }
-  }
-}
+import privacy from '@/scripts/privacy';
+export default privacy
 </script>
 <style src="../styles/privacy.css"></style>

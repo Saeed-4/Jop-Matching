@@ -47,37 +47,7 @@
     </div>
 </template>
 <script>
-import messages from '@/data/lang'
-
-export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
-  data() {
-    return {
-      openFaqs: []
-    }
-  },
-
-  computed: {
-    text() {
-      return messages[this.currentLang]
-    }
-  },
-
-  methods: {
-    toggleFaq(index) {
-      if (this.openFaqs.includes(index)) {
-        this.openFaqs = this.openFaqs.filter(item => item !== index)
-      } else {
-        this.openFaqs.push(index)
-      }
-    }
-  }
-}
+import faq from '@/scripts/faq';
+export default faq
 </script>
 <style src="../styles/home.css"></style>

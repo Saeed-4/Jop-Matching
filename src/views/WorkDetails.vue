@@ -159,21 +159,7 @@
     </div>
 </template>
 <script>
-import messages from '@/data/lang'
-
-export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
-  computed: {
-    t() {
-      return messages[this.currentLang]
-    }
-  }
-}
+import WorkDetails from '@/scripts/WorkDetails';
+export default WorkDetails
 </script>
 <style src="../styles/WorkDetails.css"></style>

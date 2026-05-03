@@ -68,23 +68,8 @@
 </template>
 
 <script>
-import messages from '@/data/lang'
-
-export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
-  computed: {
-    loginText() {
-      return messages[this.currentLang].loginPage
-    }
-  }
-}
+import login from '../scripts/login'
+export default login
 </script>
-
 <style src="../styles/login.css"></style>
 <style src="../styles/font.css"></style>

@@ -1113,6 +1113,29 @@ const messages = {
           content: "قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم إعلامك بالتحديثات الجوهرية."
         }
       ]
+    },
+
+    searchResults: {
+      header: {
+        title: "نتائج البحث",
+        breadcrumb: "الرئيسية - نتائج البحث"
+      }
+    },
+
+    signupPage: {
+      title: 'انشاء حساب',
+      subtitle: 'قم باختيار نوع الحساب الذي تريد القيام بانشاؤه',
+      createAccount: 'انشاء حساب',
+
+      company: {
+        title: 'شركة / مؤسسة توظيف',
+        description: 'انشاء حساب توظيف يمكنك من خلاله نشر فرص عمل او منح او تدريب عملي'
+      },
+    
+      jobSeeker: {
+        title: 'باحث عن عمل',
+        description: 'انشاء حساب باحث عن عمل يمكنك من خلاله التقديم على فرص العمل والمنح والتدريب العملي'
+      }
     }
   },
 
@@ -2203,6 +2226,29 @@ const messages = {
           content: "We may update this privacy policy from time to time and will notify you of major changes."
         }
       ]
+    },
+
+    searchResults: {
+      header: {
+        title: "Search Results",
+        breadcrumb: "Home - Search Results"
+      }
+    },
+
+    signupPage: {
+      title: 'Create Account',
+      subtitle: 'Choose the type of account you want to create',
+      createAccount: 'Create Account',
+        
+      company: {
+        title: 'Company / Recruitment Organization',
+        description: 'Create a recruitment account to post job opportunities, grants, or internships'
+      },
+    
+      jobSeeker: {
+        title: 'Job Seeker',
+        description: 'Create a job seeker account to apply for jobs, grants, and internships'
+      }
     }
   }
 }

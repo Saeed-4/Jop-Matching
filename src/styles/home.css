@@ -150,13 +150,11 @@ a{
   pointer-events: none;
 }
 
-/* عربي */
 .ar .select-box .icon-Polygon-1 {
   left: 12px;
   right: auto;
 }
 
-/* انجليزي */
 .en .select-box .icon-Polygon-1 {
   right: 12px;
   left: auto;
@@ -210,12 +208,11 @@ a{
     height: auto;
 }
 
-
-
 .person img{
     width: 100%;
     height: auto;
 }
+
 .wave {
   position: absolute;
   bottom: 0;
@@ -232,7 +229,6 @@ a{
   height: 101%;
 }
 
-
 .job-categories{
   display: flex;
   flex-direction: column;
@@ -240,6 +236,7 @@ a{
   height: auto;
   gap: 40px;
 }
+
 .categorie-title{
     width: 100%;
     height: auto;
@@ -247,6 +244,7 @@ a{
     flex-direction: column;
     justify-content: space-between;
 }
+
 .categorie-title h2{
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
@@ -294,9 +292,6 @@ a{
     color: #000000;
     text-align: center;
 }
-
-
-
 
 .about{
     width: 100%;
@@ -553,7 +548,7 @@ a{
   background: #EFB596;
   top: 6px;
   left: 590px;
-  opacity: 0.8;
+  opacity: 0.8; /* شفافية تبعته*/
 }
 
 .circle-right-l{
@@ -775,14 +770,12 @@ a{
   transition: 0.3s ease;
 }
 
-/* الكرت الرئيسي */
 .active-card {
   z-index: 3;
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1);/* الحجم */
 }
 
-/* الكروت الجانبية */
 .side-card {
   z-index: 1;
   opacity: 0.2;
@@ -798,7 +791,6 @@ a{
   right: 0;
 }
 
-/* محتوى الكرت */
 .top-jobs-slider-preview {
   display: flex;
   align-items: center;
@@ -1096,14 +1088,14 @@ a{
 }
 
 .title-width span {
-font-family: 'Tajawal', sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 16px;
-line-height: 156%;
-letter-spacing: 0;
-vertical-align: middle;
-color: #DD5C16;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #DD5C16;
 }
 
 .news-slider {
@@ -1429,12 +1421,6 @@ color: #DD5C16;
   color: #6E6E6E;
 }
 
-/* =========================
-   RTL / LTR READY OVERRIDES
-   حطي هذا آخر الملف
-========================= */
-
-/* language wrappers */
 .ar {
   direction: rtl;
   text-align: right;
@@ -1447,7 +1433,6 @@ color: #DD5C16;
   font-family: "Poppins", sans-serif;
 }
 
-/* general text alignment */
 .en .title-decor h1,
 .en .title-decor p,
 .en .title-box h3,
@@ -1520,7 +1505,6 @@ color: #DD5C16;
   flex-direction: row;
 }
 
-/* search area */
 .ar .search-box {
   direction: rtl;
 }
@@ -1541,7 +1525,6 @@ color: #DD5C16;
   text-align: right;
 }
 
-/* common flex rows */
 .ar .paragraph-Options,
 .ar .Option,
 .ar .Apply-now,
@@ -1564,7 +1547,6 @@ color: #DD5C16;
   direction: ltr;
 }
 
-/* cards and content alignment */
 .en .card-content {
   align-items: flex-start;
 }
@@ -1573,7 +1555,6 @@ color: #DD5C16;
   align-items: flex-start;
 }
 
-/* lots of jobs bullets */
 .en .title-Lots p img,
 .en .faq-mark,
 .en .icon-sector,
@@ -1588,7 +1569,6 @@ color: #DD5C16;
   margin-left: 0;
 }
 
-/* latest jobs cards */
 .en .Options-jop {
   direction: ltr;
 }
@@ -1605,7 +1585,6 @@ color: #DD5C16;
   text-align: end;
 }
 
-/* company cards */
 .en .company-card {
   direction: ltr;
 }
@@ -1622,7 +1601,6 @@ color: #DD5C16;
   direction: rtl;
 }
 
-/* faq block */
 .en .faq-item {
   direction: ltr;
 }
@@ -1641,7 +1619,6 @@ color: #DD5C16;
   padding-left: 0;
 }
 
-/* arrows */
 .ar .vector {
   transform: rotate(270deg);
 }
@@ -1658,7 +1635,6 @@ color: #DD5C16;
   transform: rotate(270deg);
 }
 
-/* slider arrows */
 .en .news-arrow .icon-arrow {
   transform: rotate(0deg);
 }
@@ -1667,7 +1643,6 @@ color: #DD5C16;
   transform: rotate(-180deg);
 }
 
-/* government slider side positions */
 .en .left-card {
   left: 0;
   right: auto;
@@ -1688,7 +1663,6 @@ color: #DD5C16;
   left: auto;
 }
 
-/* title width/date alignment */
 .en .title-width,
 .en .title-Lots,
 .en .title-fqa,
@@ -1697,9 +1671,6 @@ color: #DD5C16;
   align-items: flex-start;
 }
 
-
-
-/* buttons / links alignment */
 .en .categorie-title a,
 .en .title-fqa a,
 .en .buttom-Latest-Jobs,
@@ -1716,7 +1687,6 @@ color: #DD5C16;
   direction: rtl;
 }
 
-/* navbar */
 .en nav,
 .en .nav,
 .en .nav .container,
@@ -1744,7 +1714,6 @@ color: #DD5C16;
   display: flex;
 }
 
-/* responsive small screens */
 @media (max-width: 991px) {
   .en .hero .row,
   .ar .hero .row {
@@ -1810,8 +1779,8 @@ color: #DD5C16;
   background: #fff;
   border: 1px solid #dd5c16;
   border-radius: 15px;
-  max-height: 200px; /* 👈 هون السر */
-  overflow-y: auto; /* 👈 سكرول */
+  max-height: 200px; 
+  overflow-y: auto; 
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   z-index: 1000;
 }
@@ -1854,7 +1823,6 @@ color: #DD5C16;
   right: auto;
 }
 
-/* انجليزي */
 .en .input-box .icon-search {
   left: 12px;
   right: auto;

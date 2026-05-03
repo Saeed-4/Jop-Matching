@@ -1,5 +1,5 @@
 <template>
-  <div class="signup-company":dir="currentLang === 'ar' ? 'rtl' : 'ltr'":class="currentLang === 'ar' ? 'rtl' : 'ltr'">
+  <div class="signup-company" :dir="currentLang === 'ar' ? 'rtl' : 'ltr'" :class="currentLang === 'ar' ? 'rtl' : 'ltr'">
     <div class="container">
       <div class="signup-company-box">
         <div class="signup-company-header">
@@ -270,70 +270,8 @@
 </template>
 
 <script>
-import messages from '@/data/lang'
-
-export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
-  data() {
-    return {
-      currentStep: 1,
-      form: {
-        companyName: '',
-        registrationNumber: '',
-        phone: '',
-        email: '',
-        workSector: '',
-        website: '',
-        companyType: '',
-        city: '',
-        governorate: '',
-        address: '',
-        companySize: '',
-        description: '',
-        logoFile: null,
-        registrationFile: null,
-        taxFile: null,
-        chamberFile: null,
-        password: '',
-        confirmPassword: ''
-      }
-    }
-  },
-
-  computed: {
-    t() {
-      return messages[this.currentLang].signupCompany
-    }
-  },
-
-  methods: {
-    nextStep() {
-      if (this.currentStep < 5) {
-        this.currentStep++
-      }
-    },
-
-    prevStep() {
-      if (this.currentStep > 1) {
-        this.currentStep--
-      }
-    },
-
-    handleBack() {
-      if (this.currentStep > 1) {
-        this.currentStep--
-      } else {
-        this.$router.push('/signup')
-      }
-    }
-  }
-}
+import signupCompany from '@/scripts/signup-company';
+export default signupCompany
 </script>
 
 <style src="../styles/signup-company.css"></style>

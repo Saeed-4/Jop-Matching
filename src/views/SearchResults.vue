@@ -9,8 +9,8 @@
           <span class="decor-circle right-dot"></span>
           <div class="container">
             <div class="title-Operators">
-              <h2>نتائج البحث</h2>
-              <p>الرئيسية-نتائج البحث</p>
+              <h2>{{ text.searchResults.header.title }}</h2>
+              <p>{{ text.searchResults.header.breadcrumb }}</p>
             </div>
           </div>
         </div>

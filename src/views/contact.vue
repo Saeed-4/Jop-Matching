@@ -69,21 +69,7 @@
   </div>
 </template>
 <script>
-import messages from '@/data/lang'
-
-export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
-  computed: {
-    t() {
-      return messages[this.currentLang]
-    }
-  }
-}
+import contact from '@/scripts/contact';
+export default contact
 </script>
 <style scoped src="../styles/contact.css"></style>

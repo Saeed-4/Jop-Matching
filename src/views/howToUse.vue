@@ -286,35 +286,8 @@
 </template>
 
 <script>
-import messages from '@/data/lang'
-
-export default {
-  props: ['currentLang'],
-
-  computed: {
-    text() {
-      return messages[this.currentLang].howUse
-    }
-  },
-
-  data() {
-    return {
-      showVideo1: false,
-      showVideo2: false
-    }
-  },
-
-  methods: {
-    openVideo(type) {
-      if (type === 1) this.showVideo1 = true
-      if (type === 2) this.showVideo2 = true
-    },
-    closeVideo() {
-      this.showVideo1 = false
-      this.showVideo2 = false
-    }
-  }
-}
+import howToUse from '@/scripts/howToUse';
+export default howToUse
 </script>
 
 <style src="../styles/howToUse.css"></style>
