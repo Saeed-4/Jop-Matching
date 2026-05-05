@@ -61,8 +61,8 @@ export default {
       newsCurrentIndex: 0,
       newsImages: [
         new URL('@/assets/Group 1000003989.png', import.meta.url).href,
-        new URL('@/assets/image 26.png', import.meta.url).href,
-        new URL('@/assets/image 27.png', import.meta.url).href
+        new URL('@/assets/images.png', import.meta.url).href,
+        new URL('@/assets/pngtree-business-meetings-at-a-conference-table-with-silhouettes-of-workers-and-image_2961694.jpg', import.meta.url).href
       ]
     }
   },
