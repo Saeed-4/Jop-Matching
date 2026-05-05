@@ -10,13 +10,14 @@
             </div>
 
             <div class="section-login">
-              <form class="login-form">
+              <form class="login-form" @submit.prevent="login">
                 <div class="input-group">
                   <label>{{ loginText.phoneLabel }}</label>
 
                   <div class="phone-box">
                     <input
                       type="text"
+                      v-model="phone"
                       :placeholder="loginText.phonePlaceholder"
                     />
 
@@ -34,6 +35,7 @@
                     <span class="icon-hide"></span>
                     <input
                       type="password"
+                      v-model="password"
                       :placeholder="loginText.passwordPlaceholder"
                     />
                   </div>

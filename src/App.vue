@@ -7,12 +7,15 @@
     />
 
     <Navbar
-      v-else
+      v-else-if="$route.path !== '/jobseeker-home'"
       :currentLang="currentLang"
       @changeLang="changeLang"
     />
 
-    <router-view :currentLang="currentLang" />
+    <router-view
+      :currentLang="currentLang"
+      @changeLang="changeLang"
+    />
 
     <Footer
       v-if="!$route.meta.authLayout"

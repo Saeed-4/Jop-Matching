@@ -131,7 +131,8 @@ const messages = {
       },
 
       lotsOfJobs: {
-        title1: 'عشرات الوظائف المقدمة',
+        title1: 'عشرات الوظائف ',
+        title3:'المقدمة',
         title2: 'قم بالتقديم على الوظيفة المناسبة لمهاراتك',
         description: 'ستجد عددًا كبيرًا من الوظائف المقدمة من خلال الموقع والشركات بمختلف المجالات لوصولك لوظيفة أحلامك أو لتطوير مهاراتك الحالية ولفرص تدريب العمل',
         point1: 'عدد كبير من الوظائف المقدمة',
@@ -1135,6 +1136,30 @@ const messages = {
       jobSeeker: {
         title: 'باحث عن عمل',
         description: 'انشاء حساب باحث عن عمل يمكنك من خلاله التقديم على فرص العمل والمنح والتدريب العملي'
+      }
+    },
+
+    jobSeekerHome: {
+      heroTitle: 'أهلاً بك فارس ، من جديد',
+      heroDesc: 'يمكنك البحث من خلال الفلترة أدناه عن بعض الوظائف المتاحة في الوقت الحالي، والتي تناسبك',
+      searchPlaceholder: 'وظائف، شركات، تدريب عملي... أخرى',
+      sector: 'القطاع',
+      country: 'البلد',
+      suggestedTitle: 'إليك بعض الوظائف المقترحة والتي تناسب ملفك الشخصي',
+      viewAll: 'عرض الكل',
+      matchTitle: 'نسبة التوافق',
+      matchDesc: 'تعتمد على مهاراتك وخبراتك الموجودة في ملفك الشخصي',
+      applyNow: 'تقدم الآن',
+      sectorName: 'قطاع تكنولوجيا المعلومات',
+      company: 'Blue ltd.',
+      location: 'فلسطين، نابلس',
+      postDate: '5 حزيران 2025',
+      deadline: '24 حزيران 2025',
+      jobDesc: 'نبحث عن شخص مميز يمتلك مهارات مناسبة للعمل ضمن فريق محترف، ولديه القدرة على التعلم والتطوير.',
+      tags: {
+        remote: 'عمل عن بعد',
+        fullTime: 'دوام كامل',
+        level: 'مستوى متوسط'
       }
     }
   },
@@ -2248,6 +2273,30 @@ const messages = {
       jobSeeker: {
         title: 'Job Seeker',
         description: 'Create a job seeker account to apply for jobs, grants, and internships'
+      }
+    },
+
+    jobSeekerHome: {
+      heroTitle: 'Welcome back, Fares',
+      heroDesc: 'You can use the filters below to search for available jobs that match your profile.',
+      searchPlaceholder: 'Jobs, companies, internships... others',
+      sector: 'Sector',
+      country: 'Country',
+      suggestedTitle: 'Here are some suggested jobs that match your profile',
+      viewAll: 'View All',
+      matchTitle: 'Match Score',
+      matchDesc: 'Based on your skills and experience in your personal profile',
+      applyNow: 'Apply Now',
+      sectorName: 'Information Technology Sector',
+      company: 'Blue ltd.',
+      location: 'Palestine, Nablus',
+      postDate: 'June 5, 2025',
+      deadline: 'June 24, 2025',
+      jobDesc: 'We are looking for a talented person with suitable skills to work within a professional team and grow continuously.',
+      tags: {
+        remote: 'Remote Work',
+        fullTime: 'Full Time',
+        level: 'Mid Level'
       }
     }
   }

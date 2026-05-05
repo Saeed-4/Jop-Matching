@@ -90,6 +90,12 @@ const routes = [
     name:'SearchResults',
     component:SearchResults,
   },
+
+  {
+    path: '/jobseeker-home',
+    name: 'JobSeekerHome',
+    component: () => import('@/views/JobSeekerHome.vue')
+  }
 ]
 
 const router = createRouter({

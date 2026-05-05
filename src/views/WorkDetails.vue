@@ -162,4 +162,4 @@
 import WorkDetails from '@/scripts/WorkDetails';
 export default WorkDetails
 </script>
-<style src="../styles/WorkDetails.css"></style>
+<style scoped src="../styles/WorkDetails.css"></style>

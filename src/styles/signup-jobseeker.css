@@ -463,6 +463,10 @@
   font-size: 25px;
   line-height: 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 0px 5px 0px;
 }
 
 .skills-title {
@@ -637,6 +641,12 @@
   margin: 20px 0px;
 }
 
+.error-text {
+  color: #d93025;
+  font-size: 13px;
+  margin-top: 6px;
+  display: block;
+}
 
 .signup-jobseeker.rtl .pro-card {
   flex-direction: row;

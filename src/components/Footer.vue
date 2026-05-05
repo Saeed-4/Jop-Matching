@@ -84,6 +84,15 @@ const text = computed(() => messages[props.currentLang])
 </script>
 
 <style scoped>
+
+[dir="rtl"] .subscribe-box {
+  flex-direction: row;
+}
+
+[dir="ltr"] .arrow-btn img {
+  transform: rotate(180deg);
+}
+
 ul {
   list-style: none;
   padding: 18px 0px;
@@ -105,7 +114,8 @@ li {
 
 .footer-top {
   width: 100%;
-  padding: 20px 0;
+  background-color: #fff;
+  box-shadow:1px slategrey #0000000F;
 }
 
 .container {
@@ -139,12 +149,14 @@ li {
   align-items: center;
   gap: 20px;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .subscribe-section {
   display: flex;
   align-items: center;
   gap: 18px;
+  width: 80%;
 }
 
 .title {
@@ -184,7 +196,6 @@ li {
   font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  text-align: right;
   color: #999;
 }
 

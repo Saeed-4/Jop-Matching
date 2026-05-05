@@ -5,7 +5,40 @@ a{
 .home {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+}
+
+.all-1{
+  background-color: #fff;
+}
+.all-2{
+  background-color: #F7F7F7;
+}
+
+.al{
+  padding: 36px 0px;
+}
+
+
+[dir="ltr"] .news-slider {
+  transform: scaleX(-1);
+}
+
+[dir="ltr"] .news-arrow .icon-arrow {
+  transform: scaleX(-1);
+}
+
+.Key-partners{
+  padding: 20px 0px 0px 0px;
+}
+
+.Latest-government-jobs{
+  padding: 50px 0px 0px 0px;
+}
+
+.space{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
 }
 
 .hero {
@@ -218,7 +251,7 @@ a{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 317px;
+  height: 326px;
   overflow: hidden;
   line-height: 0;
 }
@@ -234,7 +267,6 @@ a{
   flex-direction: column;
   width: 100%;
   height: auto;
-  gap: 40px;
 }
 
 .categorie-title{
@@ -296,7 +328,6 @@ a{
 .about{
     width: 100%;
     height: auto;
-    margin: 50px 0px
 }
 
 .about-item{
@@ -421,14 +452,13 @@ a{
 
 .card-company {
   width: 100%;
-  margin: 40px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .company-card {
   width: 100%;
-  min-height: 360px;
+  min-height: 290px;
   background: #FFFFFF;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -441,7 +471,7 @@ a{
 }
 
 .card-image {
-  width: 38%;
+  width: 36%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -498,7 +528,7 @@ a{
   line-height: 150%;
   color: #656565;
   margin: 0;
-  padding: 17px 0px ;
+  padding: 7px 0px ;
   max-width: 420px;
 }
 
@@ -531,13 +561,13 @@ a{
   height: 82px;
   background: rgba(163, 180, 255, 0.3);
   left: -35px;
-  top: 60px;
+  top: 77px;
 }
 
 .circle-buttom{
   width: 324px;
   height: 324px;
-  top: 91px;
+  top: 106px;
   left: -120px;
   background: #1A33ED47;
 }
@@ -564,13 +594,13 @@ a{
   height: 82px;
   background: #BFBFBF73;
   left: -35px;
-  top: 60px;
+  top: 77px;
 }
 
 .circle-buttom-l{
   width: 324px;
   height: 324px;
-  top: 91px;
+  top: 106px;
   left: -120px;
   background: #DD5C161A;
 }
@@ -581,7 +611,7 @@ a{
   display: flex;
   flex-direction: row; 
   justify-content: center;
-  width: 196px;
+  width: 100%;
   padding: 10px;
   gap: 10px;
   border: 1px solid #DD5C16; 
@@ -621,7 +651,7 @@ a{
 .Options-jop{
   display: flex;
   width: 100%;
-  height: 178px;
+  height: 161px;
   padding: 20px 30px; 
   gap: 10px;
   border-radius: 15px;
@@ -647,7 +677,7 @@ a{
     font-family: "Tajawal", sans-serif;
     font-weight: 500;
     font-size: 17px;
-    line-height: 150%;
+    line-height: 78%;
     letter-spacing: 0;
     display: flex;
     justify-content: flex-start;
@@ -1006,11 +1036,9 @@ a{
 }
 
 .title-width{
-  display: flex;
-  flex-direction: column; 
   width: 569px;
   height: 297px;
-  justify-content: space-between;
+  padding: 40px 0px 0px 0px;
 }
 
 .title-width b{
@@ -1023,9 +1051,8 @@ a{
   align-items: center;
   color: #DD5C16;
 }
-.news-events {
+.News-events {
   width: 100%;
-  padding: 40px 0;
 }
 
 .news-row {
@@ -1188,30 +1215,39 @@ a{
 .big-circle {
   width: 150px;
   height: 150px;
-  right: 0;
-  bottom: -51px;
+  right: 7px;
+  bottom: -41px;
   border: 10px solid rgba(221, 92, 22, 0.12);
+}
+
+.x-circle {
+  width: 180px;
+  height: 180px;
+  right: -7px;
+  bottom: -53px;
+  border: 2px solid rgba(221, 92, 22, 0.12);
 }
 
 .small-circle {
     width: 50px;
     height: 51px;
-    right: 39px;
-    bottom: -75px;
+    right: 49px;
+    bottom: -64px;
     border: 2px solid rgba(221, 92, 22, 0.18);
 }
 
 .dot-circle {
-    width: 20px;
-    height: 20px;
-    right: -37px;
-    bottom: 18px;
+    width: 18px;
+    height: 18px;
+    right: -19px;
+    bottom: 61px;
     background: rgba(221, 92, 22, 0.25);
 }
 
 .Lots-of-jobs{
   width: 100%;
   height: auto;
+  padding: 50px 0px 0px 0px;
 }
 
 .img-Lots img{
@@ -1220,24 +1256,20 @@ a{
 }
 
 .title-Lots{
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: auto;
-  justify-content: space-between;
-  margin-top: -38px;
 }
 
 .title-Lots h2{
   font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 35px;
+  font-size: 32px;
   line-height: 150%;
   letter-spacing: 0;
   vertical-align: middle;
   color: #000;
-  
+  margin: 0;
 }
 
 .title-Lots span{
@@ -1261,11 +1293,13 @@ a{
   vertical-align: middle;
   color: #717070;
   width: 81%;
+  margin: 18px 0px;
 }
 
 .fqa{
   width: 100%;
   height: auto;
+  margin: 50px 0px;
 }
 
 .title-fqa{

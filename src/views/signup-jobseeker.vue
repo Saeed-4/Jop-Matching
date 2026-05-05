@@ -117,21 +117,27 @@
             <div class="form-group half">
               <label>{{ t.fields.firstName }}</label>
               <input v-model="form.firstName" :placeholder="t.fields.firstName" />
+              <small v-if="errors.first_name" class="error-text">{{ errors.first_name }}</small>
             </div>
 
             <div class="form-group half">
               <label>{{ t.fields.lastName }}</label>
               <input v-model="form.lastName" :placeholder="t.fields.lastName" />
+              <small v-if="errors.last_name" class="error-text">{{ errors.last_name }}</small>
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group half">
-              <label>{{ t.fields.birthDate }}</label>
-              <input v-model="form.birthDate" placeholder="DD / MM / YYYY" />
-            </div>
 
             <div class="form-group half">
+              <label>{{ t.fields.birthDate }}</label>
+              <input type="date" v-model="form.birthDate" />
+              <small v-if="errors.birth_date" class="error-text">
+                {{ errors.birth_date }}
+              </small>
+            </div>
+
+             <div class="form-group half">
               <label>{{ t.fields.idNumber }}</label>
               <input v-model="form.idNumber" placeholder="0 0000 00 00" />
             </div>
@@ -151,6 +157,7 @@
               <label>{{ t.fields.phone }}</label>
               <div class="phone-box">
                 <input v-model="form.phone" placeholder="972  00 000 0000" />
+                <small v-if="errors.phone" class="error-text">{{ errors.phone }}</small>
                 <div class="country-box">
                   <img src="@/assets/image.png" alt="flag" />
                   <span class="icon-arrow-1"></span>
@@ -163,6 +170,7 @@
             <div class="form-group half">
               <label>{{ t.fields.email }}</label>
               <input v-model="form.email" placeholder="example@email.com" />
+              <small v-if="errors.email" class="error-text">{{ errors.email }}</small>
             </div>
 
             <div class="form-group half">
@@ -229,38 +237,73 @@
           <div class="pro-card">
             <div class="pro-text">
               <strong>{{ t.professional.education }}</strong>
-              <small>{{ t.professional.educationDesc }}</small>
+              <small>
+                {{ form.educationFile ? form.educationFile.name : t.professional.educationDesc }}
+              </small>
             </div>
-            <button class="plus-btn">+</button>
+          
+            <label class="plus-btn">
+              +
+              <input
+                type="file"
+                hidden
+                @change="e => form.educationFile = e.target.files[0]"
+              />
+            </label>
           </div>
-        
+
           <div class="pro-card">
             <div class="pro-text">
               <strong>{{ t.professional.experience }}</strong>
-              <small>{{ t.professional.experienceDesc }}</small>
+              <small>
+                {{ form.experienceFile ? form.experienceFile.name : t.professional.experienceDesc }}
+              </small>
             </div>
-            <button class="plus-btn">+</button>
+          
+            <label class="plus-btn">
+              +
+              <input
+                type="file"
+                hidden
+                @change="e => form.experienceFile = e.target.files[0]"
+              />
+            </label>
           </div>
-        
+
           <label class="skills-title">{{ t.professional.skills }}</label>
-        
+
           <div class="skills-box">
-            <input :placeholder="t.professional.skillsPlaceholder" />
-            <button class="add-skill">+</button>
+            <input
+              v-model="form.skillInput"
+              :placeholder="t.professional.skillsPlaceholder"
+            />
+            <button class="add-skill" type="button" @click="addSkill">+</button>
           </div>
-        
+
           <div class="tags">
-            <span v-for="skill in skills" :key="skill">× {{ skill }}</span>
+            <span v-for="skill in skills" :key="skill" @click="removeSkill(skill)">
+              × {{ skill }}
+            </span>
           </div>
-        
+
           <div class="pro-card">
             <div class="pro-text">
               <strong>{{ t.professional.certificates }}</strong>
-              <small>{{ t.professional.certificatesDesc }}</small>
+              <small>
+                {{ form.certificateFile ? form.certificateFile.name : t.professional.certificatesDesc }}
+              </small>
             </div>
-            <button class="plus-btn">+</button>
+          
+            <label class="plus-btn">
+              +
+              <input
+                type="file"
+                hidden
+                @change="e => form.certificateFile = e.target.files[0]"
+              />
+            </label>
           </div>
-        
+
           <button class="main-btn" @click="nextStep">{{ t.buttons.next }}</button>
         
           <p class="bottom-auth-text">
@@ -279,6 +322,7 @@
             <div class="password-input">
               <span class="icon-hide"></span>
               <input type="password" :placeholder="t.fields.password" v-model="form.password" />
+              <small v-if="errors.password" class="error-text">{{ errors.password }}</small>
             </div>
           </div>
 
@@ -287,10 +331,11 @@
             <div class="password-input">
               <span class="icon-hide"></span>
               <input type="password" :placeholder="t.fields.confirmPassword" v-model="form.confirmPassword" />
+              <small v-if="errors.password_confirmation" class="error-text">{{ errors.password_confirmation }}</small>
             </div>
           </div>
 
-          <button class="main-btn" @click="nextStep">{{ t.buttons.next }}</button>
+          <button class="main-btn" @click="registerJobSeeker">{{ t.buttons.next }}</button>
           <AuthText :text="t" />
 
           <p class="bottom-auth-text">

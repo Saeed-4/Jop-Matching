@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?48ewji');
-  src:  url('fonts/icomoon.eot?48ewji#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?48ewji') format('truetype'),
-    url('fonts/icomoon.woff?48ewji') format('woff'),
-    url('fonts/icomoon.svg?48ewji#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ewy67a');
+  src:  url('fonts/icomoon.eot?ewy67a#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ewy67a') format('truetype'),
+    url('fonts/icomoon.woff?ewy67a') format('woff'),
+    url('fonts/icomoon.svg?ewy67a#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,14 +25,113 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+  content: "\e94e";
+  color: #dd5c16;
+}
+.icon-stopwatch-watch-deadline-svgrepo-com:before {
+  content: "\e94f";
+  color: #ff7900;
+}
+.icon-sector2:before {
+  content: "\e950";
+  color: #dd5c16;
+}
+.icon-posting1:before {
+  content: "\e952";
+  color: #dd5c16;
+}
+.icon-logout-svgrepo-com1:before {
+  content: "\e953";
+}
+.icon-settings1:before {
+  content: "\e954";
+}
+.icon-Vector-23:before {
+  content: "\e955";
+}
+.icon-Vector-221:before {
+  content: "\e956";
+}
+.icon-Vector-211:before {
+  content: "\e957";
+}
+.icon-log-out1:before {
+  content: "\e958";
+}
+.icon-sector3:before {
+  content: "\e959";
+  color: #dd5c16;
+}
+.icon-location1:before {
+  content: "\e95a";
+  color: #dd5c16;
+}
+.icon-sector1:before {
+  content: "\e94c";
+  color: #dd5c16;
+}
+.icon-arrow-right-svgrepo-com:before {
+  content: "\e925";
+}
+.icon-logout-svgrepo-com:before {
+  content: "\e94a";
+}
+.icon-settings:before {
+  content: "\e945";
+}
+.icon-Frame-4:before {
+  content: "\e93c";
+}
+.icon-Frame-3:before {
+  content: "\e93d";
+}
+.icon-Frame-2:before {
+  content: "\e93e";
+}
+.icon-Frame-1:before {
+  content: "\e93f";
+}
+.icon-Vector-20:before {
+  content: "\e946";
+}
 .icon-Vector-19:before {
   content: "\e93b";
+}
+.icon-Vector-22:before {
+  content: "\e947";
+}
+.icon-Vector-21:before {
+  content: "\e948";
+}
+.icon-log-out:before {
+  content: "\e949";
+}
+.icon-Vector-16:before {
+  content: "\e937";
+  color: #c3c3c3;
 }
 .icon-Vector-15:before {
   content: "\e938";
 }
 .icon-Vector-14:before {
   content: "\e939";
+}
+.icon-Vector-13:before {
+  content: "\e940";
+  color: #fff;
+}
+.icon-Vector-12:before {
+  content: "\e941";
+  color: #fff;
+}
+.icon-Vector-11:before {
+  content: "\e942";
+  color: #fff;
+}
+.icon-Vector-10:before {
+  content: "\e943";
+  color: #fff;
 }
 .icon-Vector-18:before {
   content: "\e93a";
@@ -46,8 +145,12 @@
   content: "\e936";
   color: #7b7b7b;
 }
+.icon-posting:before {
+  content: "\e94d";
+  color: #dd5c16;
+}
 .icon-Vector-7:before {
-  content: "\e937";
+  content: "\e94b";
   color: #7b7b7b;
 }
 .icon-Vector-6:before {
@@ -67,42 +170,28 @@
   color: #dd5c16;
 }
 .icon-delete .path1:before {
-  content: "\e92b";
+  content: "\e92c";
   color: rgb(221, 92, 22);
 }
 .icon-delete .path2:before {
-  content: "\e92c";
+  content: "\e944";
   margin-left: -1em;
   color: rgb(255, 255, 255);
-}
-.icon-Group-1000003978 .path1:before {
-  content: "\e92d";
-  color: rgb(255, 255, 255);
-}
-.icon-Group-1000003978 .path2:before {
-  content: "\e92e";
-  margin-left: -1em;
-  color: rgb(221, 92, 22);
-}
-.icon-Group-1000003978 .path3:before {
-  content: "\e92f";
-  margin-left: -1em;
-  color: none;
 }
 .icon-calender:before {
   content: "\e930";
   color: #dd5c16;
 }
 .icon-upload-files-1:before {
-  content: "\e92a";
+  content: "\e92b";
   color: #a7a7a7;
 }
 .icon-upload-files:before {
-  content: "\e929";
+  content: "\e92a";
   color: #dd5c16;
 }
 .icon-work:before {
-  content: "\e927";
+  content: "\e929";
   color: #aeaeae;
 }
 .icon-company:before {
@@ -110,7 +199,7 @@
   color: #aeaeae;
 }
 .icon-hide:before {
-  content: "\e926";
+  content: "\e927";
   color: #dd5c16;
 }
 .icon-Vector-2:before {
@@ -122,6 +211,9 @@
 }
 .icon-Group:before {
   content: "\e923";
+}
+.icon-arrow-2:before {
+  content: "\e926";
 }
 .icon-search-1:before {
   content: "\e922";
@@ -138,10 +230,6 @@
   content: "\e921";
   color: #dd5c16;
 }
-.icon-Frame-1000006967-1:before {
-  content: "\e925";
-  color: #dd5c16;
-}
 .icon-arrow-1:before {
   content: "\e916";
   color: #dd5c16;
@@ -149,6 +237,9 @@
 .icon-arrow:before {
   content: "\e917";
   color: #fff;
+}
+.icon-Vector-231:before {
+  content: "\e92d";
 }
 .icon-warning:before {
   content: "\e915";
