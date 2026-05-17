@@ -1,7 +1,6 @@
 .sign-up {
   min-height: calc(100vh - 80px);
   padding: 55px 0 40px;
-  background: #f9f9f9;
 }
 
 .title-sign-up {
@@ -40,7 +39,7 @@
   text-align: center;
   transition: 0.3s ease;
   position: relative;
-  overflow: visible; 
+  overflow: visible;
 }
 
 .icon-sign-up {
@@ -53,24 +52,12 @@
   width: 150px;
   height: auto;
   transition: 0.35s ease;
+  filter: brightness(0) saturate(100%) invert(70%);
 }
 
 .box-sign-up:hover .icon-sign-up img {
   transform: scale(0.9);
   filter: brightness(0) saturate(100%) invert(68%) sepia(58%) saturate(748%) hue-rotate(165deg) brightness(101%) contrast(101%);
-}
-
-.icon-sign-up span {
-  display: inline-block;
-  font-size: 108px;
-  color: #b1b1b1;
-  line-height: 1;
-  transition: 0.4s ease;
-}
-
-.box-sign-up:hover .icon-sign-up span {
-  color: #38bdf8;
-  transform: scale(1.05);
 }
 
 .hover-stats {
@@ -330,7 +317,7 @@
   justify-content: center;
 }
 
-.signup-text p {
+.signup-text span {
   color: #dd5c16;
   font-weight: 700;
   padding: 0px 5px;
@@ -358,10 +345,6 @@
   .box-sign-up {
     min-height: 390px;
     padding: 34px 22px 26px;
-  }
-
-  .icon-sign-up span {
-    font-size: 95px;
   }
 
   .about-sign-up h3 {
@@ -420,10 +403,6 @@
     min-height: 340px;
   }
 
-  .icon-sign-up span {
-    font-size: 82px;
-  }
-
   .about-sign-up h3 {
     font-size: 24px;
   }
@@ -463,10 +442,6 @@
 
   .icon-sign-up {
     margin-bottom: 18px;
-  }
-
-  .icon-sign-up span {
-    font-size: 70px;
   }
 
   .about-sign-up h3 {
@@ -537,10 +512,6 @@
     min-height: 270px;
     border-radius: 18px;
     padding: 22px 14px 18px;
-  }
-
-  .icon-sign-up span {
-    font-size: 58px;
   }
 
   .about-sign-up h3 {

@@ -84,7 +84,7 @@
           <p class="signup-text">
             {{ $t('loginPage.thisAccont') }}
             <router-link to="/login">
-              <p>{{ $t('loginPage.title') }}</p>
+              <span>{{ $t('loginPage.title') }}</span>  
             </router-link>
           </p>
         </div>
@@ -97,5 +97,5 @@
 import signup from '../scripts/signup'
 export default signup
 </script>
-<style src="../styles/resposive/signup-responsive.css"></style>
 <style src="../styles/sugnup.css"></style>
+<style src="../styles/resposive/signup-responsive.css"></style>
