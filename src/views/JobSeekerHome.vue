@@ -299,7 +299,7 @@
                 </div>
                 <div class="col-lg-5-custom col-md-3 col-sm-12 col-12">
                   <div class="about-partners">
-                    <img class="img4" src="@/assets/image 8.png" alt="img">
+                    <img class="img4" src="@/assets/img4partners.png" alt="img">
                     <p>{{ text.home.partners.jobsCount }}</p>
                   </div>
                 </div>
