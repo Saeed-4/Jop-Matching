@@ -50,7 +50,7 @@
                         
                           <div class="job-meta">
                             <div class="img-job-meta">
-                              <img src="@/assets/Rectangle 652 (2).png" alt="img">
+                              <img src="@/assets/Rectangle652(2).png" alt="img">
                               <span class="company-name"><strong>Blue ltd.</strong></span>
                             </div>
                             <div class="location-job-meta">
@@ -281,19 +281,19 @@
               <div class="all-partners">
                 <div class="col-lg-5-custom col-md-3 col-sm-12 col-12">
                   <div class="about-partners">
-                    <img class="img1" src="@/assets/شعار ديوان الموظفين.png" alt="img">
+                    <img class="img1" src="@/assets/img1partners.png" alt="img">
                     <p>{{ text.home.partners.jobsCount }}</p>
                   </div>
                 </div>
                 <div class="col-lg-5-custom col-md-3 col-sm-12 col-12">
                   <div class="about-partners">
-                    <img class="img2" src="@/assets/image 10.png" alt="img">
+                    <img class="img2" src="@/assets/img2partners.png" alt="img">
                     <p>{{ text.home.partners.jobsCount }}</p>
                   </div>
                 </div>
                 <div class="col-lg-5-custom col-md-3 col-sm-12 col-12">
                   <div class="about-partners">
-                    <img class="img1" src="@/assets/joby.png" alt="img">
+                    <img class="img1" src="@/assets/img3partners.png" alt="img">
                     <p>{{ text.home.partners.jobsCount }}</p>
                   </div>
                 </div>
@@ -305,7 +305,7 @@
                 </div>
                 <div class="col-lg-5-custom col-md-3 col-sm-12 col-12">
                   <div class="about-partners">
-                    <img class="img5" src="@/assets/Group.png" alt="img">
+                    <img class="img5" src="@/assets/img5partners.png" alt="img">
                     <p>{{ text.home.partners.jobsCount }}</p>
                   </div>
                 </div>
@@ -339,7 +339,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
-                  <img src="@/assets/Rectangle 652 (1).png" alt="img">
+                  <img src="@/assets/Rectangle652(1).png" alt="img">
                 </div>
                 <div class="titles-Options">
                   <h2>{{ text.home.latestJobs.jobs[0].title }}</h2>
@@ -361,7 +361,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
-                  <img src="@/assets/Rectangle 652 (2).png" alt="img">
+                  <img src="@/assets/Rectangle652(2).png" alt="img">
                 </div>
                 <div class="titles-Options">
                   <h2>{{ text.home.latestJobs.jobs[1].title }}</h2>
@@ -383,7 +383,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
-                  <img src="@/assets/Rectangle 652 (3).png" alt="img">
+                  <img src="@/assets/Rectangle652 (3).png" alt="img">
                 </div>
                 <div class="titles-Options">
                   <h2>{{ text.home.latestJobs.jobs[2].title }}</h2>
@@ -405,7 +405,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
-                  <img src="@/assets/Rectangle 652 (3).png" alt="img">
+                  <img src="@/assets/Rectangle652 (3).png" alt="img">
                 </div>
                 <div class="titles-Options">
                   <h2>{{ text.home.latestJobs.jobs[3].title }}</h2>
@@ -427,7 +427,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
-                  <img src="@/assets/Rectangle 652 (2).png" alt="img">
+                  <img src="@/assets/Rectangle652(2).png" alt="img">
                 </div>
                 <div class="titles-Options">
                   <h2>{{ text.home.latestJobs.jobs[4].title }}</h2>
@@ -449,7 +449,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
-                  <img src="@/assets/Rectangle 652 (1).png" alt="img">
+                  <img src="@/assets/Rectangle652(1).png" alt="img">
                 </div>
                 <div class="titles-Options">
                   <h2>{{ text.home.latestJobs.jobs[5].title }}</h2>
