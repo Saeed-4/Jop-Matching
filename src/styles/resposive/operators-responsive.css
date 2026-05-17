@@ -1,0 +1,196 @@
+@media (max-width: 1399.98px) {
+  .header-Operators {
+    min-height: 120px;
+    padding: 20px 0;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    width: 100%;
+  }
+
+  .section-operators {
+    min-height: 320px;
+  }
+
+  .operator-name {
+    font-size: 16px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header-Operators {
+    min-height: 115px;
+    padding: 18px 0;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    width: 100%;
+  }
+
+  .section-operators {
+    min-height: 320px;
+  }
+
+  .operator-name {
+    font-size: 16px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-Operators {
+    min-height: 110px;
+    padding: 18px 0;
+  }
+
+  .title-Operators {
+    align-items: center;
+    text-align: center;
+  }
+
+  .decor-circle.left-big,
+  .decor-circle.right-big {
+    transform: scale(0.85);
+  }
+
+  .Operators .container {
+    width: 94%;
+  }
+
+  .filters-bar {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .section-operators {
+    min-height: 300px;
+    padding: 18px 16px;
+  }
+
+  .img-section {
+    width: 56px;
+    height: 56px;
+  }
+
+  .operator-name {
+    font-size: 15px;
+  }
+
+  .operator-location {
+    font-size: 13px;
+  }
+
+  .pagination-box {
+    margin-top: 24px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .Operators .container {
+    width: 94%;
+  }
+
+  .header-Operators {
+    min-height: 95px;
+    padding: 16px 0;
+  }
+
+  .title-Operators {
+    text-align: center;
+  }
+
+  .row {
+    row-gap: 14px;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 14px;
+  }
+
+  .section-operators {
+    padding: 16px 14px;
+  }
+
+  .img-section {
+    width: 52px;
+    height: 52px;
+  }
+
+  .operator-name {
+    font-size: 15px;
+  }
+
+  .about-section p {
+    font-size: 13px;
+  }
+
+  .pagination-box {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .Operators .container {
+    width: 92%;
+  }
+
+  .header-Operators {
+    min-height: 85px;
+    padding: 14px 0;
+  }
+
+  .filter-box.large,
+  .filter-box.small {
+    min-height: 44px;
+    padding: 0 12px;
+  }
+
+  .img-section {
+    width: 48px;
+    height: 48px;
+  }
+
+  .operator-name {
+    font-size: 14px;
+  }
+
+  .operator-location {
+    font-size: 11px;
+  }
+
+  .about-section p {
+    font-size: 12px;
+  }
+
+  .page-btn {
+    min-width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+}

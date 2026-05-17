@@ -3,7 +3,7 @@
     <div class="nav">
       <div class="container">
         <div class="img-nav">
-          <router-link to="/">
+          <router-link :to="localizedPath('/')">
             <img src="@/assets/Group 3.png" alt="logo">
           </router-link>
         </div>
@@ -17,23 +17,23 @@
             <div class="close-menu" @click="toggleMenu">✕</div>
           
             <ul>
-              <li><router-link to="/">{{ text.navbar.home }}</router-link></li>
-              <li><router-link to="/operators">{{ text.navbar.operators }}</router-link></li>
-              <li><router-link to="/JobOpportunities">{{ text.navbar.jobOpportunities }}</router-link></li>
-              <li><router-link to="/GovernmentJobs">{{ text.navbar.governmentJobs }}</router-link></li>
+              <li><router-link :to="localizedPath('/')">{{ $t('navbar.home')}}</router-link></li>
+              <li><router-link :to="localizedPath('/Operators')">{{ $t('navbar.operators') }}</router-link></li>
+              <li><router-link :to="localizedPath('/JobOpportunities')">{{$t('navbar.jobOpportunities') }}</router-link></li>
+              <li><router-link :to="localizedPath('/GovernmentJobs')">{{ $t('navbar.governmentJobs')}}</router-link></li>
             </ul>
           
             <div class="mobile-actions">
-              <button @click="toggleLang">
-                {{ currentLang === 'ar' ? 'EN' : 'AR' }}
+              <button @click="changeLang">
+                {{ locale === 'ar' ? 'EN' : 'AR' }}
               </button>
             
-              <router-link to="/login" class="mobile-btn login-btn">
-                {{ text.navbar.login }}
+              <router-link :to="localizedPath('/login')" class="mobile-btn login-btn">
+                {{ $t('navbar.login')}}
               </router-link>
             
-              <router-link to="/signup" class="mobile-btn signup-btn">
-                {{ text.navbar.newUser }}
+              <router-link :to="localizedPath('/signup')" class="mobile-btn signup-btn">
+                {{ $t('navbar.newUser') }}
               </router-link>
             </div>
           
@@ -41,15 +41,15 @@
 
         <div class="nav-links">
           <ul>
-            <li><router-link to="/">{{ text.navbar.home }}</router-link></li>
-            <li><router-link to="/operators">{{ text.navbar.operators }}</router-link></li>
-            <li><router-link to="/JobOpportunities">{{ text.navbar.jobOpportunities }}</router-link></li>
-            <li><router-link to="/GovernmentJobs">{{ text.navbar.governmentJobs }}</router-link></li>
+            <li><router-link :to="localizedPath('/')">{{ $t('navbar.home')}}</router-link></li>
+            <li><router-link :to="localizedPath('/Operators')">{{ $t('navbar.operators') }}</router-link></li>
+            <li><router-link :to="localizedPath('/JobOpportunities')">{{$t('navbar.jobOpportunities') }}</router-link></li>
+            <li><router-link :to="localizedPath('/GovernmentJobs')">{{ $t('navbar.governmentJobs')}}</router-link></li>
           </ul>
         </div>
 
         <div class="nav-links2">
-          <router-link to="/Search-results">
+          <router-link :to="localizedPath('/Search-results')">
             <div class="icon-research">
               <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 101 101" id="search">
                 <path d="M63.3 59.9c3.8-4.6 6.2-10.5 6.2-17 0-14.6-11.9-26.5-26.5-26.5S16.5 28.3 16.5 42.9 28.4 69.4 43 69.4c6.4 0 12.4-2.3 17-6.2l20.6 20.6c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4L63.3 59.9zm-20.4 4.7c-12 0-21.7-9.7-21.7-21.7s9.7-21.7 21.7-21.7 21.7 9.7 21.7 21.7-9.7 21.7-21.7 21.7z"></path>
@@ -58,17 +58,17 @@
           </router-link>
 
           <div class="lang-switch">
-            <button @click="toggleLang">
-              {{ currentLang === 'ar' ? 'EN' : 'AR' }}
+            <button @click="changeLang">
+              {{ $i18n.locale === 'ar' ? 'EN' : 'AR' }}
             </button>
           </div>
 
           <div class="login">
-            <router-link to="/login"><p>{{ text.navbar.login }}</p></router-link>
+            <router-link :to="localizedPath('/login')"><p>{{ $t('navbar.login') }}</p></router-link>
           </div>
 
           <div class="new-user">
-            <router-link to="/signup">{{ text.navbar.newUser }}</router-link>
+            <router-link :to="localizedPath('/signup')">{{ $t('navbar.newUser') }}</router-link>
           </div>
         </div>
       </div>
@@ -77,9 +77,11 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import messages from '@/data/lang'
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRouter, useRoute } from 'vue-router'
+
+const emit = defineEmits(['changeLang'])
 
 const isMenuOpen = ref(false)
 
@@ -87,23 +89,34 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
-const props = defineProps({
-  currentLang: {
-    type: String,
-    default: 'en'
+const { locale } = useI18n()
+const router = useRouter()
+const route = useRoute()
+
+const changeLang = () => {
+  const newLang = locale.value === 'ar' ? 'en' : 'ar'
+
+  locale.value = newLang
+  localStorage.setItem('lang', newLang)
+  emit('changeLang', newLang)
+
+  let path = route.path
+
+  if (newLang === 'en') {
+    path = path === '/' ? '/en' : `${path.replace(/\/en$/, '')}/en`
+  } else {
+    path = path.replace(/\/en$/, '') || '/'
   }
-})
 
-const emit = defineEmits(['changeLang'])
-
-const text = computed(() => messages[props.currentLang])
-
-const changeLang = (lang) => {
-  emit('changeLang', lang)
+  router.push(path)
 }
 
-const toggleLang = () => {
-  changeLang(props.currentLang === 'ar' ? 'en' : 'ar')
+const localizedPath = (path) => {
+  if (locale.value === 'en') {
+    return path === '/' ? '/en' : `${path}/en`
+  }
+
+  return path
 }
 </script>
 
@@ -112,7 +125,6 @@ const toggleLang = () => {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Tajawal', sans-serif;
 }
 
 ul {
@@ -172,16 +184,12 @@ li {
 .nav-links a {
   text-decoration: none;
   color: black;
-
-  font-family: 'Tajawal', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 30px;
   padding: 0 10px;
 }
@@ -247,7 +255,6 @@ li {
 }
 
 .login a p{
-  font-family: 'Tajawal', sans-serif;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 15px;
@@ -265,7 +272,6 @@ li {
 }
 
 .new-user a {
-  font-family: 'Tajawal', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,31 +404,6 @@ li {
   .icon-research {
     display: none !important;
   }
-}
-
-
-@font-face {
-  font-family: 'Tajawal';
-  src: url('@/assets/fonts/Tajawal/Tajawal-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Tajawal';
-  src: url('@/assets/fonts/Tajawal/Tajawal-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('@/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('@/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
-  font-weight: 600;
 }
 
 </style>

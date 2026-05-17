@@ -1,14 +1,6 @@
-import messages from '@/data/lang'
-import operatorLogo from '@/assets/Rectangle 652 (2).png'
+import { operators } from '@/data/operators'
 
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
   data() {
     return {
       currentPage: 1,
@@ -17,14 +9,14 @@ export default {
   },
 
   computed: {
-    text() {
-      return messages[this.currentLang]
-    },
-
     operatorsList() {
-      return this.text.operators.cards.map(card => ({
-        ...card,
-        logo: operatorLogo
+      const lang = this.$i18n.locale
+
+      return operators.map(operator => ({
+        ...operator,
+        name: operator.name[lang],
+        location: operator.location[lang],
+        description: operator.description[lang]
       }))
     },
 
@@ -34,8 +26,7 @@ export default {
 
     paginatedOperators() {
       const start = (this.currentPage - 1) * this.itemsPerPage
-      const end = start + this.itemsPerPage
-      return this.operatorsList.slice(start, end)
+      return this.operatorsList.slice(start, start + this.itemsPerPage)
     },
 
     visiblePages() {
@@ -45,14 +36,12 @@ export default {
 
       if (total <= 5) {
         for (let i = 1; i <= total; i++) pages.push(i)
+      } else if (current <= 3) {
+        pages.push(1, 2, 3, '...', total)
+      } else if (current >= total - 2) {
+        pages.push(1, '...', total - 2, total - 1, total)
       } else {
-        if (current <= 3) {
-          pages.push(1, 2, 3, '...', total)
-        } else if (current >= total - 2) {
-          pages.push(1, '...', total - 2, total - 1, total)
-        } else {
-          pages.push(1, '...', current, '...', total)
-        }
+        pages.push(1, '...', current, '...', total)
       }
 
       return pages

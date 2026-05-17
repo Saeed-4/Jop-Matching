@@ -1,13 +1,4 @@
-import messages from '@/data/lang'
-
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
   data() {
     return {
       currentStep: 1,
@@ -31,12 +22,6 @@ export default {
         password: '',
         confirmPassword: ''
       }
-    }
-  },
-
-  computed: {
-    t() {
-      return messages[this.currentLang].signupCompany
     }
   },
 

@@ -1,0 +1,203 @@
+@media (max-width: 1399.98px) {
+  .title-signup-company h2 {
+    font-size: 52px;
+  }
+
+  .title-signup-company p {
+    font-size: 20px;
+  }
+
+  .signup-company-box {
+    padding: 38px 32px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .signup-company-box {
+    padding: 34px 28px;
+  }
+
+  .title-signup-company h2 {
+    font-size: 46px;
+  }
+
+  .title-signup-company p {
+    font-size: 18px;
+  }
+
+  .step-item span {
+    font-size: 14px;
+  }
+
+  .input-company input,
+  .input-company select,
+  .input-company textarea {
+    height: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .signup-company {
+    padding: 50px 0;
+  }
+
+  .signup-company .container {
+    width: 94%;
+  }
+
+  .title-signup-company {
+    margin-bottom: 28px;
+  }
+
+  .title-signup-company h2 {
+    font-size: 40px;
+  }
+
+  .title-signup-company p {
+    font-size: 17px;
+  }
+
+  .signup-company-box {
+    padding: 30px 24px;
+    border-radius: 22px;
+  }
+
+  .steps-wrapper {
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .step-line {
+    display: none;
+  }
+
+  .form-row {
+    row-gap: 18px;
+  }
+
+  .input-company input,
+  .input-company select,
+  .input-company textarea {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .submit-company-btn {
+    height: 52px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .signup-company {
+    padding: 40px 0;
+  }
+
+  .signup-company .container {
+    width: 94%;
+  }
+
+  .title-signup-company h2 {
+    font-size: 34px;
+  }
+
+  .title-signup-company p {
+    font-size: 15px;
+  }
+
+  .signup-company-box {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .steps-wrapper {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .step-item {
+    width: 42px;
+    height: 42px;
+  }
+
+  .step-item span {
+    font-size: 12px;
+  }
+
+  .input-company label {
+    font-size: 13px;
+  }
+
+  .input-company input,
+  .input-company select,
+  .input-company textarea {
+    height: 46px;
+    font-size: 13px;
+    border-radius: 14px;
+  }
+
+  .input-company textarea {
+    min-height: 120px;
+  }
+
+  .submit-company-btn {
+    height: 48px;
+    font-size: 16px;
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .signup-company .container {
+    width: 92%;
+  }
+
+  .title-signup-company h2 {
+    font-size: 28px;
+  }
+
+  .title-signup-company p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .signup-company-box {
+    padding: 20px 14px;
+    border-radius: 16px;
+  }
+
+  .steps-wrapper {
+    gap: 8px;
+  }
+
+  .step-item {
+    width: 38px;
+    height: 38px;
+  }
+
+  .step-item span {
+    font-size: 11px;
+  }
+
+  .input-company label {
+    font-size: 12px;
+  }
+
+  .input-company input,
+  .input-company select,
+  .input-company textarea {
+    height: 44px;
+    font-size: 12px;
+    padding-inline: 12px;
+  }
+
+  .input-company textarea {
+    min-height: 100px;
+  }
+
+  .submit-company-btn {
+    height: 44px;
+    font-size: 15px;
+  }
+}

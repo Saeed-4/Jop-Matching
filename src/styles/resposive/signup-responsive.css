@@ -1,0 +1,161 @@
+@media (max-width: 1399.98px) {
+  .title-sign-up h2 {
+    font-size: 52px;
+  }
+
+  .title-sign-up p {
+    font-size: 20px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 32px;
+  }
+
+  .about-sign-up p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .box-sign-up {
+    min-height: 390px;
+    padding: 34px 22px 26px;
+  }
+
+  .icon-sign-up span {
+    font-size: 95px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 30px;
+  }
+
+  .about-sign-up p {
+    font-size: 17px;
+  }
+
+  .Create-sign-up p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .sign-up {
+    padding: 45px 0 36px;
+  }
+
+  .sign-up .container {
+    width: 94%;
+  }
+
+  .title-sign-up {
+    margin-bottom: 28px;
+  }
+
+  .title-sign-up h2 {
+    font-size: 44px;
+  }
+
+  .title-sign-up p {
+    font-size: 18px;
+  }
+
+  .box-sign-up {
+    min-height: 340px;
+  }
+
+  .icon-sign-up span {
+    font-size: 82px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 24px;
+  }
+
+  .about-sign-up p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sign-up {
+    padding: 38px 0 30px;
+  }
+
+  .title-sign-up h2 {
+    font-size: 36px;
+  }
+
+  .title-sign-up p {
+    font-size: 16px;
+  }
+
+  .box-sign-up {
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 28px 18px 22px;
+  }
+
+  .icon-sign-up {
+    margin-bottom: 18px;
+  }
+
+  .icon-sign-up span {
+    font-size: 70px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .about-sign-up p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .Create-sign-up {
+    margin-top: 20px;
+  }
+
+  .Create-sign-up p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sign-up .container {
+    width: 92%;
+  }
+
+  .title-sign-up h2 {
+    font-size: 30px;
+  }
+
+  .title-sign-up p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .box-sign-up {
+    min-height: 270px;
+    border-radius: 18px;
+    padding: 22px 14px 18px;
+  }
+
+  .icon-sign-up span {
+    font-size: 58px;
+  }
+
+  .about-sign-up h3 {
+    font-size: 19px;
+  }
+
+  .about-sign-up p {
+    font-size: 13px;
+  }
+
+  .Create-sign-up p {
+    font-size: 17px;
+  }
+}

@@ -27,7 +27,6 @@
 }
 
 .filter-label {
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #6f6f6f;
@@ -40,7 +39,7 @@
 }
 
 .search-job-box {
-  padding: 0 6px 0 16px;
+  padding: 0 6px 0 6px;
   justify-content: space-between;
   gap: 12px;
 }
@@ -50,7 +49,6 @@
   border: none;
   outline: none;
   background: transparent;
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   color: #7a7a7a;
   text-align: right;
@@ -108,7 +106,6 @@
   border-radius: 999px;
   background: #fff2e7;
   color: #dd5c16;
-  font-family: 'Tajawal', sans-serif;
   font-size: 13px;
   font-weight: 500;
 }
@@ -123,25 +120,44 @@
 .job-card-action {
   width: 180px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   padding-top: 4px;
 }
 
 .apply-btn {
-  width: 120px;
-  height: 40px;
+  width: 162px;
+  height: 36px;
   border: none;
   border-radius: 999px;
   background: #e46616;
   color: #fff;
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   font-weight: 700;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   cursor: pointer;
+}
+
+.apply-btn span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.icon-arrow-right-svgrepo-com {
+  display: inline-block;
+  font-size: 14px;
+}
+
+html[dir="rtl"] .icon-arrow-right-svgrepo-com,
+.ar .icon-arrow-right-svgrepo-com {
+  transform: scaleX(-1);
+}
+
+.ar .icon-arrow-right-svgrepo-com {
+  transform: scaleX(-1);
 }
 
 .apply-btn .icon-arrow {
@@ -166,7 +182,6 @@
 
 .job-card-head h2 {
   margin: 0;
-  font-family: 'Tajawal', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #1d1d1d;
@@ -174,7 +189,6 @@
 }
 
 .job-date {
-  font-family: 'Tajawal', sans-serif;
   font-size: 13px;
   color: #b7b7b7;
 }
@@ -185,7 +199,6 @@
   justify-content: flex-start;
   gap: 10px;
   margin-bottom: 16px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 17px;
   color: #2c2c2c;
 }
@@ -198,7 +211,6 @@
 
 .job-description {
   margin: 0 0 18px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   line-height: 2;
   color: #9b9b9b;
@@ -229,7 +241,6 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 13px;
   color: #8d8d8d;
   background: #fff;
@@ -251,7 +262,6 @@
   border: 1px solid #e48a52;
   background: #fff;
   color: #dd5c16;
-  font-family: 'Tajawal', sans-serif;
   font-size: 22px;
   font-weight: 500;
   cursor: pointer;

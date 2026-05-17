@@ -23,7 +23,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import messages from '@/data/lang'
+import messages from '@/locales'
 import { ref } from 'vue'
 
 const isMenuOpen = ref(false)
@@ -57,7 +57,6 @@ const toggleLang = () => {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Tajawal', sans-serif;
 }
 
 .nav {
@@ -121,7 +120,6 @@ const toggleLang = () => {
 
 .lang-switch button {
   all: unset;
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.5;
@@ -131,8 +129,6 @@ const toggleLang = () => {
   justify-content: center;
   cursor: pointer;
 }
-
-/* ========= responsive ========= */
 
 @media (max-width: 991px) {
   .nav {
@@ -208,31 +204,5 @@ const toggleLang = () => {
   .lang-switch button {
     font-size: 13px;
   }
-}
-
-/* ========= fonts ========= */
-
-@font-face {
-  font-family: 'Tajawal';
-  src: url('@/assets/fonts/Tajawal/Tajawal-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Tajawal';
-  src: url('@/assets/fonts/Tajawal/Tajawal-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('@/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('@/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
-  font-weight: 600;
 }
 </style>

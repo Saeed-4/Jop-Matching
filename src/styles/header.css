@@ -8,14 +8,6 @@
   align-items: center;
 }
 
-.header-Operators .container {
-  width: 90%;
-  max-width: 1350px;
-  margin: auto;
-  position: relative;
-  z-index: 2;
-}
-
 .title-Operators {
   display: flex;
   flex-direction: column;
@@ -25,7 +17,6 @@
 
 .title-Operators h2 {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #000;
@@ -33,7 +24,6 @@
 
 .title-Operators p {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #8f98a3;

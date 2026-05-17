@@ -7,24 +7,8 @@ a{
   flex-direction: column;
 }
 
-.all-1{
-  background-color: #fff;
-}
-.all-2{
-  background-color: #F7F7F7;
-}
-
 .al{
   padding: 36px 0px;
-}
-
-
-[dir="ltr"] .news-slider {
-  transform: scaleX(-1);
-}
-
-[dir="ltr"] .news-arrow .icon-arrow {
-  transform: scaleX(-1);
 }
 
 .Key-partners{
@@ -58,10 +42,10 @@ a{
   inset: 0;
   background: repeating-linear-gradient(
     135deg,
-    rgba(255,255,255,0.02) 0px,
-    rgba(255,255,255,0.02) 250px,
-    rgba(255,255,255,0.05) 250px,
-    rgba(255,255,255,0.05) 450px
+    rgba(255, 255, 255, 0.06) 0px,
+    rgba(255, 255, 255, 0.06) 220px,
+    rgba(255, 255, 255, 0.13) 220px,
+    rgba(255, 255, 255, 0.13) 420px
   );
 }
 
@@ -83,17 +67,14 @@ a{
 }
 
 .title-decor h1 {
-  font-family: "Tajawal", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.6;
   color: #fff;
   margin: 0 0 -10px;
-  
 }
 
 .title-decor p {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.8;
@@ -107,11 +88,10 @@ a{
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin-top: 47px;
+  margin-top: 32px;
 }
 
 .title-box h3 {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 1.7;
@@ -149,20 +129,16 @@ a{
   background: #f3f3f3;
   border-radius: 12px;
   padding: 0 42px 0 16px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   color: #444;
 }
 
 .input-box span {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 14px;
   font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.icon-Polygon-1{
+  font-size: 7px !important;
 }
 
 .input-box .icon-search {
@@ -171,26 +147,7 @@ a{
   right: 12px;
   transform: translateY(-50%);
   color: #dd5c16;
-}
-
-.select-box .icon-Polygon-1 {
-  position: absolute;
-  top: 50%;
-  left: 12px; /* عربي */
-  transform: translateY(-50%);
-  font-size: 10px;
-  color: #dd5c16;
-  pointer-events: none;
-}
-
-.ar .select-box .icon-Polygon-1 {
-  left: 12px;
-  right: auto;
-}
-
-.en .select-box .icon-Polygon-1 {
-  right: 12px;
-  left: auto;
+  display: flex;
 }
 
 .select-box select {
@@ -206,6 +163,17 @@ a{
   color: #dd5c16; 
   background: transparent;
   appearance: none; 
+}
+
+.select-box .icon-Polygon-1 {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 7px !important;
+  color: #dd5c16;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .select-box select option {
@@ -230,26 +198,44 @@ a{
   border-radius: 12px;
   background: #dd5c16;
   color: #fff;
-  font-family: 'Tajawal', sans-serif;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
 }
 
-.hero-left{
-    width: 100%;
-    height: auto;
+.hero-left {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.person img{
-    width: 100%;
-    height: auto;
+.hero-left::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  width: 100%;
+  height: -webkit-fill-available;
+  background-image: url('@/assets/8cd.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.person {
+  position: relative;
+}
+
+.person img {
+  width: 100%;
+  height: auto;
 }
 
 .wave {
   position: absolute;
   bottom: 0;
-  left: 0;
+  inset-inline-start: 0;
   width: 100%;
   height: 326px;
   overflow: hidden;
@@ -278,7 +264,6 @@ a{
 }
 
 .categorie-title h2{
-    font-family: 'Tajawal', sans-serif;
     font-weight: 700;
     font-style: bold;
     font-size: 30px;
@@ -291,7 +276,6 @@ a{
 }
 
 .categorie-title p{
-    font-family: 'Tajawal', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
@@ -317,7 +301,6 @@ a{
 .item p{
     margin: 0;
     flex: 1;
-    font-family: "Tajawal", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
@@ -339,9 +322,8 @@ a{
 }
 
 .black h1{
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-weight: 275;
+    color: #595959;
+    font-weight: 100;
     font-size: 74px;
     line-height: 150%;
     letter-spacing: 0;
@@ -352,7 +334,6 @@ a{
 }
 
 .black p{
-    font-family: "Tajawal", sans-serif;
     font-weight: 500;
     font-size: 19px;
     line-height: 150%;
@@ -366,7 +347,6 @@ a{
 
 .orange h1{
     color: #DD5C16;
-    font-family: "Poppins";
     font-weight: 600;
     font-style: normal;
     font-size: 74px;
@@ -379,7 +359,6 @@ a{
 }
 
 .orange p{
-    font-family: "Tajawal", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 150%;
@@ -438,7 +417,6 @@ a{
   height: 100px;
 }
 .about-partners p{
-  font-family: "Tajawal", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -484,7 +462,7 @@ a{
   width: 105%;
   max-width: 360px;
   top: -55px;
-  left: 23px;
+  inset-inline-start: 23px;
   display: block;
   object-fit: contain;
 }
@@ -500,7 +478,6 @@ a{
 }
 
 .small-title {
-  font-family: "Tajawal", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 150%;
@@ -513,7 +490,6 @@ a{
 }
 
 .card-content h2 {
-  font-family: "Tajawal", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 150%;
@@ -522,7 +498,6 @@ a{
 }
 
 .card-content p {
-  font-family: "Tajawal", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 150%;
@@ -578,7 +553,7 @@ a{
   background: #EFB596;
   top: 6px;
   left: 590px;
-  opacity: 0.8; /* شفافية تبعته*/
+  opacity: 0.8; 
 }
 
 .circle-right-l{
@@ -619,7 +594,6 @@ a{
 }
 
 .buttom-Latest-Jobs a{
-  font-family: "Tajawal", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
@@ -674,7 +648,6 @@ a{
 }
 
 .titles-Options h2{
-    font-family: "Tajawal", sans-serif;
     font-weight: 500;
     font-size: 17px;
     line-height: 78%;
@@ -695,15 +668,13 @@ a{
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-family: "Tajawal", sans-serif;
+  gap: 4px;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .color-Re{
   color: #000000;
-  font-family: "Tajawal";
   font-weight: 300;
   font-size: 12px;
   line-height: 150%;
@@ -714,7 +685,6 @@ a{
 
 .color-b{
   color: #000000;
-  font-family: "Tajawal";
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
@@ -780,7 +750,7 @@ a{
 .slider-wrapper {
   position: relative;
   width: 100%;
-  min-height: 420px;
+  min-height: 261px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -803,7 +773,7 @@ a{
 .active-card {
   z-index: 3;
   opacity: 1;
-  transform: scale(1);/* الحجم */
+  transform: scale(1);
 }
 
 .side-card {
@@ -842,7 +812,6 @@ a{
 
 .top-jobs-slider-preview h2 {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-size: 12px;
   font-weight: 500;
   color: #000;
@@ -867,7 +836,6 @@ a{
 
 .title-jobs-slider-preview h1 {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #111;
@@ -875,14 +843,12 @@ a{
 
 .title-jobs-slider-preview p {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-size: 11px;
   color: #a4a4a4;
 }
 
 .Center-jobs-slider-preview > p {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-size: 12px;
   line-height: 1.8;
   color: #777;
@@ -904,7 +870,6 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Tajawal", sans-serif;
   font-size: 10px;
   color: #848484;
 }
@@ -918,7 +883,6 @@ a{
 
 .bottom-jobs-slider-preview > p {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-size: 11px;
   color: #DD5C16;
   text-align: center;
@@ -940,7 +904,6 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Tajawal", sans-serif;
   font-size: 15px;
   font-weight: 700;
 }
@@ -990,7 +953,7 @@ a{
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   box-shadow: 0 0 8px rgba(0,0,0,0.06);
-  transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .prev .icon-arrow {
@@ -1009,10 +972,10 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 0px;
+    padding: 40px 0px 0px 0px;
+    
 }
 .categorie-title-or h2{
-    font-family: 'Tajawal', sans-serif;
     font-weight: 700;
     font-style: bold;
     font-size: 30px;
@@ -1024,7 +987,6 @@ a{
     margin: 0px;
 }
 .categorie-title-or p{
-    font-family: 'Tajawal', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
@@ -1036,13 +998,12 @@ a{
 }
 
 .title-width{
-  width: 569px;
+  width: 100%;
   height: 297px;
   padding: 40px 0px 0px 0px;
 }
 
 .title-width b{
-  font-family: "Helvetica", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 156%;
@@ -1067,7 +1028,6 @@ a{
 
 .news-content h3 {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 150%;
@@ -1076,7 +1036,6 @@ a{
 
 .sub-title {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -1090,7 +1049,6 @@ a{
 }
 
 .news-date {
-  font-family: "Tajawal", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #DD5C16;
@@ -1098,7 +1056,6 @@ a{
 
 .title-width h2 {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 150%;
@@ -1107,7 +1064,6 @@ a{
 
 .title-width p {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 170%;
@@ -1115,7 +1071,6 @@ a{
 }
 
 .title-width span {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -1250,9 +1205,16 @@ a{
   padding: 50px 0px 0px 0px;
 }
 
-.img-Lots img{
+.img-Lots{
   width: 100%;
-  height: auto;
+  height: 649px;
+  overflow: hidden;
+}
+
+.img-Lots img{
+  width: 97%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .title-Lots{
@@ -1261,7 +1223,6 @@ a{
 }
 
 .title-Lots h2{
-  font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 32px;
@@ -1273,7 +1234,6 @@ a{
 }
 
 .title-Lots span{
-  font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 35px;
@@ -1284,7 +1244,6 @@ a{
 }
 
 .title-Lots p{
-  font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -1310,7 +1269,6 @@ a{
   gap: 25px;
 }
 .small-faq-title{
-  font-family: 'Tajawal', sans-serif;
   display: inline-flex;
   width: 99px;
   height: 26px;
@@ -1328,7 +1286,6 @@ a{
 }
 
 .title-fqa h2{
-  font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 60px;
@@ -1344,7 +1301,6 @@ a{
 }
 
 .title-fqa p{
-  font-family: 'Tajawal', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 15px;
@@ -1354,7 +1310,6 @@ a{
 }
 
 .title-fqa a{
-  font-family: 'Tajawal', sans-serif;
   width: 154px;
   height: 35px;
   gap: 10px;
@@ -1387,11 +1342,13 @@ a{
   padding: 10px;
   gap: 10px;
   justify-content: center;
-  height: auto;
+  height: 66px;
 }
 
 .faq-item.active {
   background: #F8F3EC;
+  height: auto;
+  border: 0px;
 }
 
 .faq-question {
@@ -1403,7 +1360,8 @@ a{
 }
 
 .vector {
-  transform: rotate(270deg) transform 0.3s ease;
+  transform: rotate(270deg);
+  transition: 0.3s ease;
   margin: 0px 20px;
 }
 
@@ -1411,7 +1369,6 @@ a{
   transform: rotate(90deg);
 }
 .faq-question h3 {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
@@ -1442,386 +1399,62 @@ a{
 }
 
 .faq-answer {
-  margin-top: 18px;
   padding-right: 40px;
 }
 
 .faq-answer p {
   margin: 0;
-  font-family: "Tajawal", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.9;
   color: #6E6E6E;
 }
 
-.ar {
-  direction: rtl;
-  text-align: right;
-  font-family: "Tajawal", sans-serif;
-}
-
-.en {
-  direction: ltr;
-  text-align: left;
-  font-family: "Poppins", sans-serif;
-}
-
-.en .title-decor h1,
-.en .title-decor p,
-.en .title-box h3,
-.en .categorie-title h2,
-.en .categorie-title p,
-.en .categorie-title-or h2,
-.en .categorie-title-or p,
-.en .titles-Options h2,
-.en .paragraph-Options p,
-.en .card-content,
-.en .title-width h2,
-.en .title-width p,
-.en .title-width b,
-.en .title-width span,
-.en .title-Lots h2,
-.en .title-Lots span,
-.en .title-Lots p,
-.en .title-fqa h2,
-.en .title-fqa p,
-.en .faq-question h3,
-.en .faq-answer p,
-.en .top-jobs-slider-preview h2,
-.en .title-jobs-slider-preview h1,
-.en .title-jobs-slider-preview p,
-.en .Center-jobs-slider-preview > p,
-.en .bottom-jobs-slider-preview > p,
-.en .about-partners p,
-.en .item p,
-.en .black p,
-.en .orange p {
-  text-align: left;
-  direction: ltr;
-}
-
-.ar .title-decor h1,
-.ar .title-decor p,
-.ar .title-box h3,
-.ar .categorie-title h2,
-.ar .categorie-title p,
-.ar .categorie-title-or h2,
-.ar .categorie-title-or p,
-.ar .titles-Options h2,
-.ar .paragraph-Options p,
-.ar .card-content,
-.ar .title-width h2,
-.ar .title-width p,
-.ar .title-width b,
-.ar .title-width span,
-.ar .title-Lots h2,
-.ar .title-Lots span,
-.ar .title-Lots p,
-.ar .title-fqa h2,
-.ar .title-fqa p,
-.ar .faq-question h3,
-.ar .faq-answer p,
-.ar .top-jobs-slider-preview h2,
-.ar .title-jobs-slider-preview h1,
-.ar .title-jobs-slider-preview p,
-.ar .Center-jobs-slider-preview > p,
-.ar .bottom-jobs-slider-preview > p,
-.ar .about-partners p,
-.ar .item p,
-.ar .black p,
-.ar .orange p {
-  text-align: right;
-  direction: rtl;
-}
-
-.en .hero .row {
-  flex-direction: row;
-}
-
-.ar .search-box {
-  direction: rtl;
-}
-
-.en .search-box {
-  direction: ltr;
-}
-
-
-
-.en .search-box .input {
-  display: flex;
-  gap: 14px;
-  width: 100%;
-}
-
-.ar .search-box input {
-  text-align: right;
-}
-
-.ar .paragraph-Options,
-.ar .Option,
-.ar .Apply-now,
-.ar .title-top-jobs,
-.ar .top-jobs-slider-preview,
-.ar .faq-question,
-.ar .Jobs,
-.ar .nav-links2 {
-  direction: rtl;
-}
-
-.en .paragraph-Options,
-.en .Option,
-.en .Apply-now,
-.en .title-top-jobs,
-.en .top-jobs-slider-preview,
-.en .faq-question,
-.en .Jobs,
-.en .nav-links2 {
-  direction: ltr;
-}
-
-.en .card-content {
-  align-items: flex-start;
-}
-
-.ar .card-content {
-  align-items: flex-start;
-}
-
-.en .title-Lots p img,
-.en .faq-mark,
-.en .icon-sector,
-.en .icon-Vector {
-  margin-right: 0;
-}
-
-.ar .title-Lots p img,
-.ar .faq-mark,
-.ar .icon-sector,
-.ar .icon-Vector {
-  margin-left: 0;
-}
-
-.en .Options-jop {
-  direction: ltr;
-}
-
-.ar .Options-jop {
-  direction: rtl;
-}
-
-.en .icon-Options {
-  text-align: end;
-}
-
-.ar .icon-Options {
-  text-align: end;
-}
-
-.en .company-card {
-  direction: ltr;
-}
-
-.ar .company-card {
-  direction: rtl;
-}
-
-.en .card-company {
-  direction: ltr;
-}
-
-.ar .card-company {
-  direction: rtl;
-}
-
-.en .faq-item {
-  direction: ltr;
-}
-
-.ar .faq-item {
-  direction: rtl;
-}
-
-.en .faq-answer {
-  padding-right: 0;
-  padding-left: 40px;
-}
-
-.ar .faq-answer {
-  padding-right: 40px;
-  padding-left: 0;
-}
-
-.ar .vector {
-  transform: rotate(270deg);
-}
-
-.ar .vector.rotated {
-  transform: rotate(90deg);
-}
-
-.en .vector {
-  transform: rotate(270deg);
-}
-
-.en .vector.rotated {
-  transform: rotate(270deg);
-}
-
-.en .news-arrow .icon-arrow {
-  transform: rotate(0deg);
-}
-
-.ar .news-arrow .icon-arrow {
-  transform: rotate(-180deg);
-}
-
-.en .left-card {
-  left: 0;
-  right: auto;
-}
-
-.en .right-card {
-  right: 0;
-  left: auto;
-}
-
-.ar .left-card {
-  left: 0;
-  right: auto;
-}
-
-.ar .right-card {
-  right: 0;
-  left: auto;
-}
-
-.en .title-width,
-.en .title-Lots,
-.en .title-fqa,
-.en .categorie-title,
-.en .categorie-title-or {
-  align-items: flex-start;
-}
-
-.en .categorie-title a,
-.en .title-fqa a,
-.en .buttom-Latest-Jobs,
-.en .Apply-now a {
-  text-align: center;
-  direction: ltr;
-}
-
-.ar .categorie-title a,
-.ar .title-fqa a,
-.ar .buttom-Latest-Jobs,
-.ar .Apply-now a {
-  text-align: center;
-  direction: rtl;
-}
-
-.en nav,
-.en .nav,
-.en .nav .container,
-.en .nav-links ul,
-.en .nav-links2 {
-  direction: ltr;
-}
-
-.ar nav,
-.ar .nav,
-.ar .nav .container,
-.ar .nav-links ul,
-.ar .nav-links2 {
-  direction: rtl;
-}
-
-.en .nav-links ul,
-.en .nav-links2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.ar .nav-links ul,
-.ar .nav-links2 {
-  display: flex;
-}
-
-@media (max-width: 991px) {
-  .en .hero .row,
-  .ar .hero .row {
-    flex-direction: column;
-  }
-
-  .en .title-Lots,
-  .ar .title-Lots,
-  .en .title-fqa,
-  .ar .title-fqa,
-  .en .title-width,
-  .ar .title-width {
-    width: 100%;
-    align-items: center;
-  }
-
-  .en .title-decor h1,
-  .en .title-decor p,
-  .en .title-box h3,
-  .en .categorie-title h2,
-  .en .categorie-title p,
-  .en .categorie-title-or h2,
-  .en .categorie-title-or p,
-  .en .title-width h2,
-  .en .title-width p,
-  .en .title-Lots h2,
-  .en .title-Lots p,
-  .en .title-fqa h2,
-  .en .title-fqa p,
-  .en .faq-question h3,
-  .en .faq-answer p,
-  .ar .title-decor h1,
-  .ar .title-decor p,
-  .ar .title-box h3,
-  .ar .categorie-title h2,
-  .ar .categorie-title p,
-  .ar .categorie-title-or h2,
-  .ar .categorie-title-or p,
-  .ar .title-width h2,
-  .ar .title-width p,
-  .ar .title-Lots h2,
-  .ar .title-Lots p,
-  .ar .title-fqa h2,
-  .ar .title-fqa p,
-  .ar .faq-question h3,
-  .ar .faq-answer p {
-    text-align: center;
-  }
-}
-
-
 .select-box {
+  width: 251px;
+  height: 46px;
   position: relative;
   cursor: pointer;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background: #F3F3F3;
+  border-radius: 12px;
 }
 
 .dropdown {
   position: absolute;
-  top: 110%;
+  top: 49px;
+  right: 0;
   width: 100%;
   background: #fff;
-  border: 1px solid #dd5c16;
-  border-radius: 15px;
-  max-height: 200px; 
-  overflow-y: auto; 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  z-index: 1000;
+  border-radius: 12px;
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+  z-index: 9999;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background: #dd5c16;
+  border-radius: 10px;
 }
 
 .dropdown li {
   padding: 10px 15px;
   color: #dd5c16;
+  cursor: pointer;
   transition: 0.2s;
 }
 
@@ -1835,7 +1468,6 @@ a{
   border: none;
   outline: none;
   background: transparent;
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   color: #7a7a7a;
   cursor: pointer;
@@ -1847,22 +1479,4 @@ a{
   pointer-events: none;
 }
 
-.ar .input-box .icon-search {
-  right: 12px;
-  left: auto;
-}
 
-.ar .select-box .icon-Polygon-1 {
-  left: 12px;
-  right: auto;
-}
-
-.en .input-box .icon-search {
-  left: 12px;
-  right: auto;
-}
-
-.en .select-box .icon-Polygon-1 {
-  right: 12px;
-  left: auto;
-}

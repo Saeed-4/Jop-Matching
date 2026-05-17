@@ -1,5 +1,5 @@
 <template>
-  <div class="Operators" :dir="currentLang === 'ar' ? 'rtl' : 'ltr'">
+  <div class="Operators">
     <div class="header-Operators">
       <span class="decor-circle left-big"></span>
       <span class="decor-circle left-small"></span>
@@ -10,8 +10,8 @@
 
       <div class="container">
         <div class="title-Operators">
-          <h2>{{ text.operators.header.title }}</h2>
-          <p>{{ text.operators.header.breadcrumb }}</p>
+          {{ $t('operators.header.title') }}
+          {{ $t('operators.header.breadcrumb') }}
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
         <div class="col-lg-6 col-md-12 col-sm-12 col-12">
           <div class="filters-bar">
             <div class="filter-box large search-box">
-              <input type="text" :placeholder="text.operators.filters.searchPlaceholder" />
+              <input type="text" :placeholder="$t('operators.filters.searchPlaceholder')" />
               <span class="icon-search"></span>
             </div>
           </div>
@@ -30,7 +30,7 @@
         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
           <div class="filters-bar">
             <div class="filter-box small">
-              <span class="filter-text">{{ text.operators.filters.sector }}</span>
+              <span class="filter-text">{{ $t('operators.filters.sector') }}</span>
               <div class="down">
                 <span class="icon-arrow-1"></span>
               </div>
@@ -41,7 +41,7 @@
         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
           <div class="filters-bar">
             <div class="filter-box small">
-              <span class="filter-text">{{ text.operators.filters.companySize }}</span>
+              <span class="filter-text">{{ $t('operators.filters.companySize') }}</span>
               <div class="down">
                 <span class="icon-arrow-1"></span>
               </div>
@@ -107,8 +107,6 @@ import Operators from '../scripts/Operators.js'
 
 export default Operators
 </script>
-
-<style src="../styles/Operators.css"></style>
-<style src="../styles/font.css"></style>
+<style src="../styles/resposive/operators-responsive.css"></style>
+<style scoped src="../styles/Operators.css"></style>
 <style src="../styles/header.css"></style>
-<style src="../styles/resposive.css"></style>

@@ -1,0 +1,177 @@
+@media (max-width: 1399.98px) {
+  .title-login h2 {
+    font-size: 58px;
+  }
+
+  .title-login p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .title-login h2 {
+    font-size: 52px;
+  }
+
+  .title-login p {
+    font-size: 21px;
+  }
+
+  .phone-box input,
+  .password-box input,
+  .country-box {
+    height: 52px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .log-in {
+    padding: 50px 0;
+  }
+
+  .title-login h2 {
+    font-size: 46px;
+  }
+
+  .title-login p {
+    font-size: 19px;
+  }
+
+  .login-form {
+    max-width: 480px;
+  }
+
+  .login-btn {
+    height: 52px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .log-in {
+    padding: 40px 0;
+  }
+
+  .log-in .container {
+    width: 94%;
+  }
+
+  .title-login {
+    margin-bottom: 28px;
+  }
+
+  .title-login h2 {
+    font-size: 38px;
+  }
+
+  .title-login p {
+    font-size: 17px;
+  }
+
+  .phone-box input,
+  .password-box input,
+  .country-box {
+    height: 48px;
+  }
+
+  .country-box {
+    width: 50px;
+    min-width: 50px;
+    border-radius: 14px;
+  }
+
+  .phone-box input,
+  .password-box input {
+    border-radius: 14px;
+    font-size: 13px;
+  }
+
+  .login-btn {
+    height: 48px;
+    font-size: 20px;
+    border-radius: 16px;
+  }
+
+  .signup-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .log-in .container {
+    width: 92%;
+  }
+
+  .title-login h2 {
+    font-size: 32px;
+  }
+
+  .title-login p {
+    font-size: 15px;
+  }
+
+  .phone-box,
+  .password-box {
+    gap: 8px;
+  }
+
+  .country-box {
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
+    border-radius: 12px;
+  }
+
+  .country-box img {
+    width: 18px;
+    height: 14px;
+  }
+
+  .phone-box input,
+  .password-box input {
+    height: 46px;
+    border-radius: 12px;
+    font-size: 12px;
+    padding-inline: 14px;
+  }
+
+  [dir="rtl"] .password-box input {
+    padding-left: 42px;
+  }
+
+  [dir="ltr"] .password-box input {
+    padding-right: 42px;
+  }
+
+  .password-box .icon-hide {
+    font-size: 14px;
+  }
+
+  [dir="rtl"] .password-box .icon-hide {
+    left: 14px;
+  }
+
+  [dir="ltr"] .password-box .icon-hide {
+    right: 14px;
+  }
+
+  .login-options {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .forgot-password,
+  .remember-me {
+    font-size: 13px;
+  }
+
+  .login-btn {
+    height: 46px;
+    font-size: 18px;
+    border-radius: 14px;
+  }
+
+  .signup-text {
+    font-size: 14px;
+  }
+}

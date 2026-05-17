@@ -9,8 +9,8 @@
           <span class="decor-circle right-dot"></span>
           <div class="container">
             <div class="title-Operators">
-              <h2>{{ text.searchResults.header.title }}</h2>
-              <p>{{ text.searchResults.header.breadcrumb }}</p>
+              <h2>{{ $t('searchResults.header.title') }}</h2>
+              <p>{{ $t('searchResults.header.breadcrumb') }}</p>
             </div>
           </div>
         </div>
@@ -21,7 +21,7 @@
                   <div class="job-filter-box search-job-box">
                     <input
                       type="text"
-                      :placeholder="text.jobOpportunities.filters.searchPlaceholder"
+                      :placeholder="$t('jobOpportunities.filters.searchPlaceholder')"
                     />
                     <button class="search-btn-job">
                       <span class="icon-search-1"></span>
@@ -31,28 +31,28 @@
             
                 <div class="col-lg-2 col-md-3 col-sm-12 col-12">
                   <div class="job-filter-box small-job-box">
-                    <span class="filter-label">{{ text.jobOpportunities.filters.country }}</span>
+                    <span class="filter-label">{{ $t('jobOpportunities.filters.country') }}</span>
                     <span class="icon-arrow-1 filter-arrow"></span>
                   </div>
                 </div>
 
                 <div class="col-lg-2 col-md-3 col-sm-12 col-12">
                   <div class="job-filter-box small-job-box">
-                    <span class="filter-label">{{ text.jobOpportunities.filters.sector }}</span>
+                    <span class="filter-label">{{ $t('jobOpportunities.filters.sector') }}</span>
                     <span class="icon-arrow-1 filter-arrow"></span>
                   </div>
                 </div>
             
                 <div class="col-lg-2 col-md-3 col-sm-12 col-12">
                   <div class="job-filter-box small-job-box">
-                    <span class="filter-label">{{ text.jobOpportunities.filters.educationLevel }}</span>
+                    <span class="filter-label">{{ $t('jobOpportunities.filters.educationLevel') }}</span>
                     <span class="icon-arrow-1 filter-arrow"></span>
                   </div>
                 </div>
             
                 <div class="col-lg-2 col-md-3 col-sm-12 col-12">
                   <div class="job-filter-box small-job-box">
-                    <span class="filter-label">{{ text.jobOpportunities.filters.workType }}</span>
+                    <span class="filter-label">{{ $t('jobOpportunities.filters.workType') }}</span>
                     <span class="icon-arrow-1 filter-arrow"></span>
                   </div>
                 </div>
@@ -63,7 +63,7 @@
                     <div class="job-list">
                         <div
                           class="job-card-wide"
-                          v-for="(job, index) in filteredJobs"
+                          v-for="(job, index) in paginatedJobs"
                           :key="index"
                         >
                             <div class="job-card-top">
@@ -99,7 +99,7 @@
                                 <div class="job-card-action">
                                   <button class="apply-btn">
                                     {{ job.applyNow }}
-                                    <span class="icon-arrow"></span>
+                                    <span class="icon-arrow-right-svgrepo-com"></span>
                                   </button>
                                 </div>
                             </div>

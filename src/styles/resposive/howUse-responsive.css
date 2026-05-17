@@ -1,0 +1,267 @@
+@media (max-width: 1399.98px) {
+
+  .how-use-hero {
+    height: 580px;
+  }
+
+  .video-content h3 {
+    font-size: 24px;
+  }
+
+  .video-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+
+  .how-use-hero {
+    height: 520px;
+  }
+
+  .title-how-use-hero h2,
+  .Simple-steps h2,
+  .title-slidar h2,
+  .cta-content h2 {
+    font-size: 26px;
+  }
+
+  .section1 h3,
+  .section2 h3 {
+    font-size: 22px;
+  }
+
+  .section1 p:not(:first-child),
+  .section2 p:not(:first-child) {
+    font-size: 17px;
+  }
+
+  .bg-left.second {
+    width: 300px;
+    left: 150px;
+  }
+
+  .bg-right {
+    width: 320px;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .how-use-hero {
+    height: 460px;
+  }
+
+  .top-text {
+    text-align: center;
+  }
+
+  .section1,
+  .section2 {
+    text-align: center;
+    border: 0;
+    padding: 20px;
+  }
+
+  .section1 h3,
+  .section2 h3,
+  .section1 p,
+  .section2 p {
+    text-align: center !important;
+    justify-content: center;
+  }
+
+  .section1 > b:first-child,
+  .section2 > b:first-child {
+    margin: 0 auto 14px;
+  }
+
+  .section1:has(img),
+  .section2:has(img) {
+    justify-content: center;
+  }
+
+  .title-See-works {
+    text-align: center;
+  }
+
+  .title-See-works ul li {
+    text-align: start;
+  }
+
+  .video-See-works {
+    margin-top: 25px;
+  }
+
+  .platform-card {
+    height: 210px;
+  }
+
+  .bg-left,
+  .bg-right {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .how-use-hero {
+    height: 410px;
+  }
+
+  .title-overlay {
+    height: 85px;
+  }
+
+  .top-text h2 {
+    font-size: 16px;
+  }
+
+  .top-text p {
+    font-size: 12px;
+  }
+
+  .video-content h3 {
+    font-size: 19px;
+  }
+
+  .video-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .play-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .video-player {
+    width: 92%;
+    height: 260px;
+  }
+
+  .title-how-use-hero h2,
+  .Simple-steps h2,
+  .title-slidar h2,
+  .cta-content h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .title-how-use-hero p,
+  .Simple-steps p,
+  .title-slidar p,
+  .cta-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .section1,
+  .section2 {
+    min-height: auto;
+    padding: 16px 10px;
+  }
+
+  .section1 img,
+  .section2 img {
+    width: 75px;
+  }
+
+  .section1 h3,
+  .section2 h3 {
+    font-size: 19px;
+  }
+
+  .section1 p:not(:first-child),
+  .section2 p:not(:first-child) {
+    font-size: 14px;
+  }
+
+  .title-See-works h3 {
+    font-size: 22px;
+  }
+
+  .title-See-works p,
+  .title-See-works ul li {
+    font-size: 13px;
+  }
+
+  .video-box .play-btn {
+    width: 55px;
+    height: 55px;
+  }
+
+  .platform-card {
+    height: 200px;
+  }
+
+  .card-contente h3 {
+    font-size: 17px;
+  }
+
+  .card-contente p {
+    font-size: 13px;
+  }
+
+  .cta-section {
+    padding: 45px 15px;
+  }
+
+  .cta-buttons a {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+
+/* ---------- 575px ---------- */
+@media (max-width: 575.98px) {
+
+  .how-use-hero {
+    height: 360px;
+  }
+
+  .video-content h3 {
+    font-size: 17px;
+  }
+
+  .video-content p {
+    font-size: 12px;
+  }
+
+  .circle,
+  .circle2 {
+    transform: scale(0.75);
+  }
+
+  .c1 {
+    left: -35px;
+  }
+
+  .c2 {
+    left: -42px;
+  }
+
+  .video-player {
+    height: 220px;
+  }
+
+  .title-how-use-hero h2,
+  .Simple-steps h2,
+  .title-slidar h2,
+  .cta-content h2 {
+    font-size: 20px;
+  }
+
+  .platform-card {
+    height: 190px;
+  }
+
+  .platform-card:hover .card-img {
+    height: 125px;
+  }
+
+  .platform-card:hover .card-contente {
+    height: 65px;
+  }
+}

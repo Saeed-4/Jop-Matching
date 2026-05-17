@@ -1,14 +1,6 @@
-import messages from '@/data/lang'
-import companyLogo from '@/assets/Rectangle 652 (2).png'
+import { governmentJobs } from '@/data/governmentJobs'
 
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
   data() {
     return {
       currentPage: 1,
@@ -17,15 +9,18 @@ export default {
   },
 
   computed: {
-    text() {
-      return messages[this.currentLang]
-    },
-
     governmentJobsList() {
-      const cards = this.text?.governmentJobsPage?.cards || []
-      return cards.map(card => ({
-        ...card,
-        logo: companyLogo
+      const lang = this.$i18n.locale
+
+      return governmentJobs.map(job => ({
+        ...job,
+        category: job.category[lang],
+        title: job.title[lang],
+        company: job.company[lang],
+        description: job.description[lang],
+        showMore: job.showMore[lang],
+        tags: job.tags[lang],
+        applyNow: job.applyNow[lang]
       }))
     },
 
@@ -35,8 +30,7 @@ export default {
 
     paginatedGovernmentJobs() {
       const start = (this.currentPage - 1) * this.itemsPerPage
-      const end = start + this.itemsPerPage
-      return this.governmentJobsList.slice(start, end)
+      return this.governmentJobsList.slice(start, start + this.itemsPerPage)
     },
 
     visiblePages() {
@@ -49,7 +43,7 @@ export default {
   },
 
   watch: {
-    currentLang() {
+    '$i18n.locale'() {
       this.currentPage = 1
     },
 

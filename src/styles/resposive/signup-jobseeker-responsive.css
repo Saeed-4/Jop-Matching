@@ -1,0 +1,498 @@
+@media (max-width: 1399.98px) {
+  .signup-jobseeker-box {
+    max-width: 760px;
+  }
+
+  .signup-header h2 {
+    font-size: 40px;
+  }
+
+  .step-line {
+    width: 65px;
+  }
+
+  .otp-box {
+    max-width: 620px;
+  }
+
+  .professional-step {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .signup-jobseeker-box {
+    max-width: 720px;
+  }
+
+  .signup-header h2 {
+    font-size: 36px;
+  }
+
+  .steps-indicator {
+    gap: 8px;
+  }
+
+  .step-item {
+    width: 70px;
+  }
+
+  .step-line {
+    width: 50px;
+  }
+
+  .otp-box {
+    padding: 40px 50px;
+  }
+
+  .otp-inputs input {
+    width: 80px;
+    height: 90px;
+  }
+
+  .pro-card {
+    padding: 16px 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .signup-jobseeker {
+    padding: 30px 0;
+  }
+
+  .signup-jobseeker .container {
+    width: 94%;
+  }
+
+  .signup-jobseeker-box {
+    max-width: 100%;
+  }
+
+  .signup-header {
+    padding-top: 36px;
+  }
+
+  .signup-header h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .steps-indicator {
+    gap: 6px;
+    margin-bottom: 30px;
+  }
+
+  .step-item {
+    width: 64px;
+  }
+
+  .step-line {
+    width: 28px;
+  }
+
+  .step-item p {
+    font-size: 9px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group.half {
+    width: 100%;
+  }
+
+  .otp-box {
+    padding: 35px 28px;
+  }
+
+  .otp-inputs {
+    gap: 14px;
+  }
+
+  .otp-inputs input {
+    width: 68px;
+    height: 78px;
+    font-size: 26px;
+  }
+
+  .professional-step h3,
+  .password-step h3,
+  .cv-step h3 {
+    font-size: 22px;
+  }
+
+  .pro-card {
+    min-height: 80px;
+  }
+
+  .main-btn,
+  .outline-btn {
+    height: 48px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .signup-jobseeker {
+    padding: 24px 0;
+  }
+
+  .signup-jobseeker .container {
+    width: 94%;
+  }
+
+  .signup-header {
+    padding-top: 38px;
+  }
+
+  .signup-header h2 {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+
+  .back-link {
+    top: 0;
+    font-size: 13px;
+  }
+
+  .steps-indicator {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+  }
+
+  .steps-indicator::-webkit-scrollbar {
+    display: none;
+  }
+
+  .step-item {
+    min-width: 68px;
+  }
+
+  .step-line {
+    min-width: 26px;
+    width: 26px;
+  }
+
+  .step-circle {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  .step-item p {
+    font-size: 8px;
+    margin-top: 6px;
+  }
+
+  .upload-cv-box {
+    height: 140px;
+    padding: 14px;
+  }
+
+  .upload-big-icon {
+    font-size: 40px;
+  }
+
+  .upload-cv-box strong {
+    font-size: 14px;
+  }
+
+  .uploaded-file {
+    height: auto;
+    min-height: 70px;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .file-info {
+    max-width: 72%;
+  }
+
+  .file-info strong {
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .file-icon {
+    font-size: 30px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .password-input input {
+    height: 44px;
+    font-size: 13px;
+    border-radius: 14px;
+  }
+
+  .country-box {
+    width: 52px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .otp-box {
+    padding: 28px 18px;
+  }
+
+  .otp-text {
+    font-size: 15px;
+  }
+
+  .otp-inputs {
+    gap: 10px;
+  }
+
+  .otp-inputs input {
+    width: 54px;
+    height: 64px;
+    font-size: 22px;
+  }
+
+  .professional-step h3,
+  .password-step h3,
+  .cv-step h3 {
+    font-size: 20px;
+  }
+
+  .professional-step p,
+  .password-step p {
+    font-size: 14px;
+  }
+
+  .pro-card {
+    padding: 14px;
+    min-height: 72px;
+  }
+
+  .pro-text strong {
+    font-size: 15px;
+  }
+
+  .pro-text small {
+    font-size: 12px;
+  }
+
+  .skills-box {
+    height: auto;
+    min-height: 46px;
+  }
+
+  .tags {
+    gap: 7px;
+  }
+
+  .tags span {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .main-btn,
+  .outline-btn {
+    height: 46px;
+    font-size: 16px;
+    border-radius: 14px;
+  }
+
+  .success-step {
+    margin-top: 40px;
+  }
+
+  .success-card {
+    min-height: 220px;
+    padding: 20px;
+  }
+
+  .done-svg {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .signup-jobseeker .container {
+    width: 92%;
+  }
+
+  .signup-header h2 {
+    font-size: 24px;
+  }
+
+  .back-link {
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .vec {
+    width: 20px;
+    height: 20px;
+  }
+
+  .step-item {
+    min-width: 58px;
+  }
+
+  .step-line {
+    min-width: 18px;
+    width: 18px;
+  }
+
+  .step-item p {
+    font-size: 7px;
+  }
+
+  .upload-cv-box {
+    height: 130px;
+  }
+
+  .upload-big-icon {
+    font-size: 34px;
+  }
+
+  .upload-cv-box strong {
+    font-size: 13px;
+  }
+
+  .upload-cv-box small {
+    font-size: 11px;
+  }
+
+  .uploaded-file {
+    padding: 12px;
+  }
+
+  .file-actions {
+    gap: 8px;
+  }
+
+  .file-actions button {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .password-input input {
+    height: 42px;
+    font-size: 12px;
+    border-radius: 12px;
+    padding-inline: 14px;
+  }
+
+  .country-box {
+    width: 48px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .country-box img {
+    width: 18px;
+  }
+
+  .otp-box {
+    padding: 24px 14px;
+  }
+
+  .otp-text {
+    font-size: 14px;
+  }
+
+  .otp-inputs {
+    gap: 8px;
+  }
+
+  .otp-inputs input {
+    width: 46px;
+    height: 56px;
+    font-size: 20px;
+  }
+
+  .otp-footer {
+    font-size: 12px;
+  }
+
+  .professional-step h3,
+  .password-step h3,
+  .cv-step h3 {
+    font-size: 18px;
+  }
+
+  .professional-step p,
+  .password-step p {
+    font-size: 13px;
+  }
+
+  .pro-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .pro-text strong {
+    font-size: 14px;
+  }
+
+  .pro-text small {
+    font-size: 11px;
+  }
+
+  .plus-btn,
+  .add-skill {
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+  }
+
+  .skills-box {
+    padding: 0 8px;
+  }
+
+  .skills-box input {
+    font-size: 12px;
+  }
+
+  .tags span {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .main-btn,
+  .outline-btn {
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .bottom-auth-text {
+    font-size: 13px;
+  }
+
+  .success-card {
+    min-height: 200px;
+    padding: 18px;
+  }
+
+  .success-card h3 {
+    font-size: 18px;
+  }
+
+  .success-card p {
+    font-size: 12px;
+  }
+
+  .done-svg {
+    width: 80px;
+    height: 80px;
+  }
+}

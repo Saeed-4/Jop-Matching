@@ -1,0 +1,390 @@
+/* =========================
+   GOVERNMENT JOBS RESPONSIVE
+========================= */
+
+@media (max-width: 1399.98px) {
+  .GovernmentJobs .container {
+    width: 92%;
+  }
+
+  .government-card-wide {
+    padding: 18px 24px 20px;
+  }
+
+  .government-card-head h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header-Operators {
+    min-height: 115px;
+    padding: 18px 0;
+  }
+
+  .title-Operators h2 {
+    font-size: 28px;
+  }
+
+  .title-Operators p {
+    font-size: 15px;
+  }
+
+  .GovernmentJobs-box {
+    margin: 18px 0;
+  }
+
+  .GovernmentJobs-box input {
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .government-card-wide {
+    padding: 18px 20px;
+  }
+
+  .government-card-head h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .government-date {
+    font-size: 13px;
+  }
+
+  .government-company {
+    font-size: 15px;
+  }
+
+  .government-description {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .government-tags span {
+    min-width: auto;
+    padding: 0 14px;
+    font-size: 12px;
+  }
+
+  .apply-btn {
+    width: 118px;
+    height: 38px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .GovernmentJobs .container {
+    width: 94%;
+  }
+
+  .header-Operators {
+    min-height: 105px;
+    padding: 16px 0;
+  }
+
+  .title-Operators {
+    text-align: center;
+    align-items: center;
+  }
+
+  .title-Operators h2 {
+    font-size: 24px;
+  }
+
+  .title-Operators p {
+    font-size: 14px;
+  }
+
+  .GovernmentJobs-box {
+    margin: 16px 0;
+  }
+
+  .GovernmentJobs-box input {
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .government-card-body {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .government-card-action {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .government-card-content {
+    width: 100%;
+  }
+
+  .government-card-head {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .government-card-head h2 {
+    font-size: 18px;
+  }
+
+  .government-company {
+    gap: 8px;
+  }
+
+  .government-description {
+    font-size: 14px;
+  }
+
+  .government-tags {
+    gap: 8px;
+  }
+
+  .government-pagination {
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .government-page-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .GovernmentJobs .container {
+    width: 94%;
+  }
+
+  .header-Operators {
+    min-height: 95px;
+    padding: 14px 0;
+  }
+
+  .title-Operators {
+    text-align: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .title-Operators h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .title-Operators p {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .decor-circle.left-big,
+  .decor-circle.right-big {
+    transform: scale(0.75);
+  }
+
+  .decor-circle.left-small,
+  .decor-circle.right-small {
+    transform: scale(0.8);
+  }
+
+  .GovernmentJobs-box {
+    margin: 14px 0;
+  }
+
+  .GovernmentJobs-box input {
+    height: 42px;
+    border-radius: 24px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+
+  .government-list {
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  .government-card-wide {
+    padding: 16px 14px;
+    border-radius: 16px;
+  }
+
+  .government-category {
+    min-width: 90px;
+    height: 28px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .government-card-top {
+    margin-bottom: 10px;
+  }
+
+  .government-card-body {
+    gap: 14px;
+  }
+
+  .government-card-head {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .government-card-head h2 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .government-date {
+    font-size: 12px;
+  }
+
+  .government-company {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .government-company img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .government-description {
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 14px;
+  }
+
+  .government-tags span {
+    height: 30px;
+    padding: 0 12px;
+    font-size: 11px;
+  }
+
+  .apply-btn {
+    width: 108px;
+    height: 36px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .apply-btn .icon-arrow {
+    font-size: 10px;
+  }
+
+  .government-pagination {
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .government-page-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .GovernmentJobs .container {
+    width: 92%;
+  }
+
+  .header-Operators {
+    min-height: 84px;
+    padding: 12px 0;
+  }
+
+  .title-Operators h2 {
+    font-size: 20px;
+  }
+
+  .title-Operators p {
+    font-size: 12px;
+  }
+
+  .decor-circle.left-big,
+  .decor-circle.right-big,
+  .decor-circle.left-small,
+  .decor-circle.right-small,
+  .decor-circle.left-dot,
+  .decor-circle.right-dot {
+    opacity: 0.75;
+  }
+
+  .GovernmentJobs-box {
+    margin: 12px 0;
+  }
+
+  .GovernmentJobs-box input {
+    height: 40px;
+    border-radius: 22px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .government-list {
+    gap: 12px;
+  }
+
+  .government-card-wide {
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+
+  .government-category {
+    min-width: 84px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+  .government-card-head h2 {
+    font-size: 15px;
+  }
+
+  .government-date {
+    font-size: 11px;
+  }
+
+  .government-company {
+    font-size: 13px;
+  }
+
+  .government-company img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .government-description {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .government-tags {
+    gap: 6px;
+  }
+
+  .government-tags span {
+    height: 28px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .apply-btn {
+    width: 100px;
+    height: 34px;
+    font-size: 12px;
+  }
+
+  .government-pagination {
+    gap: 8px;
+  }
+
+  .government-page-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+}

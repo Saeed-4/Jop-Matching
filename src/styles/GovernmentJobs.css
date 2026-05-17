@@ -1,23 +1,16 @@
-.GovernmentJobs .container {
-  width: 90%;
-  max-width: 1350px;
-  margin: auto;
-}
-
 .GovernmentJobs-box {
-  margin: 20px 0;
+  margin: 20px 0 -22px 0;
+  border: 1.25px solid #DD5C16;
+  border-radius: 30px;
 }
 
 .GovernmentJobs-box input {
   width: 100%;
   height: 46px;
   background: #fff;
-  border: 1.25px solid #DD5C16;
-  border-radius: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   padding: 0 18px;
   outline: none;
-  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   color: #6f6f6f;
 }
@@ -64,7 +57,6 @@
   border-radius: 999px;
   background: #fff2e7;
   color: #dd5c16;
-  font-family: 'Tajawal', sans-serif;
   font-size: 13px;
   font-weight: 500;
 }
@@ -91,7 +83,6 @@
 
 .government-card-head h2 {
   margin: 0;
-  font-family: 'Tajawal', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #1d1d1d;
@@ -99,7 +90,6 @@
 }
 
 .government-date {
-  font-family: 'Tajawal', sans-serif;
   font-size: 13px;
   color: #b7b7b7;
   white-space: nowrap;
@@ -111,7 +101,6 @@
   justify-content: flex-start;
   gap: 10px;
   margin-bottom: 16px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 17px;
   color: #2c2c2c;
 }
@@ -124,7 +113,6 @@
 
 .government-description {
   margin: 0 0 18px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   line-height: 2;
   color: #9b9b9b;
@@ -154,7 +142,6 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 13px;
   color: #8d8d8d;
   background: #fff;
@@ -162,8 +149,7 @@
 
 .government-card-action {
   width: 180px;
-  display: flex;
-  justify-content: flex-start;
+  display: block;
   padding-top: 4px;
 }
 
@@ -174,7 +160,6 @@
   border-radius: 999px;
   background: #e46616;
   color: #fff;
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   font-weight: 700;
   display: flex;
@@ -205,7 +190,6 @@
   border: 1px solid #e48a52;
   background: #fff;
   color: #dd5c16;
-  font-family: 'Tajawal', sans-serif;
   font-size: 22px;
   font-weight: 500;
   cursor: pointer;
@@ -222,40 +206,28 @@
   background: #fdf1e8;
 }
 
-/* LTR */
-[dir="ltr"] .government-card-content {
-  text-align: left;
+.Source{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
 }
 
-[dir="ltr"] .government-company,
-[dir="ltr"] .government-tags {
-  justify-content: flex-start;
+.Source p{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px; 
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
-[dir="ltr"] .government-card-head {
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: left;
+.Source img{
+  width: 30px;
+  height: 17px;
 }
 
-[dir="rtl"] .government-card-head {
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: right;
-}
 
-[dir="rtl"] .search-job-box input {
-  text-align: right;
-}
 
-[dir="ltr"] .search-job-box input {
-  text-align: left;
-}
-
-[dir="rtl"] .apply-btn .icon-arrow {
-  transform: rotate(180deg);
-}
-
-[dir="ltr"] .apply-btn .icon-arrow {
-  transform: rotate(0deg);
-}

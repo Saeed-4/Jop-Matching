@@ -1,64 +1,70 @@
 <template>
-  <div class="log-in" :dir="currentLang === 'ar' ? 'rtl' : 'ltr'">
+  <div class="log-in">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="box-login">
             <div class="title-login">
-              <h2>{{ loginText.title }}</h2>
-              <p>{{ loginText.subtitle }}</p>
+              <h2>{{ $t('loginPage.title') }}</h2>
+              <p>{{ $t('loginPage.subtitle') }}</p>
             </div>
 
             <div class="section-login">
               <form class="login-form" @submit.prevent="login">
                 <div class="input-group">
-                  <label>{{ loginText.phoneLabel }}</label>
+                  <label>{{ $t('loginPage.phoneLabel') }}</label>
 
                   <div class="phone-box">
                     <input
                       type="text"
                       v-model="phone"
-                      :placeholder="loginText.phonePlaceholder"
+                      :placeholder="$t('loginPage.phonePlaceholder')"
                     />
 
                     <div class="country-box">
                       <img src="@/assets/image.png" alt="flag" />
-                      <span class="icon-arrow-1"></span>
+                      <span class="icon-up-chevron_svgrepocom"></span>
                     </div>
                   </div>
                 </div>
 
                 <div class="input-group">
-                  <label>{{ loginText.passwordLabel }}</label>
+                  <label>{{ $t('loginPage.passwordLabel') }}</label>
 
                   <div class="password-box">
                     <span class="icon-hide"></span>
                     <input
                       type="password"
                       v-model="password"
-                      :placeholder="loginText.passwordPlaceholder"
+                      :placeholder="$t('loginPage.passwordPlaceholder')"
                     />
                   </div>
                 </div>
 
                 <div class="login-options">
                   <label class="remember-me">
-                    <span>{{ loginText.rememberMe }}</span>
+                    <span>{{ $t('loginPage.rememberMe') }}</span>
                     <input type="checkbox" />
                   </label>
 
                   <a href="#" class="forgot-password">
-                    {{ loginText.forgotPassword }}
+                    {{ $t('loginPage.forgotPassword') }}
                   </a>
                 </div>
 
                 <button type="submit" class="login-btn">
-                  {{ loginText.loginBtn }}
+                  {{ $t('loginPage.loginBtn') }}
                 </button>
 
+                <p v-if="error" class="error-text">
+                  {{ error }}
+                </p>
+
                 <p class="signup-text">
-                  {{ loginText.noAccount }}
-                  <a href="#">{{ loginText.createAccount }}</a>
+                  {{ $t('loginPage.noAccount') }}
+                  <router-link to="/signup">
+                    {{ $t('loginPage.createAccount') }}
+                  </router-link>
                 </p>
               </form>
             </div>
@@ -73,5 +79,5 @@
 import login from '../scripts/login'
 export default login
 </script>
+<style src="../styles/resposive/login-responsive.css"></style>
 <style src="../styles/login.css"></style>
-<style src="../styles/font.css"></style>

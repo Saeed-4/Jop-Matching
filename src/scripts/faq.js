@@ -1,13 +1,4 @@
-import messages from '@/data/lang'
-
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
   data() {
     return {
       openFaqs: []
@@ -15,8 +6,14 @@ export default {
   },
 
   computed: {
-    text() {
-      return messages[this.currentLang]
+    faqQuestions() {
+      return this.$tm('home.faq.questions')
+    }
+  },
+
+  watch: {
+    '$i18n.locale'() {
+      this.openFaqs = []
     }
   },
 

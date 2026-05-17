@@ -1,25 +1,28 @@
-import messages from '@/data/lang'
+import { latestHomeJobs } from '@/data/jobs'
 
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'en'
-    }
-  },
-
   data() {
     return {
-      openFaqs: [],
       searchJob: '',
       searchLocation: '',
       showDropdown: false,
+      openFaqs: []
     }
   },
 
   computed: {
-    text() {
-      return messages[this.currentLang]
+    latestJobsList() {
+      const lang = this.$i18n.locale
+
+      return latestHomeJobs.map(job => ({
+        ...job,
+        title: job.title[lang],
+        location: job.location[lang]
+      }))
+    },
+
+    countriesList() {
+      return this.$tm('jobOpportunities.filters.countries')
     }
   },
 
@@ -49,7 +52,6 @@ export default {
     selectCountry(country) {
       this.searchLocation = country
       this.showDropdown = false
-    },
-
+    }
   }
 }

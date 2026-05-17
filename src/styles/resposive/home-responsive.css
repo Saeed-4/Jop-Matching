@@ -1,0 +1,239 @@
+@media (max-width: 1399.98px) {
+
+  .hero-right h1 {
+    font-size: 52px;
+  }
+
+  .hero-right p {
+    font-size: 18px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .person {
+    max-width: 520px;
+  }
+
+  .company-card {
+    padding: 20px;
+  }
+
+  .jobs-slider-preview {
+    gap: 18px;
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-right h1 {
+    font-size: 44px;
+  }
+
+  .hero-right p {
+    font-size: 17px;
+  }
+
+  .search-box {
+    flex-wrap: wrap;
+  }
+
+  .search-box .input-box,
+  .search-box .select-box {
+    width: 100%;
+  }
+
+  .person {
+    max-width: 450px;
+  }
+
+  .all-partners {
+    gap: 16px;
+  }
+
+  .company-card {
+    min-height: auto;
+  }
+
+  .jobs-slider-preview {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .news-slider {
+    gap: 18px;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+
+  .hero {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .hero .row {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .hero-right h1 {
+    font-size: 38px;
+  }
+
+  .hero-right p {
+    font-size: 16px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .person {
+    max-width: 380px;
+    margin: auto;
+  }
+
+  .categorie-title h2,
+  .title-Lots h2,
+  .title-fqa h2 {
+    font-size: 30px;
+  }
+
+  .all-item {
+    gap: 18px;
+  }
+
+  .all-partners {
+    justify-content: center;
+  }
+
+  .Jobs {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .jobs-slider-preview {
+    flex-direction: column;
+  }
+
+  .news-slider {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+  .hero {
+    padding: 45px 0;
+  }
+
+  .hero-right h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .hero-right p {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .search-box {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .person {
+    max-width: 300px;
+  }
+
+  .categorie-title h2,
+  .title-Lots h2,
+  .title-fqa h2 {
+    font-size: 24px;
+  }
+
+  .company-card {
+    padding: 18px;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+  }
+
+  .jobs-slider-preview {
+    gap: 14px;
+  }
+
+  .news-image-card img {
+    height: 220px;
+  }
+
+  .faq-question h3 {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+
+  .hero-right h1 {
+    font-size: 25px;
+  }
+
+  .hero-right p {
+    font-size: 13px;
+  }
+
+  .search-box {
+    gap: 12px;
+  }
+
+  .search-box input,
+  .search-box select {
+    height: 46px;
+    font-size: 13px;
+  }
+
+  .person {
+    max-width: 240px;
+  }
+
+  .categorie-title h2,
+  .title-Lots h2,
+  .title-fqa h2 {
+    font-size: 20px;
+  }
+
+  .about-item {
+    padding: 18px;
+  }
+
+  .company-card {
+    padding: 14px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+
+  .Apply-now {
+    width: 100%;
+  }
+
+  .faq-item {
+    padding: 14px;
+  }
+
+  .faq-answer p {
+    font-size: 13px;
+  }
+}

@@ -6,8 +6,14 @@
       @changeLang="changeLang"
     />
 
+    <UserNavbar
+      v-else-if="$route.path === '/jobseeker-home'"
+      :currentLang="currentLang"
+      @changeLang="changeLang"
+    />
+
     <Navbar
-      v-else-if="$route.path !== '/jobseeker-home'"
+      v-else
       :currentLang="currentLang"
       @changeLang="changeLang"
     />
@@ -28,12 +34,14 @@
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import LoginNavbar from './components/LoginNavbar.vue'
+import UserNavbar from './components/UserNavbar.vue'
 
 export default {
   components: {
     Navbar,
     Footer,
-    LoginNavbar
+    LoginNavbar,
+    UserNavbar
   },
 
   data() {
@@ -42,15 +50,14 @@ export default {
     }
   },
 
-  computed: {
-    isAuthPage() {
-      return ['login', 'signup'].includes(this.$route.name)
-    }
+  mounted() {
+    this.$i18n.locale = this.currentLang
   },
 
   methods: {
     changeLang(lang) {
       this.currentLang = lang
+      this.$i18n.locale = lang
       localStorage.setItem('lang', lang)
     }
   }

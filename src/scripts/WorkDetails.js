@@ -1,4 +1,4 @@
-import messages from '@/data/lang'
+
 
 export default {
   props: {

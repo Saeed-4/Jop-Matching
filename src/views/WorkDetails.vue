@@ -1,5 +1,5 @@
 <template>
-    <div class="WorkDetails"  :dir="currentLang === 'ar' ? 'rtl' : 'ltr'"  :class="currentLang === 'ar' ? 'rtl' : 'ltr'">
+    <div class="WorkDetails">
         <div class="header-Operators">
           <span class="decor-circle left-big"></span>
           <span class="decor-circle left-small"></span>
@@ -50,7 +50,7 @@
                             <div class="Company-WorkDetails">
                                 <p>
                                     {{ t.workDetails.source }}
-                                    <img src="@/assets/image 10.png" alt="img">
+                                    <img src="@/assets/img1partners.png" alt="img">
                                 </p>
                             </div>
                         </div>
@@ -162,4 +162,5 @@
 import WorkDetails from '@/scripts/WorkDetails';
 export default WorkDetails
 </script>
+<style scoped src="../styles/resposive/WorkDetails-responsive.css"></style>
 <style scoped src="../styles/WorkDetails.css"></style>

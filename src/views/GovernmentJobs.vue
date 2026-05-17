@@ -1,5 +1,5 @@
 <template>
-  <div class="GovernmentJobs" :dir="currentLang === 'ar' ? 'rtl' : 'ltr'">
+  <div class="GovernmentJobs">
     <div class="header-Operators">
       <span class="decor-circle left-big"></span>
       <span class="decor-circle left-small"></span>
@@ -10,8 +10,8 @@
 
       <div class="container">
         <div class="title-Operators">
-          <h2>{{ text.governmentJobsPage.header.title }}</h2>
-          <p>{{ text.governmentJobsPage.header.breadcrumb }}</p>
+          <h2>{{ $t('governmentJobsPage.header.title') }}</h2>
+          <p>{{ $t('governmentJobsPage.header.breadcrumb') }}</p>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
           <div class="GovernmentJobs-box search-job-box">
             <input
               type="text"
-              :placeholder="text.governmentJobsPage.searchPlaceholder"
+              :placeholder="$t('governmentJobsPage.searchPlaceholder')"
             />
           </div>
         </div>
@@ -65,8 +65,12 @@
                 <div class="government-card-action">
                   <button class="apply-btn">
                     {{ job.applyNow }}
-                    <span class="icon-arrow"></span>
+                    <span class="icon-arrow-right-svgrepo-com"></span>
                   </button>
+                  <div class="Source">
+                    <p>{{ $t('governmentJobsPage.source') }}:</p>
+                    <img :src="job.imglogo" alt="company logo">
+                  </div>
                 </div>
               </div>
             </div>
@@ -93,8 +97,6 @@
 import GovernmentJobs from '../scripts/GovernmentJobs.js'
 export default GovernmentJobs
 </script>
-
+<style src="../styles/resposive/government-jobs-responsive.css"></style>
 <style src="../styles/header.css"></style>
-<style src="../styles/font.css"></style>
 <style src="../styles/GovernmentJobs.css"></style>
-<style src="../styles/resposive.css"></style>

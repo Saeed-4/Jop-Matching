@@ -24,18 +24,18 @@
 
 .title-login h2 {
   margin: 0 0 8px;
-  font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-size: 44px;
   line-height: 1.2;
   color: #000;
+  text-align: center !important;
 }
 
 .title-login p {
   margin: 0;
-  font-family: 'Tajawal', sans-serif;
   font-size: 18px;
   color: #8f8f8f;
+  text-align: center !important;
 }
 
 .section-login {
@@ -56,20 +56,12 @@
 .input-group label {
   display: block;
   margin-bottom: 8px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   color: #5C5C5C;
-  text-align: right;
 }
 
 .phone-box,
 .password-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.phone-box {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -107,9 +99,13 @@
   background: #fff;
   outline: none;
   padding: 0 18px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   color: #555;
+}
+
+.phone-box input::placeholder,
+.password-box input::placeholder {
+  color: #c5c5c5;
 }
 
 .password-box {
@@ -131,11 +127,6 @@
   padding-left: 48px;
 }
 
-.phone-box input::placeholder,
-.password-box input::placeholder {
-  color: #c5c5c5;
-}
-
 .login-options {
   display: flex;
   align-items: center;
@@ -144,7 +135,6 @@
 }
 
 .forgot-password {
-  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   color: #dd5c16;
   text-decoration: none;
@@ -155,7 +145,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   color: #7b7b7b;
   cursor: pointer;
@@ -169,12 +158,11 @@
 
 .login-btn {
   width: 100%;
-  height: 56px;
+  height: 50px;
   border: none;
   border-radius: 47px;
   background: #dd5c16;
   color: #fff;
-  font-family: 'Tajawal', sans-serif;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
@@ -182,9 +170,8 @@
 }
 
 .signup-text {
-  text-align: center;
+  text-align: center !important;
   margin: 0;
-  font-family: 'Tajawal', sans-serif;
   font-size: 14px;
   color: #7a7a7a;
 }
@@ -196,70 +183,3 @@
 }
 
 
-[dir="rtl"] .input-group label {
-  text-align: right;
-}
-
-[dir="rtl"] .phone-box {
-  flex-direction: row;
-}
-
-[dir="rtl"] .phone-box input,
-[dir="rtl"] .password-box input {
-  text-align: right;
-}
-
-[dir="rtl"] .password-box .icon-hide {
-  left: 18px;
-}
-
-[dir="rtl"] .password-box input {
-  padding-left: 48px;
-  padding-right: 18px;
-}
-
-[dir="rtl"] .login-options {
-  flex-direction: row;
-}
-
-[dir="rtl"] .remember-me {
-  flex-direction: row;
-}
-
-/* =========================
-   LTR
-========================= */
-[dir="ltr"] .input-group label {
-  text-align: left;
-}
-
-[dir="ltr"] .phone-box {
-  flex-direction: row-reverse;
-}
-
-[dir="ltr"] .phone-box input,
-[dir="ltr"] .password-box input {
-  text-align: left;
-}
-
-[dir="ltr"] .password-box .icon-hide {
-  right: 18px;
-}
-
-[dir="ltr"] .password-box input {
-  padding-right: 48px;
-  padding-left: 18px;
-}
-
-[dir="ltr"] .login-options {
-  flex-direction: row-reverse;
-}
-
-[dir="ltr"] .remember-me {
-  flex-direction: row-reverse;
-}
-
-[dir="ltr"] .signup-text a {
-  margin-inline-start: 0;
-  margin-inline-end: 4px;
-}

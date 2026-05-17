@@ -1,28 +1,22 @@
-import messages from '@/data/lang'
-
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
   data() {
     return {
       phone: '',
-      password: ''
+      password: '',
+      error: ''
     }
   },
 
   computed: {
     loginText() {
-      return messages[this.currentLang].loginPage
+      return this.$tm('loginPage')
     }
   },
 
   methods: {
     async login() {
+      this.error = ''
+
       try {
         const response = await fetch('http://127.0.0.1:8000/api/login', {
           method: 'POST',
@@ -39,7 +33,7 @@ export default {
         const data = await response.json()
 
         if (!response.ok) {
-          alert(data.message || 'خطأ في تسجيل الدخول')
+          this.error = data.message || this.$t('loginPage.loginError')
           return
         }
 
@@ -53,7 +47,7 @@ export default {
         }
       } catch (error) {
         console.error(error)
-        alert('السيرفر غير شغال أو في مشكلة اتصال')
+        this.error = this.$t('loginPage.serverError')
       }
     }
   }

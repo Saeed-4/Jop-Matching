@@ -1,5 +1,5 @@
 <template>
-  <div class="JobOpportunities" :dir="currentLang === 'ar' ? 'rtl' : 'ltr'">
+  <div class="JobOpportunities">
     <div class="header-Operators">
       <span class="decor-circle left-big"></span>
       <span class="decor-circle left-small"></span>
@@ -10,8 +10,8 @@
 
       <div class="container">
         <div class="title-Operators">
-          <h2>{{ text.jobOpportunities.header.title }}</h2>
-          <p>{{ text.jobOpportunities.header.breadcrumb }}</p>
+          <h2>{{ $t('jobOpportunities.header.title') }}</h2>
+          <p>{{ $t('jobOpportunities.header.breadcrumb') }}</p>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
           <div class="job-filter-box search-job-box">
             <input
               type="text"
-              :placeholder="text.jobOpportunities.filters.searchPlaceholder"
+              :placeholder="$t('jobOpportunities.filters.searchPlaceholder')"
             />
             <button class="search-btn-job">
               <span class="icon-search-1"></span>
@@ -32,28 +32,28 @@
 
         <div class="col-lg-2 col-md-3 col-sm-12 col-12">
           <div class="job-filter-box small-job-box">
-            <span class="filter-label">{{ text.jobOpportunities.filters.sector }}</span>
+            <span class="filter-label">{{ $t('jobOpportunities.filters.sector') }}</span>
             <span class="icon-arrow-1 filter-arrow"></span>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-12 col-12">
           <div class="job-filter-box small-job-box">
-            <span class="filter-label">{{ text.jobOpportunities.filters.country }}</span>
+            <span class="filter-label">{{ $t('jobOpportunities.filters.country') }}</span>
             <span class="icon-arrow-1 filter-arrow"></span>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-12 col-12">
           <div class="job-filter-box small-job-box">
-            <span class="filter-label">{{ text.jobOpportunities.filters.educationLevel }}</span>
+            <span class="filter-label">{{ $t('jobOpportunities.filters.educationLevel') }}</span>
             <span class="icon-arrow-1 filter-arrow"></span>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-12 col-12">
           <div class="job-filter-box small-job-box">
-            <span class="filter-label">{{ text.jobOpportunities.filters.workType }}</span>
+            <span class="filter-label">{{ $t('jobOpportunities.filters.workType') }}</span>
             <span class="icon-arrow-1 filter-arrow"></span>
           </div>
         </div>
@@ -94,8 +94,8 @@
             </div>
             <div class="job-card-action">
               <button class="apply-btn">
-                {{ job.applyNow }}
-                <span class="icon-arrow"></span>
+                <span>{{ job.applyNow }}</span>
+                <span class="icon-arrow-right-svgrepo-com"></span>
               </button>
             </div>
           </div>
@@ -121,8 +121,6 @@
   import JobOpportunities from '../scripts/JobOpportunities.js'
   export default JobOpportunities
 </script>
-
+<style src="../styles/resposive/job-opportunities-responsive.css"></style>
 <style src="../styles/header.css"></style>
-<style src="../styles/font.css"></style>
-<style src="../styles/JobOpportunities.css"></style>
-<style src="../styles/resposive.css"></style>
+<style scoped src="../styles/JobOpportunities.css"></style>

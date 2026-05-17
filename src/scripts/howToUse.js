@@ -1,14 +1,4 @@
-import messages from '@/data/lang'
-
 export default {
-  props: ['currentLang'],
-
-  computed: {
-    text() {
-      return messages[this.currentLang].howUse
-    }
-  },
-
   data() {
     return {
       showVideo1: false,
@@ -21,6 +11,7 @@ export default {
       if (type === 1) this.showVideo1 = true
       if (type === 2) this.showVideo2 = true
     },
+
     closeVideo() {
       this.showVideo1 = false
       this.showVideo2 = false

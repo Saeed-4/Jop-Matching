@@ -1,0 +1,177 @@
+@media (max-width: 1399.98px) {
+  .about-contact {
+    margin: 0 0 0 120px;
+  }
+
+  .about-contact h1 {
+    font-size: 40px;
+  }
+
+  .about-contact h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .contact {
+    padding: 65px 0;
+  }
+
+  .about-contact {
+    margin: 0 0 0 70px;
+  }
+
+  .about-contact h1 {
+    font-size: 38px;
+  }
+
+  .about-contact h2 {
+    font-size: 26px;
+  }
+
+  .about-contact p {
+    font-size: 16px;
+  }
+
+  .box-contact {
+    padding: 32px 36px 26px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact .container {
+    width: 94%;
+  }
+
+  .about-contact {
+    margin: 0 0 35px;
+    text-align: center;
+  }
+
+  .about-contact h1 {
+    font-size: 36px;
+  }
+
+  .about-contact h2 {
+    font-size: 26px;
+  }
+
+  .about-contact p {
+    font-size: 16px;
+  }
+
+  .social ul {
+    justify-content: center;
+  }
+
+  .box-contact {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact {
+    padding: 40px 0;
+  }
+
+  .about-contact h1 {
+    font-size: 32px;
+  }
+
+  .about-contact h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .about-contact p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .contact-link {
+    font-size: 15px !important;
+    line-height: 1.8;
+    word-break: break-word;
+  }
+
+  .box-contact {
+    padding: 28px 22px;
+    border-radius: 22px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .send-btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact .container {
+    width: 92%;
+  }
+
+  .box-contact {
+    padding: 25px 18px;
+  }
+
+  .about-contact {
+    margin: auto;
+  }
+
+  .about-contact h1 {
+    font-size: 30px;
+  }
+
+  .about-contact h2 {
+    font-size: 22px;
+  }
+
+  .about-contact p {
+    font-size: 14px;
+  }
+
+  .social li {
+    width: 38px;
+    height: 38px;
+  }
+
+  .phone-box {
+    gap: 8px;
+  }
+
+  .country-box {
+    width: 65px;
+  }
+
+  .contact-info {
+    align-items: flex-start;
+  }
+
+  .info-item {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .send-btn {
+    height: 46px;
+    font-size: 17px;
+  }
+}

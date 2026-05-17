@@ -1,5 +1,5 @@
 <template>
-  <div class="home-2" :dir="currentLang === 'ar' ? 'rtl' : 'ltr'">
+  <div class="home-2">
     <UserNavbar :currentLang="currentLang" @changeLang="$emit('changeLang', $event)" />
     <section class="hero-2">
       <div class="container">
@@ -336,7 +336,6 @@
             </div>
           </div>
           <div class="row">
-            <!-- job 1 -->
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
@@ -359,7 +358,6 @@
                 </div>
               </div>
             </div>
-            <!-- job 2 -->
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
@@ -382,7 +380,6 @@
                 </div>
               </div>
             </div>
-            <!-- job 3 -->
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
@@ -405,7 +402,6 @@
                 </div>
               </div>
             </div>
-            <!-- job 4 -->
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
@@ -428,7 +424,6 @@
                 </div>
               </div>
             </div>         
-            <!-- job 5 -->
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
@@ -451,7 +446,6 @@
                 </div>
               </div>
             </div>         
-            <!-- job 6 -->
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="Options-jop">
                 <div class="img-Options">
@@ -492,7 +486,6 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="slider-wrapper">
               
-                <!-- الكرت اليسار -->
                 <div class="jobs-slider-preview side-card left-card">
                   <div class="top-jobs-slider-preview">
                     <div class="title-top-jobs">
@@ -524,7 +517,6 @@
                   </div>
                 </div>
               
-                <!-- الكرت الرئيسي -->
                 <div class="jobs-slider-preview active-card">
                   <div class="top-jobs-slider-preview">
                     <div class="title-top-jobs">
@@ -789,7 +781,4 @@ export default {
 </script>
 <style src="../styles/home.css"></style>
 <style src="../styles/JobSeekerHome.css"></style>
-<style src="../styles/_grids.css"></style>
 <style src="../styles/icon.css"></style>
-<style src="../styles/resposive.css"></style>
-<style src="../styles/font.css"></style>

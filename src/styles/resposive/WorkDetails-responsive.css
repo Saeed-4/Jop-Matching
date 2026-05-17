@@ -1,0 +1,226 @@
+@media (max-width: 1399.98px) {
+  .title-Work h1 {
+    font-size: 26px;
+  }
+
+  .back-1 p,
+  .about-Job-requirements p,
+  .Basic-responsibilities p,
+  .Submission-mechanism p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .header-WorkDetails {
+    gap: 15px;
+  }
+
+  .title-Work h1 {
+    font-size: 24px;
+  }
+
+  .title-Work p {
+    font-size: 15px;
+  }
+
+  .button-WorkDetails button {
+    font-size: 15px;
+    padding: 11px 24px;
+  }
+
+  .Company-WorkDetails p {
+    font-size: 20px;
+  }
+
+  .back-1 h2,
+  .back-2 h3,
+  .Job-requirements h2,
+  .Job-Skills h2,
+  .Basic-responsibilities h2,
+  .Submission-mechanism h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-WorkDetails {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Application-period {
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .button-WorkDetails {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-WorkDetails button {
+    width: 100%;
+  }
+
+  .Company-WorkDetails {
+    justify-content: flex-start;
+  }
+
+  .about-Job-requirements {
+    margin-bottom: 15px;
+  }
+
+  .title-Work h1 {
+    font-size: 22px;
+  }
+
+  .back-1 p,
+  .about-Job-requirements p,
+  .Basic-responsibilities p,
+  .Submission-mechanism p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .img-WorkDetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-WorkDetails img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .titles-WorkDetails {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .icon-WorkDetails {
+    justify-content: center;
+  }
+
+  .title-Work h1 {
+    font-size: 20px;
+  }
+
+  .title-Work p {
+    font-size: 14px;
+  }
+
+  .button-WorkDetails button {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .Company-WorkDetails p {
+    font-size: 18px;
+  }
+
+  .back-1 h2,
+  .back-2 h3,
+  .Job-requirements h2,
+  .Job-Skills h2,
+  .Basic-responsibilities h2,
+  .Submission-mechanism h2 {
+    font-size: 20px;
+  }
+
+  .back-1 p,
+  .about-Job-requirements p,
+  .Basic-responsibilities p,
+  .Submission-mechanism p,
+  .about-Job-Skills p {
+    font-size: 14px;
+  }
+}
+
+/* ---------- 575 ---------- */
+@media (max-width: 575.98px) {
+  .WorkDetails .container {
+    width: 92%;
+  }
+
+  .title-Work h1 {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .title-Work p {
+    font-size: 13px;
+  }
+
+  .icon-WorkDetails span {
+    font-size: 16px;
+  }
+
+  .button-WorkDetails {
+    gap: 10px;
+  }
+
+  .button-WorkDetails button {
+    height: 42px;
+    font-size: 13px;
+    border-radius: 24px;
+  }
+
+  .icon-save-Work {
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+  }
+
+  .Company-WorkDetails {
+    justify-content: center;
+  }
+
+  .Company-WorkDetails p {
+    font-size: 16px;
+  }
+
+  .Company-WorkDetails img {
+    width: 40px;
+    height: auto;
+  }
+
+  .about-WorkDetails {
+    border-radius: 18px;
+    padding: 16px;
+  }
+
+  .back-1 h2,
+  .back-2 h3,
+  .Job-requirements h2,
+  .Job-Skills h2,
+  .Basic-responsibilities h2,
+  .Submission-mechanism h2 {
+    font-size: 18px;
+  }
+
+  .back-1 p,
+  .about-Job-requirements p,
+  .Basic-responsibilities p,
+  .Submission-mechanism p,
+  .about-Job-Skills p {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .about-Job-requirements {
+    padding: 14px;
+  }
+
+  .about-Job-Skills {
+    justify-content: center;
+  }
+
+  .about-Job-Skills p {
+    padding: 6px 12px;
+  }
+}

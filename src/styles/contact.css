@@ -1,25 +1,13 @@
 .contact {
   min-height: 78vh;
   padding: 80px 0;
-  direction: rtl;
-  font-family: 'Tajawal', sans-serif;
-}
-
-.contact .container {
-  width: 90%;
-  max-width: 1350px;
-  margin: auto;
-}
-
-.about-contact {
-  margin: 0px 0px 0px 173px;
 }
 
 .about-contact h1 {
   color: #dd5c16;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 800;
-  margin-bottom: 10px;
+  margin-bottom: -24px;
 }
 
 .about-contact h2 {
@@ -34,6 +22,7 @@
   font-size: 18px;
   line-height: 1.9;
   margin-bottom: 25px;
+  max-width: 461px;
 }
 
 .social ul {
@@ -86,33 +75,31 @@
 
 .form-group label {
   display: block;
-  text-align: right;
   color: #555;
   font-size: 15px;
   margin-bottom: 8px;
 }
 
-.form-group input{
-  width: 100%;
-  border: 0.25px solid #DD5C16;
-  border-radius: 47px;
-  outline: none;
-  padding: 0 22px;
-  height: 48px;
-  font-family: 'Tajawal', sans-serif;
-  color: #777;
-  box-sizing: border-box;
-}
+.form-group input,
 .form-group textarea {
   width: 100%;
   border: 0.25px solid #DD5C16;
-  border-radius: 30px;
   outline: none;
   padding: 0 22px;
   height: 48px;
-  font-family: 'Tajawal', sans-serif;
   color: #777;
   box-sizing: border-box;
+}
+
+.form-group input {
+  border-radius: 47px;
+}
+
+.form-group textarea {
+  border-radius: 30px;
+  height: 150px;
+  resize: none;
+  padding-top: 18px;
 }
 
 .form-group input::placeholder,
@@ -153,7 +140,6 @@
 }
 
 .send-btn {
-  font-family: 'Tajawal', sans-serif;
   width: 100%;
   height: 48px;
   border: none;
@@ -193,32 +179,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.contact {
-  direction: rtl;
-}
-
-.contact[dir="ltr"] {
-  direction: ltr;
-}
-
-.contact[dir="ltr"] .phone-box {
-  flex-direction: row-reverse;
-}
-
-.contact[dir="ltr"] .info-item {
-  flex-direction: row-reverse;
-}
-
-.contact[dir="ltr"] .about-contact {
-  text-align: left;
-  margin: auto;
-}
-
-.contact[dir="rtl"] .about-contact {
-  text-align: right;
-}
-
 
 @media (max-width: 991.98px) {
   .contact {

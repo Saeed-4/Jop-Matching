@@ -1,13 +1,6 @@
-import messages from '@/data/lang'
+import { latestJobs } from '@/data/latestJobs'
 
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
   data() {
     return {
       currentPage: 1,
@@ -16,26 +9,22 @@ export default {
   },
 
   computed: {
-    text() {
-      return messages[this.currentLang]
-    },
-
     jobs() {
-      return this.text.latestJobsPage.jobs
+      const lang = this.$i18n.locale
+
+      return latestJobs.map(job => ({
+        ...job,
+        category: job.category[lang],
+        title: job.title[lang],
+        company: job.company[lang],
+        description: job.description[lang],
+        showMore: job.showMore[lang],
+        tags: job.tags[lang],
+        applyNow: job.applyNow[lang],
+        date: job.date
+      }))
     },
 
-    paginatedJobs() {
-      const start = (this.currentPage - 1) * this.perPage
-      return this.jobs.slice(start, start + this.perPage)
-    },
-
-    totalPages() {
-      return Math.ceil(this.filteredJobs.length / this.perPage)
-    },
-
-    visiblePages() {
-      return Array.from({ length: this.totalPages }, (_, i) => i + 1)
-    },
     jobQuery() {
       return this.$route.query.job || ''
     },
@@ -49,13 +38,36 @@ export default {
         const matchJob = this.jobQuery
           ? job.title.toLowerCase().includes(this.jobQuery.toLowerCase())
           : true
-      
+
         const matchLocation = this.locationQuery
           ? job.tags.join(' ').toLowerCase().includes(this.locationQuery.toLowerCase())
           : true
-      
+
         return matchJob && matchLocation
       })
+    },
+
+    paginatedJobs() {
+      const start = (this.currentPage - 1) * this.perPage
+      return this.filteredJobs.slice(start, start + this.perPage)
+    },
+
+    totalPages() {
+      return Math.ceil(this.filteredJobs.length / this.perPage)
+    },
+
+    visiblePages() {
+      return Array.from({ length: this.totalPages }, (_, i) => i + 1)
+    }
+  },
+
+  watch: {
+    '$i18n.locale'() {
+      this.currentPage = 1
+    },
+
+    '$route.query'() {
+      this.currentPage = 1
     }
   },
 

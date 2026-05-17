@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+.slidar-See-works{
+  margin: 0px 0px 30px 0px;
+}
+
 .how-use-hero {
   position: relative;
   height: 646px;
@@ -36,7 +40,6 @@ body {
 }
 
 .top-text h2 {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.56;
@@ -45,7 +48,6 @@ body {
 }
 
 .top-text p {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.56; 
@@ -67,31 +69,29 @@ body {
 }
 
 .play-btn {
-   width: 63px;
-   height: 63px;
-   border-radius: 50%;
-   border: 0;
-   background: radial-gradient(
-     circle at 30% 30%,
-     rgba(255,255,255,0.35) 0%,
-     rgba(0,0,0,0.2) 40%,
-     rgba(255,255,255,0.1) 70%,
-     rgba(0,0,0,0.3) 100%
-   );
-   display: flex;
-   align-items: center;
-   margin-bottom: 13px;
-   cursor: pointer;
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  border: 0;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255,255,255,0.35) 0%,
+    rgba(0,0,0,0.2) 40%,
+    rgba(255,255,255,0.1) 70%,
+    rgba(0,0,0,0.3) 100%
+  );
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
 }
 
 .play-btn span {
-  color: #f28c1b;
-  font-size: 28px;
-  transform: rotate(270deg);
+  color: #F97316;
+  font-size: 57px;
 }
 
 .video-content h3 {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 28px;
@@ -100,7 +100,6 @@ body {
 }
 
 .video-content p {
-  font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-size: 20.4px;
   line-height: 32px;
@@ -177,9 +176,9 @@ body {
 }
 
 .title-how-use-hero{
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .back{
@@ -187,59 +186,55 @@ body {
 }
 
 .title-how-use-hero h2{
-    width: 100%;
-    font-family: "Tajawal";
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30.6px;
-    line-height: 40px;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    color: #F97316;
+  width: 100%;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30.6px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center !important;
+  vertical-align: middle;
+  color: #F97316;
 }
 
 .title-how-use-hero p{
-    width: 100%;
-    font-family: "Tajawal";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 28px;
-    letter-spacing: 0;
-    text-align: center;
-    vertical-align: middle;
-    color: #4B5563;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center !important;
+  vertical-align: middle;
+  color: #4B5563;
 }
 
 .Simple-steps{
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .Simple-steps h2{
-   font-family: "Tajawal";
-   font-weight: 700;
-   font-style: normal;
-   font-size: 30.6px;
-   line-height: 40px;
-   letter-spacing: 0;
-   text-align: center;
-   vertical-align: middle;
-   color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30.6px;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-align: center !important;
+  vertical-align: middle;
+  color: #000000;
 }
 
 .Simple-steps p{
-   font-family: "Tajawal";
-   font-weight: 400;
-   font-style: normal;
-   font-size: 15.3px;
-   line-height: 28px;
-   letter-spacing: 0;
-   text-align: center;
-   vertical-align: middle;
-   color: #4B5563;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15.3px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center !important;
+  vertical-align: middle;
+  color: #4B5563;
 }
 
 .section1,
@@ -247,7 +242,6 @@ body {
   min-height: 145px;
   position: relative;
   padding: 10px 35px;
-  font-family: 'Tajawal', sans-serif;
 }
 
 .section2 {
@@ -284,52 +278,48 @@ body {
 }
 
 .section1 h3 {
-    font-family: "Tajawal";
-    font-weight: 800;
-    font-style: normal;
-    font-size: 25px;
-    line-height: 32px;
-    letter-spacing: 0;
-    text-align: right;
-    vertical-align: middle;
-    color: #111827;
-    display: flex;
-    justify-content: flex-end;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: right;
+  vertical-align: middle;
+  color: #111827;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .section2 h3 {
-    font-family: "Tajawal";
-    font-weight: 800;
-    font-style: normal;
-    font-size: 25px;
-    line-height: 32px;
-    letter-spacing: 0;
-    text-align: right;
-    vertical-align: middle;
-    color: #111827;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: right;
+  vertical-align: middle;
+  color: #111827;
 }
 
 .section1 p:not(:first-child){
-    font-family: "Tajawal";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1.5; 
-    letter-spacing: 0;
-    vertical-align: middle;
-    display: flex;
-    justify-content: flex-end;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5; 
+  letter-spacing: 0;
+  vertical-align: middle;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .section2 p:not(:first-child) {
-    font-family: "Tajawal";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1.5; 
-    letter-spacing: 0;
-    text-align: right;
-    vertical-align: middle;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5; 
+  letter-spacing: 0;
+  text-align: right;
+  vertical-align: middle;
 }
 
 .section1 img,
@@ -368,17 +358,11 @@ body {
   filter: invert(55%) sepia(95%) saturate(1300%) hue-rotate(350deg) brightness(100%) contrast(95%);
 }
 
-.See-works {
-  padding: 60px 0;
-  
-}
-
 .title-See-works {
   padding-top: 30px;
 }
 
 .title-See-works h3 {
-  font-family: "Tajawal";
   font-weight: 700;
   font-size: 28px;
   color: #F97316;
@@ -386,7 +370,6 @@ body {
 }
 
 .title-See-works p {
-  font-family: "Tajawal";
   font-size: 16px;
   line-height: 1.8;
   color: #000000;
@@ -400,7 +383,6 @@ body {
 }
 
 .title-See-works ul li {
-  font-family: "Tajawal";
   font-size: 14px;
   color: #6B7280;
   margin-bottom: 12px;
@@ -452,10 +434,13 @@ body {
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  font-size: 30px;
-  color: #fff;
+  justify-content: center;
   cursor: pointer;
+}
+
+.video-box .play-btn span {
+  color: #fff;
+  font-size: 57px;
 }
 
 .color-bak1{
@@ -471,27 +456,23 @@ body {
     left: 0;
 }
 
-.slidar-See-works {
-  padding: 60px 0;
-}
-
 .title-slidar {
   text-align: center;
   margin-bottom: 35px;
 }
 
 .title-slidar h2 {
-  font-family: "Tajawal";
   font-size: 30px;
   font-weight: 700;
   color: #111827;
   margin-bottom: 8px;
+  text-align: center !important;
 }
 
 .title-slidar p {
-  font-family: "Tajawal";
   font-size: 16px;
   color: #6B7280;
+  text-align: center !important;
 }
 
 .platform-card {
@@ -555,7 +536,6 @@ body {
 }
 
 .card-contente h3 {
-  font-family: "Tajawal";
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 6px;
@@ -563,7 +543,6 @@ body {
 }
 
 .card-contente p {
-  font-family: "Tajawal";
   font-size: 14px;
   margin: 0;
   color: #fff;
@@ -571,41 +550,74 @@ body {
 
 .bg-left {
   position: absolute;
-  left: 40px;
   bottom: 20px;
   opacity: 0.15;
   width: 200px;
+  display: block;
+  font-size: 160px;
+  color: #fff;
+  z-index: 1;
+}
+
+.bg-center {
+  position: absolute;
+  bottom: 0px;
+  opacity: 0.15;
+  width: 424px;
+  display: block;
+  font-size: 160px;
+  color: #fff;
+  z-index: 1;
+  left: 200px;
+}
+
+.bg-left.main {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  opacity: 1;
+  filter: grayscale(1);
+  opacity: 0.3;
+}
+
+.bg-center.second {
+  left: 266;         
 }
 
 .bg-right {
   position: absolute;
-  right: 40px;
-  top: 20px;
-  opacity: 0.15;
-  width: 200px;
+  right: 1px;
+  top: 65px;
+  opacity: 1;
+  width: 327px;
+  display: block;
+  font-size: 160px;
+  z-index: 1;
+  filter: grayscale(1);
 }
 
 .cta-content h2 {
-   font-family: "Tajawal";
    font-weight: 700;
    font-style: normal;
-   font-size: 30.6px;
    line-height: 40px;
    letter-spacing: 0;
-   text-align: center;
+   text-align: center !important;
    vertical-align: middle;
+   font-size: 28px;
+   color: #fff;
+   margin-bottom: 10px;
 }
 
 .cta-content p {
-font-family: "Tajawal";
-font-weight: 400;
-font-style: normal;
-font-size: 17px;
-line-height: 32px;
-letter-spacing: 0;
-text-align: center;
-vertical-align: middle;
-color: #FFF7ED;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center !important;
+  vertical-align: middle;
+  color: #FFF7ED;
+  font-size: 15px;
+  margin-bottom: 25px;
 }
 
 .cta-buttons {
@@ -619,49 +631,22 @@ color: #FFF7ED;
 .cta-buttons a {
   width: 220px;
   text-align: center;
-}
-
-.cta-note {
-  font-family: "Tajawal";
-  font-size: 12px;
-  color: #FFEFE5;
-}
-
-.cta-buttons a {
   text-decoration: none;
   display: inline-block;
-  font-family: "Tajawal";
   font-size: 14px;
   padding: 10px 22px;
   border-radius: 6px;
   transition: 0.3s;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 0;
+  vertical-align: middle;
 }
 
-.cta-buttons a{
-    font-family: "Tajawal";
-    font-weight: 800;
-    font-style: normal;
-    font-size: 15.3px;
-    line-height: 28px;
-    letter-spacing: 0;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.cta-buttons a:first-child {
-  background: #fff;
-  color: #F97316;
-}
-
-
-.cta-buttons a:last-child {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.cta-buttons a:first-child:hover {
-  background: #f3f4f6;
+.cta-note {
+  font-size: 12px;
+  color: #FFEFE5;
 }
 
 .cta-buttons a:last-child:hover {
@@ -676,61 +661,10 @@ color: #FFF7ED;
   padding: 70px 0;
   text-align: center;
   overflow: hidden;
-}
-
-.bg-left {
-  position: absolute;
-  left: 40px;
-  bottom: 20px;
-  opacity: 0.15;
-  width: 200px;
-}
-
-.bg-right {
-  position: absolute;
-  right: 40px;
-  top: 20px;
-  opacity: 0.15;
-  width: 200px;
-}
-
-.cta-content h2 {
-  font-family: "Tajawal";
-  font-size: 28px;
-  font-weight: 700;
-  color: #fff;
   margin-bottom: 10px;
 }
 
-.cta-content p {
-  font-family: "Tajawal";
-  font-size: 15px;
-  color: #FFEFE5;
-  margin-bottom: 25px;
-}
-
-.cta-note {
-  font-family: "Tajawal";
-  font-size: 12px;
-  color: #FFEFE5;
-}
-
-.cta-buttons a {
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Tajawal";
-  font-size: 14px;
-  padding: 10px 22px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-
-.cta-buttons a:first-child {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
+.cta-buttons a:first-child,
 .cta-buttons a:last-child {
   background: transparent;
   color: #fff;
@@ -738,144 +672,11 @@ color: #FFF7ED;
 }
 
 .cta-buttons a:first-child:hover {
-  background: #fff;
+  background: #f3f4f6;
   color: #F97316;
-}
-
-.cta-buttons a:last-child:hover {
-  background: #fff;
-  color: #F97316;
-}
-
-.bg-left,
-.bg-right {
-  display: block;
-  font-size: 160px;
-  color: #fff;
-  z-index: 1;
 }
 
 .cta-content {
   position: relative;
   z-index: 2;
 }
-
-
-.bg-left.main {
-  position: absolute;
-  left: 30px;
-  bottom: 0;
-  width: 200px;
-  opacity: 0.15;
-}
-
-
-.bg-left.second {
-  left: 0;              
-  width: 200px;         
-}
-
-.bg-right {
-  right: 0;             
-  width: 200px;         
-}
-
-.bg-left.second {
-  left: 0;              
-  width: 200px;         
-}
-
-.bg-right {
-  right: 0;             
-  width: 200px;         
-}
-
-
-
-[dir="rtl"] {
-  text-align: right;
-}
-
-[dir="ltr"] {
-  text-align: left;
-}
-
-[dir="rtl"] .bg-left {
-  left: 40px;
-}
-
-[dir="ltr"] .bg-left {
-  right: 40px;
-  left: auto;
-}
-
-.how-use-page[dir="rtl"] {
-  direction: rtl;
-  text-align: right;
-}
-
-.how-use-page[dir="ltr"] {
-  direction: ltr;
-  text-align: left;
-}
-
-.how-use-page[dir="rtl"] .top-text h2,
-.how-use-page[dir="rtl"] .top-text p,
-.how-use-page[dir="rtl"] .section1 h3,
-.how-use-page[dir="rtl"] .section2 h3,
-.how-use-page[dir="rtl"] .section1 p,
-.how-use-page[dir="rtl"] .section2 p {
-  text-align: right;
-}
-
-.how-use-page[dir="ltr"] .top-text h2,
-.how-use-page[dir="ltr"] .top-text p,
-.how-use-page[dir="ltr"] .section1 h3,
-.how-use-page[dir="ltr"] .section2 h3,
-.how-use-page[dir="ltr"] .section1 p,
-.how-use-page[dir="ltr"] .section2 p {
-  text-align: left;
-}
-
-.how-use-page[dir="rtl"] .section2 {
-  border-right: 1px solid #e5e7eb;
-  border-left: 0;
-}
-
-.how-use-page[dir="ltr"] .section2 {
-  border-left: 1px solid #e5e7eb;
-  border-right: 0;
-}
-
-.how-use-page[dir="rtl"] .title-See-works ul li {
-  padding-right: 20px;
-  padding-left: 0;
-}
-
-.how-use-page[dir="ltr"] .title-See-works ul li {
-  padding-left: 20px;
-  padding-right: 0;
-}
-
-.how-use-page[dir="rtl"] .title-See-works ul li::before {
-  right: 0;
-  left: auto;
-}
-
-.how-use-page[dir="ltr"] .title-See-works ul li::before {
-  left: 0;
-  right: auto;
-}
-
-.how-use-page[dir="rtl"] .bg-left.main {
-  left: 30px;
-  right: auto;
-}
-
-.how-use-page[dir="ltr"] .bg-left.main {
-  right: 30px;
-  left: auto;
-}
-
-
-

@@ -6,10 +6,10 @@
           <div class="col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="nav-links">
               <ul>
-                <li><router-link to="/faq"><p>{{ text.footer.faq }}</p></router-link></li>
-                <li><router-link to="/howToUse"><p>{{ text.footer.howToUse }}</p></router-link></li>
-                <li><router-link to="/contact"><p>{{ text.footer.contact }}</p></router-link></li>
-                <li><router-link to="/privacy"><p>{{ text.footer.privacy }}</p></router-link></li>
+                <li><router-link to="/faq"><p>{{ $t('footer.faq') }}</p></router-link></li>
+                <li><router-link to="/howToUse"><p>{{ $t('footer.howToUse') }}</p></router-link></li>
+                <li><router-link to="/contact"><p>{{ $t('footer.contact') }}</p></router-link></li>
+                <li><router-link to="/privacy"><p>{{ $t('footer.privacy') }}</p></router-link></li>
               </ul>
             </div>
           </div>
@@ -17,12 +17,12 @@
             <div class="StayWithUs">
               <div class="subscribe-section">
                 <div class="title">
-                  <h2>{{ text.footer.stayInTouch }}</h2> 
+                  <h2>{{ $t('footer.stayInTouch') }}</h2>
                 </div>
 
 
                 <div class="subscribe-box">
-                  <input type="email" :placeholder="text.footer.emailPlaceholder" />
+                  <input type="email" :placeholder="$t('footer.emailPlaceholder')" />
 
                   <button class="arrow-btn">
                     <span><img src="@/assets/Vector.png" alt="logo"></span>
@@ -41,7 +41,7 @@
       <div class="container">
         <div class="col-lg-4 col-md-12 col-sm-12 col-12">
           <div class="JM">
-            <p>©2025 JM {{ text.footer.rights }}</p>
+            <p>{{ $t('footer.rights') }}©2025 JM </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 col-12">
@@ -57,7 +57,7 @@
         <div class="col-lg-4 col-md-12 col-sm-12 col-12">
           <div class="development">
             <div class="dev-h">
-              <h2>{{ text.footer.developedBy }}</h2>
+              <h2>{{ $t('footer.developedBy') }}</h2>
             </div>
             <div class="dev-img">
               <router-link to="#"><img src="@/assets/Group 1000005954.png" alt="img"></router-link>
@@ -71,16 +71,16 @@
 
 <script setup>
 import { computed } from 'vue'
-import messages from '@/data/lang'
+import messages from '@/locales'
 
 const props = defineProps({
   currentLang: {
     type: String,
-    default: 'en'
+    default: 'ar'
   }
 })
 
-const text = computed(() => messages[props.currentLang])
+const text = computed(() => messages[props.currentLang] || messages.ar)
 </script>
 
 <style scoped>
@@ -99,7 +99,7 @@ ul {
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 56px;
 }
 
 li {
@@ -134,7 +134,6 @@ li {
 }
 
 .nav-links ul li p {
-  font-family: 'Tajawal', sans-serif;
   font-size: 15px;
   line-height: 100%;
   font-weight: 400;
@@ -165,7 +164,6 @@ li {
 }
 
 .title h2 {
-  font-family: 'Tajawal', sans-serif;
   margin: 0;
   color: #DD5C16;
   font-size: 15px;
@@ -183,7 +181,6 @@ li {
   border-radius: 31px;
   border: 0.5px solid #B2B2B2;
   background: transparent;
-
   padding: 0 4px 0 4px;
 }
 
@@ -193,7 +190,6 @@ li {
   border: none;
   outline: none;
   background: transparent;
-  font-family: 'Tajawal', sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #999;
@@ -270,7 +266,6 @@ li {
 
 .JM p {
   margin: 0;
-  font-family: 'Tajawal', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 100%;
@@ -315,7 +310,6 @@ li {
 
 .dev-h h2 {
   margin: 0;
-  font-family: 'Tajawal', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
@@ -327,18 +321,6 @@ li {
   width: 54px;
   height: auto;
   object-fit: contain;
-}
-
-@font-face {
-  font-family: 'Tajawal';
-  src: url('@/assets/fonts/Tajawal/Tajawal-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Tajawal';
-  src: url('@/assets/fonts/Tajawal/Tajawal-Bold.ttf') format('truetype');
-  font-weight: 700;
 }
 
 @media (max-width: 767.98px) {
@@ -361,7 +343,6 @@ li {
     flex-direction: column;
   }
 
-  /* الروابط */
   .nav-links ul {
     display: flex;
     flex-direction: column;
@@ -374,7 +355,6 @@ li {
     list-style: none;
   }
 
-  /* قسم الاشتراك */
   .StayWithUs {
     display: flex;
     flex-direction: column;
@@ -405,7 +385,6 @@ li {
     height: 42px;
   }
 
-  /* الأيقونة */
   .icon-footer img {
     max-width: 120px;
     margin-top: 10px;

@@ -1,13 +1,6 @@
-import messages from '@/data/lang'
+import { latestJobs } from '@/data/latestJobs'
 
 export default {
-  props: {
-    currentLang: {
-      type: String,
-      default: 'ar'
-    }
-  },
-
   data() {
     return {
       currentPage: 1,
@@ -16,12 +9,23 @@ export default {
   },
 
   computed: {
-    text() {
-      return messages[this.currentLang]
+    lang() {
+      return this.$i18n.locale
     },
 
     jobs() {
-      return this.text.latestJobsPage.jobs
+      return latestJobs.map(job => ({
+        ...job,
+        category: job.category[this.lang],
+        title: job.title[this.lang],
+        company: job.company[this.lang],
+        description: job.description[this.lang],
+        showMore: job.showMore[this.lang],
+        tags: job.tags[this.lang],
+        applyNow: job.applyNow[this.lang],
+        date: job.date,
+        logo: job.logo
+      }))
     },
 
     paginatedJobs() {
@@ -38,9 +42,16 @@ export default {
     }
   },
 
+  watch: {
+    '$i18n.locale'() {
+      this.currentPage = 1
+    }
+  },
+
   methods: {
     goToPage(page) {
       this.currentPage = page
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 }
