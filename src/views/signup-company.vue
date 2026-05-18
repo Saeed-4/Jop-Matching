@@ -85,10 +85,10 @@
               <p class="otp-text">{{ $t('signupCompany.otpText') }}</p>
 
               <div class="otp-inputs">
-                <input type="text" maxlength="1" />
-                <input type="text" maxlength="1" />
-                <input type="text" maxlength="1" />
-                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" placeholder="#" />
+                <input type="text" maxlength="1" placeholder="#"/>
+                <input type="text" maxlength="1" placeholder="#"/>
+                <input type="text" maxlength="1" placeholder="#"/>
               </div>
 
               <div class="otp-footer">
@@ -108,16 +108,21 @@
           <div v-if="currentStep === 3" class="step-content company-step">
             <div class="form-group">
               <label>{{ $t('signupCompany.fields.workSector') }}</label>
-              <div class="select-box">
-                <select v-model="form.workSector">
-                  <option disabled value="">
-                    {{ $t('signupCompany.fields.workSector') }}
-                  </option>
-                  <option>IT</option>
-                  <option>Marketing</option>
-                  <option>Design</option>
-                </select>
-                <span class="icon-up-chevron_svgrepocom"></span>
+              <div class="select-box custom-select" @click="toggleSector">
+                <div class="selected-value">
+                  {{ form.workSector || $t('signupCompany.fields.workSector') }}
+                </div>
+              
+                <span
+                  class="icon-up-chevron_svgrepocom"
+                  :class="{ rotate: showSector }"
+                ></span>
+              
+                <ul v-if="showSector" class="select-dropdown">
+                  <li @click.stop="selectSector('IT')">IT</li>
+                  <li @click.stop="selectSector('Marketing')">Marketing</li>
+                  <li @click.stop="selectSector('Design')">Design</li>
+                </ul>
               </div>
             </div>
 
@@ -128,20 +133,25 @@
 
             <div class="form-group">
               <label>{{ $t('signupJobSeeker.fields.country') }}</label>
-              <div class="select-box">
-                <select v-model="form.workSector">
-                  <option disabled value="">
-                    {{ $t('signupJobSeeker.fields.select') }}
-                  </option>
-                  <option
+              <div class="select-box custom-select" @click="toggleCountry">
+                <div class="selected-value">
+                  {{ form.country || $t('signupJobSeeker.fields.select') }}
+                </div>
+              
+                <span
+                  class="icon-up-chevron_svgrepocom"
+                  :class="{ rotate: showCountry }"
+                ></span>
+              
+                <ul v-if="showCountry" class="select-dropdown">
+                  <li
                     v-for="country in $tm('jobOpportunities.filters.countries')"
                     :key="country"
-                    :value="country"
+                    @click.stop="selectCountry(country)"
                   >
                     {{ country }}
-                  </option>
-                </select>
-                <span class="icon-up-chevron_svgrepocom"></span>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -149,44 +159,50 @@
               <div class="form-group half">
                 <label>{{ $t('signupCompany.fields.city') }}</label>
               
-                <div class="select-box">
-                  <select v-model="form.city">
-                    <option disabled value="">
-                      {{ $t('signupCompany.fields.city') }}
-                    </option>
-                  
-                    <option
+                <div class="select-box custom-select" @click="toggleCity">
+                  <div class="selected-value">
+                    {{ form.city || $t('signupCompany.fields.city') }}
+                  </div>
+                
+                  <span
+                    class="icon-up-chevron_svgrepocom"
+                    :class="{ rotate: showCity }"
+                  ></span>
+                
+                  <ul v-if="showCity" class="select-dropdown">
+                    <li
                       v-for="city in $tm('signupCompany.cities')"
                       :key="city"
-                      :value="city"
+                      @click.stop="selectCity(city)"
                     >
                       {{ city }}
-                    </option>
-                  </select>
-                
-                  <span class="icon-up-chevron_svgrepocom"></span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             
               <div class="form-group half">
                 <label>{{ $t('signupCompany.fields.governorate') }}</label>
               
-                <div class="select-box">
-                  <select v-model="form.governorate">
-                    <option disabled value="">
-                      {{ $t('signupCompany.fields.governorate') }}
-                    </option>
-                  
-                    <option
+                <div class="select-box custom-select" @click="toggleGovernorate">
+                  <div class="selected-value">
+                    {{ form.governorate || $t('signupCompany.fields.governorate') }}
+                  </div>
+                
+                  <span
+                    class="icon-up-chevron_svgrepocom"
+                    :class="{ rotate: showGovernorate }"
+                  ></span>
+                
+                  <ul v-if="showGovernorate" class="select-dropdown">
+                    <li
                       v-for="governorate in $tm('signupCompany.governorates')"
                       :key="governorate"
-                      :value="governorate"
+                      @click.stop="selectGovernorate(governorate)"
                     >
                       {{ governorate }}
-                    </option>
-                  </select>
-                
-                  <span class="icon-up-chevron_svgrepocom"></span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -199,22 +215,25 @@
             <div class="form-group">
               <label>{{ $t('signupCompany.fields.companySize') }}</label>
 
-              <div class="select-box">
-                <select v-model="form.companySize">
-                  <option disabled value="">
-                    {{ $t('signupCompany.fields.companySize') }}
-                  </option>
-                
-                  <option
+              <div class="select-box custom-select" @click="toggleCompanySize">
+                <div class="selected-value">
+                  {{ form.companySize || $t('signupCompany.fields.companySize') }}
+                </div>
+              
+                <span
+                  class="icon-up-chevron_svgrepocom"
+                  :class="{ rotate: showCompanySize }"
+                ></span>
+              
+                <ul v-if="showCompanySize" class="select-dropdown">
+                  <li
                     v-for="size in $tm('signupCompany.companySizes')"
                     :key="size"
-                    :value="size"
+                    @click.stop="selectCompanySize(size)"
                   >
                     {{ size }}
-                  </option>
-                </select>
-              
-                <span class="icon-up-chevron_svgrepocom"></span>
+                  </li>
+                </ul>
               </div>
             </div>
 

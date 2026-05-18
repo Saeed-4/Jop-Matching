@@ -15,6 +15,35 @@
               {{ currentLang === 'ar' ? 'EN' : 'AR' }}
             </button>
           </div>
+        
+          <div class="menu-toggle" @click="toggleMenu">
+            ☰
+          </div>
+        </div>
+
+        <div class="overlay" :class="{ active: isMenuOpen }" @click="toggleMenu"></div>
+
+        <div class="mobile-menu" :class="{ active: isMenuOpen }">
+          <div class="close-menu" @click="toggleMenu">✕</div>
+        
+          <ul>
+            <li><router-link to="/">{{ $t('navbar.home') }}</router-link></li>
+            <li><router-link to="/Operators">{{ $t('navbar.operators') }}</router-link></li>
+            <li><router-link to="/JobOpportunities">{{ $t('navbar.jobOpportunities') }}</router-link></li>
+            <li><router-link to="/GovernmentJobs">{{ $t('navbar.governmentJobs') }}</router-link></li>
+          </ul>
+        
+          <button class="mobile-lang" @click="toggleLang">
+            {{ currentLang === 'ar' ? 'EN' : 'AR' }}
+          </button>
+
+          <div class="login">
+            <router-link :to="localizedPath('/login')"><p>{{ $t('navbar.login') }}</p></router-link>
+          </div>
+
+          <div class="new-user">
+            <router-link :to="localizedPath('/signup')">{{ $t('navbar.newUser') }}</router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -49,6 +78,9 @@ const changeLang = (lang) => {
 
 const toggleLang = () => {
   changeLang(props.currentLang === 'ar' ? 'en' : 'ar')
+}
+const localizedPath = (path) => {
+  return props.currentLang === 'en' ? `/en${path}` : path
 }
 </script>
 
@@ -130,6 +162,140 @@ const toggleLang = () => {
   cursor: pointer;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+  transition: 0.3s;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  inset-inline-end: -100%;
+  width: 82%;
+  max-width: 340px;
+  height: 100vh;
+  background: #fff;
+  z-index: 100;
+  padding: 26px 22px;
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.12);
+}
+
+.mobile-menu.active {
+  inset-inline-end: 0;
+}
+
+.close-menu {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #DD5C16;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu ul {
+  margin: 45px 0 30px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mobile-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 14px;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mobile-menu li a:hover {
+  background: #fff2e9;
+  color: #DD5C16;
+}
+
+.mobile-lang {
+  margin-top: auto;
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 30px;
+  background: #DD5C16;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mobile-menu .login,
+.mobile-menu .new-user {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.mobile-menu .login a,
+.mobile-menu .new-user a {
+  width: 100%;
+  height: 44px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.mobile-menu .login a {
+  background: #DD5C16;
+  color: #fff;
+}
+
+.mobile-menu .login p {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.mobile-menu .new-user a {
+  border: 1px solid #DD5C16;
+  color: #DD5C16;
+  font-weight: 700;
+}
+
+.close-menu {
+  align-self: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+  color: #DD5C16;
+}
+
+
 @media (max-width: 991px) {
   .nav {
     height: 80px;
@@ -173,8 +339,11 @@ const toggleLang = () => {
   }
 
   .lang-switch {
-    width: 40px;
-    height: 40px;
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .lang-switch button {
@@ -196,13 +365,6 @@ const toggleLang = () => {
     height: 34px;
   }
 
-  .lang-switch {
-    width: 36px;
-    height: 36px;
-  }
-
-  .lang-switch button {
-    font-size: 13px;
-  }
+  
 }
 </style>

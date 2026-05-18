@@ -200,4 +200,39 @@
     height: 44px;
     font-size: 15px;
   }
+
+  .steps-indicator {
+    gap: 40px !important;
+    flex-wrap: wrap;
+  }
+
+  .back-link {
+    margin-top: -30px;
+  }
+
+  .custom-select {
+    min-height: 44px;
+  }
+
+  .selected-value {
+    min-height: 44px;
+    font-size: 13px;
+    padding: 0 16px;
+  }
+
+  .select-dropdown li {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .custom-upload {
+    font-size: 10px;
+    margin: auto;
+    padding: 0px 10px;
+    
+  }
+  
+  .custom-upload span{
+    text-align: center;
+  }
 }

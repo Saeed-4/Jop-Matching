@@ -323,71 +323,132 @@ li {
   object-fit: contain;
 }
 
-@media (max-width: 767.98px) {
-  .development{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
+@media (max-width: 991.98px) {
+  .footer-top {
+    padding: 28px 0;
+  }
+
+  .footer-top .row {
+    row-gap: 28px;
+  }
+
+  .nav-links {
     justify-content: center;
   }
 
-   .footer-top .row {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .footer-top .container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-
   .nav-links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px 32px;
     padding: 0;
-    align-items: center;
-  }
-
-  .nav-links li {
-    list-style: none;
   }
 
   .StayWithUs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    justify-content: center;
   }
 
   .subscribe-section {
     width: 100%;
-    max-width: 320px;
-    display: block;
+    max-width: 520px;
+    justify-content: center;
+  }
+
+  .footer-under .container {
+    gap: 18px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .JM,
+  .social,
+  .development {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-top {
+    padding: 32px 0;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .nav-links ul li p {
+    font-size: 16px;
+  }
+
+  .StayWithUs {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .subscribe-section {
+    flex-direction: column;
+    gap: 14px;
+    max-width: 100%;
+  }
+
+  .title h2 {
+    font-size: 16px;
   }
 
   .subscribe-box {
-    display: flex;
-    width: 100%;
-    gap: 8px;
+    max-width: 330px;
+    height: 44px;
+    margin: auto;
   }
 
   .subscribe-box input {
-    flex: 1;
-    height: 42px;
-    padding: 0 10px;
+    padding-inline: 14px;
+    font-size: 14px;
   }
 
-  .subscribe-box button {
-    width: 45px;
-    height: 42px;
+  .arrow-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .icon-footer {
+    width: 52px;
+    height: 52px;
   }
 
   .icon-footer img {
-    max-width: 120px;
-    margin-top: 10px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .footer-under {
+    padding: 18px 0;
+  }
+
+  .footer-under .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .JM p,
+  .dev-h h2 {
+    font-size: 14px;
+    white-space: normal;
+  }
+
+  .social ul {
+    gap: 14px;
+  }
+
+  .social ul li a {
+    width: 34px;
+    height: 34px;
+  }
+
+  .development {
+    flex-direction: column;
+    gap: 8px;
   }
 }
     

@@ -47,11 +47,6 @@
     width: 94%;
   }
 
-  .about-contact {
-    margin: 0 0 35px;
-    text-align: center;
-  }
-
   .about-contact h1 {
     font-size: 36px;
   }
@@ -70,6 +65,10 @@
 
   .box-contact {
     max-width: 100%;
+  }
+
+  .about-contact {
+    margin-bottom: 35px;
   }
 }
 
@@ -144,7 +143,8 @@
     font-size: 22px;
   }
 
-  .about-contact p {
+  .about-contact p { 
+    text-align: center !important;
     font-size: 14px;
   }
 
@@ -162,7 +162,10 @@
   }
 
   .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-evenly !important;
   }
 
   .info-item {
@@ -173,5 +176,29 @@
   .send-btn {
     height: 46px;
     font-size: 17px;
+  }
+
+  .box-contact {
+    padding: 25px 18px !important;
+  }
+
+  .about-contact h1 {
+    font-size: 30px;
+  }
+
+  .about-contact h2 {
+    font-size: 22px;
+  }
+
+  .phone-box {
+    gap: 8px;
+  }
+
+  .country-box {
+    width: 65px;
+  }
+
+  .about-contact{
+    margin: auto;
   }
 }

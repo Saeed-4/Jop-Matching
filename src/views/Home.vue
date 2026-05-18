@@ -671,6 +671,6 @@ export default {
   }
 }
 </script>
-<style src="../styles/resposive/home-responsive.css"></style>
+<style scoped src="../styles/resposive/home-responsive.css"></style>
 <style src="../styles/home.css"></style>
 <style src="../styles/icon.css"></style>

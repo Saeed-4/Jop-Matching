@@ -7,7 +7,11 @@ export default {
       extracted: false,
       skills: [],
       errors: {},
-
+      showGender: false,
+      showCountry: false,
+      showCity: false,
+      showGovernorate: false,
+      
       form: {
         firstName: '',
         lastName: '',
@@ -207,6 +211,42 @@ export default {
         console.error(error)
         alert(this.$t('signupJobSeeker.alerts.server'))
       }
-    }
+    },
+
+    toggleGender() {
+      this.showGender = !this.showGender
+    },
+
+    selectGender(value) {
+      this.form.gender = value
+      this.showGender = false
+    },
+
+    toggleCountry() {
+      this.showCountry = !this.showCountry
+    },
+
+    selectCountry(country) {
+      this.form.country = country
+      this.showCountry = false
+    },
+
+    toggleCity() {
+      this.showCity = !this.showCity
+    },
+    
+    selectCity(city) {
+      this.form.city = city
+      this.showCity = false
+    },
+    
+    toggleGovernorate() {
+      this.showGovernorate = !this.showGovernorate
+    },
+    
+    selectGovernorate(governorate) {
+      this.form.governorate = governorate
+      this.showGovernorate = false
+    },
   }
 }

@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
 a{
     text-decoration: none;
 }
@@ -579,8 +591,6 @@ a{
   left: -120px;
   background: #DD5C161A;
 }
-
-
 
 .buttom-Latest-Jobs{
   display: flex;
@@ -1478,5 +1488,4 @@ a{
 .select-arrow {
   pointer-events: none;
 }
-
 

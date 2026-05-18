@@ -139,14 +139,25 @@
             <div class="form-group half">
               <label>{{ $t('signupJobSeeker.fields.gender') }}</label>
 
-              <div class="select-box">
-                <select v-model="form.gender">
-                  <option value="">{{ $t('signupJobSeeker.fields.notSelected') }}</option>
-                  <option>{{ $t('signupJobSeeker.fields.male') }}</option>
-                  <option>{{ $t('signupJobSeeker.fields.female') }}</option>
-                </select>
+              <div class="select-box custom-select" @click="toggleGender">
+                <div class="selected-value">
+                  {{ form.gender || $t('signupJobSeeker.fields.notSelected') }}
+                </div>
               
-                <span class="icon-up-chevron_svgrepocom"></span>
+                <span
+                  class="icon-up-chevron_svgrepocom"
+                  :class="{ rotate: showGender }"
+                ></span>
+              
+                <ul v-if="showGender" class="select-dropdown">
+                  <li @click.stop="selectGender('ذكر')">
+                    {{ $t('signupJobSeeker.fields.male') }}
+                  </li>
+                
+                  <li @click.stop="selectGender('أنثى')">
+                    {{ $t('signupJobSeeker.fields.female') }}
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -172,20 +183,28 @@
 
             <div class="form-group half">
               <label>{{ $t('signupJobSeeker.fields.country') }}</label>
-              <div class="select-box">
-                <select v-model="form.workSector">
-                  <option disabled value="">
-                    {{ $t('signupJobSeeker.fields.select') }}
-                  </option>
-                  <option
+              <div class="select-box custom-select" @click="toggleCountry">
+                <div class="selected-value">
+                  {{
+                    form.workSector ||
+                    $t('signupJobSeeker.fields.select')
+                  }}
+                </div>
+              
+                <span
+                  class="icon-up-chevron_svgrepocom"
+                  :class="{ rotate: showCountry }"
+                ></span>
+              
+                <ul v-if="showCountry" class="select-dropdown">
+                  <li
                     v-for="country in $tm('jobOpportunities.filters.countries')"
                     :key="country"
-                    :value="country"
+                    @click.stop="selectCountry(country)"
                   >
                     {{ country }}
-                  </option>
-                </select>
-                <span class="icon-up-chevron_svgrepocom"></span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -194,44 +213,52 @@
               <div class="form-group half">
                 <label>{{ $t('signupCompany.fields.city') }}</label>
               
-                <div class="select-box">
-                  <select v-model="form.city">
-                    <option disabled value="">
-                      {{ $t('signupCompany.fields.city') }}
-                    </option>
-                  
-                    <option
+                <div class="select-box custom-select" @click="toggleCity">
+                  <div class="selected-value">
+                    {{ form.city || $t('signupCompany.fields.city') }}
+                  </div>
+                
+                  <span
+                    class="icon-up-chevron_svgrepocom"
+                    :class="{ rotate: showCity }"
+                  ></span>
+                
+                  <ul v-if="showCity" class="select-dropdown">
+                    <li
                       v-for="city in $tm('signupCompany.cities')"
                       :key="city"
-                      :value="city"
+                      @click.stop="selectCity(city)"
                     >
                       {{ city }}
-                    </option>
-                  </select>
-                
-                  <span class="icon-up-chevron_svgrepocom"></span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             
               <div class="form-group half">
                 <label>{{ $t('signupCompany.fields.governorate') }}</label>
-              
-                <div class="select-box">
-                  <select v-model="form.governorate">
-                    <option disabled value="">
-                      {{ $t('signupCompany.fields.governorate') }}
-                    </option>
-                  
-                    <option
+                <div class="select-box custom-select" @click="toggleGovernorate">
+                  <div class="selected-value">
+                    {{
+                      form.governorate ||
+                      $t('signupCompany.fields.governorate')
+                    }}
+                  </div>
+                
+                  <span
+                    class="icon-up-chevron_svgrepocom"
+                    :class="{ rotate: showGovernorate }"
+                  ></span>
+                
+                  <ul v-if="showGovernorate" class="select-dropdown">
+                    <li
                       v-for="governorate in $tm('signupCompany.governorates')"
                       :key="governorate"
-                      :value="governorate"
+                      @click.stop="selectGovernorate(governorate)"
                     >
                       {{ governorate }}
-                    </option>
-                  </select>
-                
-                  <span class="icon-up-chevron_svgrepocom"></span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -397,4 +424,6 @@ import signupJobseeker from '@/scripts/signup-jobseeker'
 export default signupJobseeker
 </script>
 <style src="../styles/resposive/signup-jobseeker-responsive.css"></style>
-<style scoped src="../styles/signup-jobseeker.css"></style>
+<style src="../styles/signup-jobseeker.css"></style>
+
+
