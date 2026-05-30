@@ -17,7 +17,7 @@
                   <div class="phone-box">
                     <input
                       type="text"
-                      v-model="phone"
+                      v-model="loginValue"
                       :placeholder="$t('loginPage.phonePlaceholder')"
                     />
 

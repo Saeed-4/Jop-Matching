@@ -319,7 +319,7 @@ export default{
     loginPage: {
       title: 'Log In',
       subtitle: 'Welcome back again',
-      phoneLabel: 'Mobile Phone',
+      phoneLabel: 'Email or phone number',
       phonePlaceholder: '972  00 000 0000',
       passwordLabel: 'Password',
       passwordPlaceholder: 'Password',
@@ -346,7 +346,8 @@ export default{
     
       jobSeeker: {
         title: 'Job Seeker',
-        description: 'Create a job seeker account through which you can post job opportunities, grants, or internships offered by the company.'
+        description: 'Create a job seeker account through which you can post job opportunities, grants, or internships offered by the company.',
+        welcome: "hi"
       },
       stats: {
         workSector: 'Work Sector',
@@ -788,4 +789,112 @@ export default{
         }
       ]
     },
+
+    jobSeekerHome: {
+      welcome: 'Welcome {name}',
+      heroDesc: 'Discover the best opportunities matching your skills and experience',
+      sector: 'Sector',
+      country: 'Country',
+      searchPlaceholder: 'Search for a job',
+      suggestedTitle: 'Here are some suggested jobs that suit your profile',
+      viewAll: 'View All',
+      sectorName: 'Information Technology',
+      jobDesc: 'Short job description',
+      location: 'Ramallah',
+      postDate: '2 days ago',
+      deadline: 'Application deadline',
+      matchTitle: 'Match Rate',
+      matchDesc: 'This job matches your profile',
+      applyNow: 'Apply Now',
+        
+      tags: {
+        remote: 'Remote',
+        fullTime: 'Full Time',
+        level: 'Advanced'
+      },
+    
+      suggestedJobs: [
+        {
+          title: 'Senior UX/UI Designer with Specialization in User Research'
+        },
+        {
+          title: 'Software Developer with a Background in QA and Networks'
+        },
+        {
+          title: 'Software Developer with a Background in QA and Networks'
+        }
+      ]
+    },
+
+    companyHome: {
+      editProfile: 'Edit Company Profile',
+      companyName: 'Corp Solutions Technology',
+      sector: 'Information Technology',
+      location: 'Cairo, Egypt',
+      companyDesc1: 'A leading provider of technology solutions specializing in enterprise software development,',
+      companyDesc2: 'Cloud services, and digital transformation. We help companies innovate and grow.',
+      companyDesc3: 'We use the latest technologies to deliver innovative and effective solutions for our clients. Our team of experts is dedicated to developing and implementing customized solutions that meet the unique needs of each client. We are committed to staying at the forefront of technology to ensure our clients receive the most advanced and cost-effective solutions.',
+
+      displayList: {
+        title: 'Display List',
+        compatible: 'Compatible Applicants',
+        qualified: 'Most Qualified Applicants',
+        received: 'Received \\ Postponed Requests',
+        activeJobs: 'Active Jobs',
+      },
+    
+      jobsOffered: {
+        title: 'Offered Jobs',
+        desc: 'A group of vacancies helping graduates reach their professional goals',
+        viewAll: 'View All',
+        active: 'Active',
+        published: 'Published',
+        deadline: 'Deadline',
+        applicants: 'Applicants',
+        match: 'Match',
+        pause: 'Pause',
+        viewApplicants: 'View Applicants',
+        edit: 'Edit',
+        delete: 'Delete',
+      },
+    
+      candidates: {
+        title: 'Job Applicants',
+        desc: 'A group of vacancies helping graduates reach their professional goals',
+        mostCompatible: 'Most Compatible',
+        leastCompatible: 'Least Compatible',
+        viewProfile: 'View Profile',
+        list: 'List',
+        years: 'Years',
+      },
+    
+      table: {
+        title: 'Job Applicants',
+        desc: 'Applicant data, jobs, and more',
+        viewAll: 'View All',
+        name: 'Candidate Name',
+        job: 'Applied Position',
+        date: 'Selection Date',
+        status: 'Status',
+        actions: 'Actions',
+      },
+    
+      stats: {
+        title: 'Statistics',
+        desc: 'Applicant data, jobs, and more',
+        workChart: 'Work Performance (Last 4 Weeks)',
+        jobsChart: 'Number of Posted Jobs',
+        month: 'Month',
+        trainees: 'Trainees',
+        jobs: 'Jobs',
+      },
+    
+      news: {
+        title: 'News & Events',
+        desc: 'Stay up to date with the latest updates and professional development opportunities in Palestine',
+        date: '12 June 2025',
+        newsTitle: 'New Job Opportunities in the Technology Sector',
+        newsDesc: 'Subscribe to our newsletter to stay up-to-date on the latest industry trends, expert advice, and exclusive job opportunities across Palestine. Join our growing community of passionate professionals and stay ahead of the curve.',
+      }
+    }
 }

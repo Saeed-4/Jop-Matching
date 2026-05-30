@@ -1,7 +1,7 @@
 export default {
   data() {
     return {
-      phone: '',
+      loginValue: '',
       password: '',
       error: ''
     }
@@ -25,7 +25,7 @@ export default {
             Accept: 'application/json'
           },
           body: JSON.stringify({
-            phone: this.phone,
+            login: this.loginValue,
             password: this.password
           })
         })
@@ -43,7 +43,7 @@ export default {
         if (data.user.role === 'job_seeker') {
           this.$router.push('/jobseeker-home')
         } else if (data.user.role === 'company') {
-          this.$router.push('/company-home')
+          this.$router.push('/companyHome') 
         }
       } catch (error) {
         console.error(error)

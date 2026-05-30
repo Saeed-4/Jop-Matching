@@ -163,14 +163,19 @@
 
             <div class="form-group half">
               <label>{{ $t('signupJobSeeker.fields.phone') }}</label>
-              <div class="phone-box">
-                <input v-model="form.phone" placeholder="972  00 000 0000" />
-                <div class="country-box">
-                  <img src="@/assets/image.png" alt="flag" />
-                  <span class="icon-up-chevron_svgrepocom"></span>
-                </div>
-                <small v-if="errors.phone" class="error-text">{{ errors.phone }}</small>
-              </div>
+              <VueTelInput
+                v-model="form.phone"
+                mode="international"
+                :defaultCountry="'PS'"
+                :autoDefaultCountry="false"
+                :inputOptions="{
+                  placeholder: $t('signupJobSeeker.fields.phone')
+                }"
+                @validate="onPhoneValidate"
+              />
+              <small v-if="errors.phone" class="error-text">
+                {{ errors.phone }}
+              </small>
             </div>
           </div>
 
@@ -262,8 +267,7 @@
                 </div>
               </div>
             </div>
-
-          <button class="main-btn" @click="nextStep">{{ $t('signupJobSeeker.buttons.next') }}</button>
+          <button class="main-btn" @click="sendOtp">{{ $t('signupJobSeeker.buttons.next') }}</button>
 
           <p class="bottom-auth-text">
             {{ $t('signupJobSeeker.auth.haveAccount') }}
@@ -273,21 +277,28 @@
 
         <div v-if="currentStep === 3" class="step-content otp-step">
           <div class="otp-box">
-            <p class="otp-text">{{ $t('signupJobSeeker.otpText') }} <strong>0594498337</strong></p>
+            <p class="otp-text">{{ $t('signupJobSeeker.otpText') }} <strong>{{ form.phone }}</strong></p>
 
             <div class="otp-inputs">
-              <input maxlength="1" placeholder="#" />
-              <input maxlength="1" placeholder="#" />
-              <input maxlength="1" placeholder="#" />
-              <input maxlength="1" placeholder="#" />
+              <input
+                v-for="(digit, index) in otp"
+                :key="index"
+                maxlength="1"
+                placeholder="#"
+                v-model="otp[index]"
+                @input="moveOtp(index, $event)"
+              />
+              <small v-if="otpError" class="error-text">{{ otpError }}</small>
             </div>
 
             <div class="otp-footer">
-              <span>02 : 59</span>
-              <span>{{ $t('signupJobSeeker.resend') }}</span>
+              <span>{{ formattedTimer }}</span>
+              <span @click="resendOtp">
+                {{ $t('signupJobSeeker.resend') }}
+              </span>
             </div>
 
-            <button class="main-btn" @click="nextStep">{{ $t('signupJobSeeker.buttons.confirm') }}</button>
+            <button class="main-btn" @click="verifyOtp">{{ $t('signupJobSeeker.buttons.confirm') }}</button>
 
             <p class="bottom-auth-text">
               {{ $t('signupJobSeeker.auth.haveAccount') }}
@@ -379,20 +390,21 @@
           <p>{{ $t('signupJobSeeker.passwordDesc') }}</p>
 
           <div class="form-group password-field">
-              <label>{{ $t('signupCompany.fields.password') }}</label>
-              <div class="password-input">
-                <input type="password" :placeholder="$t('signupCompany.fields.password')" v-model="form.password" />
-                <span class="icon-hide"></span>
-              </div>
+            <label>{{ $t('signupCompany.fields.password') }}</label>
+            <div class="password-input">
+              <input type="password" :placeholder="$t('signupCompany.fields.password')" v-model="form.password" />
+              <span class="icon-hide"></span>
             </div>
-
-            <div class="form-group password-field">
-              <label>{{ $t('signupCompany.fields.confirmPassword') }}</label>
-              <div class="password-input">
-                <input type="password" :placeholder="$t('signupCompany.fields.confirmPassword')" v-model="form.confirmPassword" />
-                <span class="icon-hide"></span>
-              </div>
+            <small v-if="errors.password" class="error-text">{{ errors.password }}</small>
+          </div>
+          <div class="form-group password-field">
+            <label>{{ $t('signupCompany.fields.confirmPassword') }}</label>
+            <div class="password-input">
+              <input type="password" :placeholder="$t('signupCompany.fields.confirmPassword')" v-model="form.confirmPassword" />
+              <span class="icon-hide"></span>
             </div>
+            <small v-if="errors.password_confirmation" class="error-text">{{ errors.password_confirmation }}</small>
+          </div>
 
           <button class="main-btn" @click="registerJobSeeker">{{ $t('signupJobSeeker.buttons.next') }}</button>
 

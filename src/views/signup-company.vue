@@ -57,14 +57,21 @@
 
             <div class="form-group">
               <label>{{ $t('signupCompany.fields.phone') }}</label>
-              <div class="phone-box">
-                <input type="text" placeholder="972  00 000 0000" v-model="form.phone" />
-
-                <div class="country-box">
-                  <img src="@/assets/image.png" alt="flag" />
-                  <span class="icon-up-chevron_svgrepocom"></span>
-                </div>
-              </div>
+                        
+              <VueTelInput
+                v-model="form.phone"
+                mode="international"
+                :defaultCountry="'PS'"
+                :autoDefaultCountry="false"
+                :inputOptions="{
+                  placeholder: $t('signupCompany.fields.phone')
+                }"
+                @validate="onPhoneValidate"
+              />
+              
+              <small v-if="errors.phone" class="error-text">
+                {{ errors.phone }}
+              </small>
             </div>
 
             <div class="form-group">
@@ -72,7 +79,7 @@
               <input type="email" placeholder="example@email.com" v-model="form.email" />
             </div>
 
-            <button class="next-btn" @click="nextStep">{{ $t('signupCompany.buttons.next') }}</button>
+            <button class="next-btn" @click="sendOtp">{{ $t('signupCompany.buttons.next') }}</button>
 
             <p class="bottom-auth-text">
               {{ $t('signupCompany.auth.haveAccount') }}
@@ -85,18 +92,23 @@
               <p class="otp-text">{{ $t('signupCompany.otpText') }}</p>
 
               <div class="otp-inputs">
-                <input type="text" maxlength="1" placeholder="#" />
-                <input type="text" maxlength="1" placeholder="#"/>
-                <input type="text" maxlength="1" placeholder="#"/>
-                <input type="text" maxlength="1" placeholder="#"/>
+                <input
+                  v-for="(digit, index) in otp"
+                  :key="index"
+                  maxlength="1"
+                  placeholder="#"
+                  v-model="otp[index]"
+                  @input="moveOtp(index, $event)"
+                />
+                <small v-if="otpError" class="error-text">{{ otpError }}</small>
               </div>
 
               <div class="otp-footer">
-                <span class="timer">02:59</span>
-                <span class="resend">{{ $t('signupCompany.resend') }}</span>
+                <span class="timer">{{ formattedTimer }}</span>
+                <span class="resend" @click="resendOtp">{{ $t('signupCompany.resend') }}</span>
               </div>
 
-              <button class="next-btn" @click="nextStep">{{ $t('signupCompany.buttons.confirm') }}</button>
+              <button class="next-btn" @click="verifyOtp">{{ $t('signupCompany.buttons.confirm') }}</button>
 
               <p class="bottom-auth-text">
                 {{ $t('signupCompany.auth.haveAccount') }}
@@ -249,7 +261,7 @@
                 <label class="custom-upload">
                   <span>{{ $t('signupCompany.uploadText') }}</span>
                   <span class="icon-upload-files"></span>
-                  <input type="file" @change="e => form.logoFile = e.target.files[0]" />
+                  <input type="file" @change="handleLogo" />
                 </label>
 
                 <p class="file-note">
@@ -263,7 +275,7 @@
                 <label class="custom-upload">
                   <span>{{ $t('signupCompany.uploadText') }}</span>
                   <span class="icon-upload-files"></span>
-                  <input type="file" @change="e => form.registrationFile = e.target.files[0]" />
+                  <input type="file" @change="handleRegistration" />
                 </label>
 
                 <p class="file-note">
@@ -277,7 +289,7 @@
                 <label class="custom-upload">
                   <span>{{ $t('signupCompany.uploadText') }}</span>
                   <span class="icon-upload-files"></span>
-                  <input type="file" @change="e => form.taxFile = e.target.files[0]" />
+                  <input type="file" @change="handleTax" />
                 </label>
 
                 <p class="file-note">
@@ -291,7 +303,7 @@
                 <label class="custom-upload">
                   <span>{{ $t('signupCompany.uploadText') }}</span>
                   <span class="icon-upload-files"></span>
-                  <input type="file" @change="e => form.chamberFile = e.target.files[0]" />
+                  <input type="file" @change="handleChamber" />
                 </label>
 
                 <p class="file-note">
@@ -300,7 +312,7 @@
               </div>
             </div>
 
-            <button class="next-btn" @click="nextStep">{{ $t('signupCompany.buttons.create') }}</button>
+            <button class="next-btn" @click="nextStep">{{ $t('signupCompany.buttons.next') }}</button>
 
             <p class="bottom-auth-text">
               {{ $t('signupCompany.auth.haveAccount') }}
@@ -330,7 +342,7 @@
               </div>
             </div>
 
-            <button class="next-btn" @click="nextStep">{{ $t('signupCompany.buttons.next') }}</button>
+            <button class="next-btn" @click="registerCompany">{{ $t('signupCompany.buttons.create') }}</button>
 
             <p class="bottom-auth-text">
               {{ $t('signupCompany.auth.haveAccount') }}

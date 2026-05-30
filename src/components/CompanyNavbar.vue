@@ -26,9 +26,9 @@
         <div class="nav-links">
           <ul>
             <li><router-link to="/">{{ $t('navbar.home') }}</router-link></li>
-            <li><router-link to="/operators">{{ $t('navbar.operators') }}</router-link></li>
-            <li><router-link to="/JobOpportunities">{{ $t('navbar.jobOpportunities') }}</router-link></li>
-            <li><router-link to="/GovernmentJobs">{{ $t('navbar.governmentJobs') }}</router-link></li>
+            <li><router-link to="/Job">{{ $t('navbar.operators') }}</router-link></li>
+            <li><router-link to="/Job-seekers">{{ $t('navbar.jobOpportunities') }}</router-link></li>
+            <li><router-link to="/Reports">{{ $t('navbar.governmentJobs') }}</router-link></li>
           </ul>
         </div>
 
@@ -44,10 +44,6 @@
           <button class="circle-btn notification-btn">
             <span class="icon-Vector-22"></span>
             <span class="badge">3</span>
-          </button>
-
-          <button class="circle-btn">
-            <span class="icon-settings"></span>
           </button>
 
           <button class="circle-btn lang-btn" @click="toggleLang">

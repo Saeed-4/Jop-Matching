@@ -7,7 +7,13 @@
     />
 
     <UserNavbar
-      v-else-if="$route.path === '/jobseeker-home'"
+      v-else-if="$route.path.includes('jobseeker-home')"
+      :currentLang="currentLang"
+      @changeLang="changeLang"
+    />
+
+    <CompanyNavbar
+      v-else-if="$route.name === 'companyHome'"
       :currentLang="currentLang"
       @changeLang="changeLang"
     />
@@ -35,13 +41,15 @@ import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import LoginNavbar from './components/LoginNavbar.vue'
 import UserNavbar from './components/UserNavbar.vue'
+import CompanyNavbar from './components/CompanyNavbar.vue'
 
 export default {
   components: {
     Navbar,
     Footer,
     LoginNavbar,
-    UserNavbar
+    UserNavbar,
+    CompanyNavbar
   },
 
   data() {

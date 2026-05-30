@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import i18n from '@/i18n'
+import { requireAuth } from './guards'
 
 import Home from '../views/Home.vue'
 import Operators from '@/views/Operators.vue'
@@ -12,6 +13,12 @@ import contact from '@/views/contact.vue'
 import LatestJobs from '@/views/LatestJobs.vue'
 import WorkDetails from '@/views/WorkDetails.vue'
 import SearchResults from '@/views/SearchResults.vue'
+import Job from '@/views/Job.vue'
+import JobSeekers from '@/views/Job-seekers.vue'
+import Reports from '@/views/Reports.vue'
+import companyHome from '@/views/companyHome.vue'
+
+
 
 const routes = [
   {
@@ -216,6 +223,7 @@ const routes = [
     path: '/jobseeker-home',
     name: 'JobSeekerHome',
     component: () => import('@/views/JobSeekerHome.vue'),
+    beforeEnter: requireAuth,
     meta: {
       userNavbar: true
     }
@@ -225,9 +233,60 @@ const routes = [
     path: '/jobseeker-home/en',
     name: 'JobSeekerHome-en',
     component: () => import('@/views/JobSeekerHome.vue'),
+    beforeEnter: requireAuth,
     meta: {
       userNavbar: true
     }
+  },
+
+  {
+    path: '/companyHome',
+    name: 'companyHome',
+    component:companyHome,
+    beforeEnter: requireAuth, 
+  },
+
+  {
+    path: '/companyHome/en',
+    name: 'companyHome-en',
+    component:companyHome,
+    beforeEnter: requireAuth,  
+  },
+
+  {
+    path:'/Job',
+    name:'Job',
+    component:Job
+  },
+
+  {
+    path:'/Job/en',
+    name:'Job-en',
+    component:Job
+  },
+
+  {
+    path:'/Job-seekers',
+    name:'Job-seekers',
+    component:JobSeekers
+  },
+
+  {
+    path:'/Job-seekers/en',
+    name:'Job-seekers-en',
+    component:JobSeekers
+  },
+
+  {
+    path:'/Reports',
+    name:'Reports',
+    component:Reports
+  },
+
+  {
+    path:'/Reports/en',
+    name:'Reports-en',
+    component:Reports
   }
 ]
 

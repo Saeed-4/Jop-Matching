@@ -683,7 +683,56 @@ textarea {
   color: #dd5c16;
 }
 
+.vue-tel-input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #F26A21 !important;
+    border-radius: 40px !important;
+    background: transparent !important;
+    direction: ltr;
+    overflow: visible !important;
+}
 
+.vue-tel-input:focus-within {
+    border-color: #F26A21 !important;
+    box-shadow: none !important;
+}
+
+.vue-tel-input input {
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 14px;
+    color: #666;
+    padding-inline: 15px;
+}
+
+.vti__dropdown {
+    border: none !important;
+    background: transparent !important;
+    padding-inline: 10px;
+}
+
+.vti__dropdown-list {
+    max-height: 300px !important;
+    overflow-y: auto;
+    direction: ltr;
+    z-index: 99999 !important;
+}
+
+.vti__dropdown-item {
+    padding: 12px 15px !important;
+    font-size: 15px !important;
+}
+
+.vti__country-name {
+    font-size: 15px;
+}
+
+.vti__flag {
+    transform: scale(1.1);
+}
 
 @keyframes drawCircle {
   to { stroke-dashoffset: 0; }

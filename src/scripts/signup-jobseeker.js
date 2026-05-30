@@ -1,4 +1,10 @@
+import { VueTelInput } from 'vue3-tel-input'
+
 export default {
+  components: {
+    VueTelInput
+  },
+
   data() {
     return {
       currentStep: 1,
@@ -11,7 +17,15 @@ export default {
       showCountry: false,
       showCity: false,
       showGovernorate: false,
-      
+
+      phoneValid: false,
+      fullPhone: '',
+
+      otp: ['', '', '', ''],
+      otpError: '',
+      timer: 180,
+      timerInterval: null,
+
       form: {
         firstName: '',
         lastName: '',
@@ -37,6 +51,12 @@ export default {
     cvSize() {
       if (!this.cvFile) return ''
       return `${(this.cvFile.size / 1024 / 1024).toFixed(2)} MB`
+    },
+
+    formattedTimer() {
+      const minutes = String(Math.floor(this.timer / 60)).padStart(2, '0')
+      const seconds = String(this.timer % 60).padStart(2, '0')
+      return `${minutes} : ${seconds}`
     }
   },
 
@@ -56,12 +76,15 @@ export default {
       this.skills = [...this.$tm('signupJobSeeker.defaultSkills')]
     },
 
+    onPhoneValidate(phoneObject) {
+      this.phoneValid = phoneObject.valid
+      this.fullPhone = phoneObject.number ? phoneObject.number.replace(/\s/g, '') : ''
+    },
+
     openDate() {
       const input = this.$refs.dateInput
-
-      if (input?.showPicker) {
-        input.showPicker()
-      } else if (input) {
+      if (input?.showPicker) input.showPicker()
+      else if (input) {
         input.focus()
         input.click()
       }
@@ -73,7 +96,7 @@ export default {
       if (this.currentStep === 2) {
         if (!this.form.firstName) this.errors.first_name = this.$t('signupJobSeeker.validation.firstNameRequired')
         if (!this.form.lastName) this.errors.last_name = this.$t('signupJobSeeker.validation.lastNameRequired')
-        if (!this.form.phone) this.errors.phone = this.$t('signupJobSeeker.validation.phoneRequired')
+        if (!this.fullPhone) this.errors.phone = this.$t('signupJobSeeker.validation.phoneRequired')
 
         if (!this.form.email) {
           this.errors.email = this.$t('signupJobSeeker.validation.emailRequired')
@@ -90,12 +113,119 @@ export default {
       }
     },
 
-    handleBack() {
-      if (this.currentStep > 1) {
-        this.currentStep--
-      } else {
-        this.$router.push('/signup')
+    async sendOtp() {
+      this.errors = {}
+
+      if (!this.form.firstName) this.errors.first_name = this.$t('signupJobSeeker.validation.firstNameRequired')
+      if (!this.form.lastName) this.errors.last_name = this.$t('signupJobSeeker.validation.lastNameRequired')
+      if (!this.fullPhone) this.errors.phone = this.$t('signupJobSeeker.validation.phoneRequired')
+      if (!this.form.email) this.errors.email = this.$t('signupJobSeeker.validation.emailRequired')
+
+      if (Object.keys(this.errors).length > 0) return
+
+      try {
+        const response = await fetch('http://127.0.0.1:8000/api/send-otp', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            phone: this.fullPhone
+          })
+        })
+
+        const data = await response.json()
+
+        if (!response.ok) {
+          alert(data.message)
+          return
+        }
+
+        console.log('OTP:', data.otp)
+
+        this.currentStep = 3
+        this.startTimer()
+      } catch (error) {
+        console.error(error)
+        alert(this.$t('signupJobSeeker.alerts.server'))
       }
+    },
+
+    async verifyOtp() {
+      this.otpError = ''
+
+      const otpCode = this.otp.join('')
+
+      if (otpCode.length !== 4) {
+        this.otpError = 'أدخل رمز التحقق كامل'
+        return
+      }
+
+      try {
+        const response = await fetch('http://127.0.0.1:8000/api/verify-otp', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            phone: this.fullPhone,
+            otp_code: otpCode
+          })
+        })
+
+        const data = await response.json()
+
+        if (!response.ok) {
+          this.otpError = data.message
+          return
+        }
+
+        this.nextStep()
+      } catch (error) {
+        console.error(error)
+        this.otpError = 'حدث خطأ أثناء التحقق'
+      }
+    },
+
+    startTimer() {
+      clearInterval(this.timerInterval)
+      this.timer = 180
+
+      this.timerInterval = setInterval(() => {
+        if (this.timer > 0) this.timer--
+        else clearInterval(this.timerInterval)
+      }, 1000)
+    },
+
+    async resendOtp() {
+      if (this.timer > 0) return
+
+      this.otp = ['', '', '', '']
+      this.otpError = ''
+
+      await this.sendOtp()
+    },
+
+    moveOtp(index, event) {
+      const value = event.target.value
+
+      if (!/^[0-9]?$/.test(value)) {
+        this.otp[index] = ''
+        return
+      }
+
+      const inputs = event.target.parentElement.querySelectorAll('input')
+
+      if (value && index < inputs.length - 1) {
+        inputs[index + 1].focus()
+      }
+    },
+
+    handleBack() {
+      if (this.currentStep > 1) this.currentStep--
+      else this.$router.push('/signup')
     },
 
     handleCvUpload(e) {
@@ -129,9 +259,7 @@ export default {
       const skill = this.form.skillInput.trim()
       if (!skill) return
 
-      if (!this.skills.includes(skill)) {
-        this.skills.push(skill)
-      }
+      if (!this.skills.includes(skill)) this.skills.push(skill)
 
       this.form.skillInput = ''
     },
@@ -165,7 +293,7 @@ export default {
         formData.append('birth_date', this.form.birthDate || '')
         formData.append('id_number', this.form.idNumber || '')
         formData.append('gender', this.form.gender || '')
-        formData.append('phone', this.form.phone)
+        formData.append('phone', this.fullPhone || this.form.phone)
         formData.append('email', this.form.email)
         formData.append('country', this.form.country || '')
         formData.append('city', this.form.city || '')
@@ -195,7 +323,6 @@ export default {
         if (!response.ok) {
           if (data.errors) {
             this.errors = {}
-
             Object.keys(data.errors).forEach(key => {
               this.errors[key] = data.errors[key][0]
             })
@@ -234,19 +361,19 @@ export default {
     toggleCity() {
       this.showCity = !this.showCity
     },
-    
+
     selectCity(city) {
       this.form.city = city
       this.showCity = false
     },
-    
+
     toggleGovernorate() {
       this.showGovernorate = !this.showGovernorate
     },
-    
+
     selectGovernorate(governorate) {
       this.form.governorate = governorate
       this.showGovernorate = false
-    },
+    }
   }
 }
