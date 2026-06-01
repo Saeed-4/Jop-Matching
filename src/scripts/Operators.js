@@ -68,5 +68,9 @@ export default {
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
     }
-  }
+  },
+
+  mounted() {
+  console.log(import.meta.env.VITE_API_URL)
+}
 }

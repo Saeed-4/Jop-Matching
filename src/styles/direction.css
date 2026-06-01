@@ -1,36 +1,10 @@
-.ar {
+.rtl {
   direction: rtl;
   text-align: right;
 }
 
-.en {
+.ltr {
   direction: ltr;
-  text-align: left;
-}
-
-.ar input,
-.ar textarea {
-  text-align: right;
-}
-
-.en input,
-.en textarea {
-  text-align: left;
-}
-
-.ar h1,
-.ar h2,
-.ar h3,
-.ar label,
-.ar p {
-  text-align: right;
-}
-
-.en h1,
-.en h2,
-.en h3,
-.en label,
-.en p {
   text-align: left;
 }
 

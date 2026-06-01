@@ -1,19 +1,18 @@
-import { getCurrentUser } from '@/services/auth'
+import { useAuthStore } from '@/stores/auth'
 
-export async function requireAuth(to, from, next) {
-  const token = localStorage.getItem('token')
-
-  if (!token) {
-    next('/login')
-    return
+export async function requireAuth(to) {
+  const auth = useAuthStore()
+  if (!auth.initialized) {
+    await auth.init()
   }
-
-  const user = await getCurrentUser()
-
-  if (!user) {
-    next('/login')
-    return
+  if (!auth.token) {
+    return '/login'
   }
-
-  next()
+  if (!auth.user) {
+    return '/login'
+  }
+  if (to.meta.role && auth.user.role !== to.meta.role) {
+    return '/'
+  }
+  return true
 }

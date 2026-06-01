@@ -1,53 +1,46 @@
+import { useAuthStore } from '@/stores/auth'
+
 export default {
   data() {
     return {
       loginValue: '',
       password: '',
-      error: ''
-    }
-  },
-
-  computed: {
-    loginText() {
-      return this.$tm('loginPage')
+      error: '',
+      loading: false
     }
   },
 
   methods: {
     async login() {
       this.error = ''
+      this.loading = true
+
+      if (!this.loginValue || !this.password) {
+        this.error = 'Please fill all fields'
+        this.loading = false
+        return
+      }
 
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json'
-          },
-          body: JSON.stringify({
-            login: this.loginValue,
-            password: this.password
-          })
+        const auth = useAuthStore()
+
+        const route = await auth.login({
+          login: this.loginValue,
+          password: this.password
         })
 
-        const data = await response.json()
+        this.$router.push(route)
 
-        if (!response.ok) {
-          this.error = data.message || this.$t('loginPage.loginError')
-          return
-        }
-
-        localStorage.setItem('token', data.token)
-        localStorage.setItem('user', JSON.stringify(data.user))
-
-        if (data.user.role === 'job_seeker') {
-          this.$router.push('/jobseeker-home')
-        } else if (data.user.role === 'company') {
-          this.$router.push('/companyHome') 
-        }
       } catch (error) {
-        console.error(error)
-        this.error = this.$t('loginPage.serverError')
+        console.log(error)
+
+        this.error =
+          error?.response?.data?.message ||
+          error?.message ||
+          this.$t('loginPage.serverError')
+
+      } finally {
+        this.loading = false
       }
     }
   }

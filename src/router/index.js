@@ -225,32 +225,40 @@ const routes = [
     component: () => import('@/views/JobSeekerHome.vue'),
     beforeEnter: requireAuth,
     meta: {
+      role: 'job_seeker',
       userNavbar: true
     }
   },
-
+  
   {
     path: '/jobseeker-home/en',
     name: 'JobSeekerHome-en',
     component: () => import('@/views/JobSeekerHome.vue'),
     beforeEnter: requireAuth,
     meta: {
+      role: 'job_seeker',
       userNavbar: true
     }
   },
-
+  
   {
     path: '/companyHome',
     name: 'companyHome',
-    component:companyHome,
-    beforeEnter: requireAuth, 
+    component: companyHome,
+    beforeEnter: requireAuth,
+    meta: {
+      role: 'company'
+    }
   },
-
+  
   {
     path: '/companyHome/en',
     name: 'companyHome-en',
-    component:companyHome,
-    beforeEnter: requireAuth,  
+    component: companyHome,
+    beforeEnter: requireAuth,
+    meta: {
+      role: 'company'
+    }
   },
 
   {
